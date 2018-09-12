@@ -11,15 +11,13 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
 
 ## Auteurs: Les  seigneurs du resto
 
-<!-- >>>
+>>>
 + Louisa Fodile
-+ Valentine Lje (parce qu'elle fait chier !!!)
++ Valentine Lejeune
 + Alexandre Hulsken
 + Martin Vasilev
 + Rémi Delavalle
->>> -->
-
-@all
+>>>
 
 #### M1S1 - Gr.1
 
