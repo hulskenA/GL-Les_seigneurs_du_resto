@@ -4,7 +4,7 @@
 
 ---
 
-[- :warning: Ce scénario sera explicité dans une version ultérieure de notre logiciel. -]
+:warning: {- Ce scénario sera explicité dans une version ultérieure de notre logiciel. -}
 
 ---
 
