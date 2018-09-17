@@ -36,7 +36,7 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
     3. [Le client ajoute un élément à sa commande](scenario/scenario_3.md)
     4. [La commande est modifiée](scenario/scenario_4.md)
     5. [Déroulement des commandes de plusieurs clients distincts](scenario/scenario_5.md)
-    6. [Le plat commandé n’est plus disponible (Martin)](scenario/scenario_6.md)
+    6. [Le plat commandé n’est plus disponible](scenario/scenario_6.md)
     7. [Ajout ou retrait des tables disponibles](scenario/scenario_7.md)
     8. [Attribution d’une table à un serveur](scenario/scenario_8.md)
     9. [Le client saisit lui même sa commande via une tablette](scenario/scenario_9.md)
