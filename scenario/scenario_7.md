@@ -18,4 +18,6 @@
 
 6. Une fois installés à leur table, notre serveur peut prendre en compte dans l'application que la table n'est plus libre.
 
+---
+
 [:leftwards_arrow_with_hook: Retour à la page d'accueil](../README.md)
