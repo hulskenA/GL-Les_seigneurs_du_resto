@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dYb7MLsjEeiK9K9WzJp_Mg" name="prise_de_commandes">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_dedDoLsjEeiK9K9WzJp_Mg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_3UAFULsjEeiK9K9WzJp_Mg" name="Utilisateur"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_7ipQALsjEeiK9K9WzJp_Mg" name="Client">
+    <generalization xmi:type="uml:Generalization" xmi:id="_CvniILsmEeiK9K9WzJp_Mg" general="_3UAFULsjEeiK9K9WzJp_Mg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_8LCswLsjEeiK9K9WzJp_Mg" name="Serveur">
+    <generalization xmi:type="uml:Generalization" xmi:id="_DRQ2oLsmEeiK9K9WzJp_Mg" general="_3UAFULsjEeiK9K9WzJp_Mg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_89FNsLsjEeiK9K9WzJp_Mg" name="Barman">
+    <generalization xmi:type="uml:Generalization" xmi:id="_FMqMULsmEeiK9K9WzJp_Mg" general="_Bre2gLskEeiK9K9WzJp_Mg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_-WeCgLsjEeiK9K9WzJp_Mg" name="Cuisinier">
+    <generalization xmi:type="uml:Generalization" xmi:id="_FpOzkLsmEeiK9K9WzJp_Mg" general="_Bre2gLskEeiK9K9WzJp_Mg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="__Drt0LsjEeiK9K9WzJp_Mg" name="Glacier">
+    <generalization xmi:type="uml:Generalization" xmi:id="_GLJ04LsmEeiK9K9WzJp_Mg" general="_Bre2gLskEeiK9K9WzJp_Mg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Bre2gLskEeiK9K9WzJp_Mg" name="Préparateurs">
+    <generalization xmi:type="uml:Generalization" xmi:id="_EfrKgLsmEeiK9K9WzJp_Mg" general="_3UAFULsjEeiK9K9WzJp_Mg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_iUjacLskEeiK9K9WzJp_Mg" name="Prise de commande"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_I6CScLslEeiK9K9WzJp_Mg" name="Réception de commande"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_MLKE8LslEeiK9K9WzJp_Mg" name="Clôture de commande"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_T0Ch4LslEeiK9K9WzJp_Mg" name="Génération de l'addition"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_eW41kLslEeiK9K9WzJp_Mg" name="Débarrassage de la table"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_82sm8LslEeiK9K9WzJp_Mg" memberEnd="_82tOArslEeiK9K9WzJp_Mg _82tOA7slEeiK9K9WzJp_Mg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_82tOALslEeiK9K9WzJp_Mg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_82tOAbslEeiK9K9WzJp_Mg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_82tOArslEeiK9K9WzJp_Mg" name="serveur" type="_8LCswLsjEeiK9K9WzJp_Mg" association="_82sm8LslEeiK9K9WzJp_Mg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_82tOA7slEeiK9K9WzJp_Mg" name="prise de commande" type="_iUjacLskEeiK9K9WzJp_Mg" association="_82sm8LslEeiK9K9WzJp_Mg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YbHlQLsmEeiK9K9WzJp_Mg" memberEnd="_YbIMULsmEeiK9K9WzJp_Mg _YbIMUbsmEeiK9K9WzJp_Mg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YbHlQbsmEeiK9K9WzJp_Mg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YbHlQrsmEeiK9K9WzJp_Mg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YbIMULsmEeiK9K9WzJp_Mg" name="prise de commande" type="_iUjacLskEeiK9K9WzJp_Mg" association="_YbHlQLsmEeiK9K9WzJp_Mg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YbIMUbsmEeiK9K9WzJp_Mg" name="client" type="_7ipQALsjEeiK9K9WzJp_Mg" association="_YbHlQLsmEeiK9K9WzJp_Mg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eql_QLsmEeiK9K9WzJp_Mg" memberEnd="_eqmmUbsmEeiK9K9WzJp_Mg _eqmmUrsmEeiK9K9WzJp_Mg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eql_QbsmEeiK9K9WzJp_Mg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eqmmULsmEeiK9K9WzJp_Mg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eqmmUbsmEeiK9K9WzJp_Mg" name="génération de l'addition" type="_T0Ch4LslEeiK9K9WzJp_Mg" association="_eql_QLsmEeiK9K9WzJp_Mg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eqmmUrsmEeiK9K9WzJp_Mg" name="serveur" type="_8LCswLsjEeiK9K9WzJp_Mg" association="_eql_QLsmEeiK9K9WzJp_Mg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_g4KqELsmEeiK9K9WzJp_Mg" memberEnd="_g4LRIrsmEeiK9K9WzJp_Mg _g4LRI7smEeiK9K9WzJp_Mg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_g4LRILsmEeiK9K9WzJp_Mg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_g4LRIbsmEeiK9K9WzJp_Mg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_g4LRIrsmEeiK9K9WzJp_Mg" name="réception de commande" type="_I6CScLslEeiK9K9WzJp_Mg" association="_g4KqELsmEeiK9K9WzJp_Mg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_g4LRI7smEeiK9K9WzJp_Mg" type="_Bre2gLskEeiK9K9WzJp_Mg" association="_g4KqELsmEeiK9K9WzJp_Mg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2m4ZQLsmEeiK9K9WzJp_Mg" memberEnd="_2m5AUrsmEeiK9K9WzJp_Mg _2m5AU7smEeiK9K9WzJp_Mg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2m5AULsmEeiK9K9WzJp_Mg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2m5AUbsmEeiK9K9WzJp_Mg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2m5AUrsmEeiK9K9WzJp_Mg" name="serveur" type="_8LCswLsjEeiK9K9WzJp_Mg" association="_2m4ZQLsmEeiK9K9WzJp_Mg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2m5AU7smEeiK9K9WzJp_Mg" name="débarrassage de la table" type="_eW41kLslEeiK9K9WzJp_Mg" association="_2m4ZQLsmEeiK9K9WzJp_Mg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3KvUQLsmEeiK9K9WzJp_Mg" memberEnd="_3Kv7UrsmEeiK9K9WzJp_Mg _3Kv7U7smEeiK9K9WzJp_Mg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3Kv7ULsmEeiK9K9WzJp_Mg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3Kv7UbsmEeiK9K9WzJp_Mg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3Kv7UrsmEeiK9K9WzJp_Mg" name="serveur" type="_8LCswLsjEeiK9K9WzJp_Mg" association="_3KvUQLsmEeiK9K9WzJp_Mg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3Kv7U7smEeiK9K9WzJp_Mg" name="clôture de commande" type="_MLKE8LslEeiK9K9WzJp_Mg" association="_3KvUQLsmEeiK9K9WzJp_Mg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5uaK4LsmEeiK9K9WzJp_Mg" name="Préparateur">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4V1Y8LsnEeiK9K9WzJp_Mg" name="Property1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_M7ylwLsnEeiK9K9WzJp_Mg" name="Client"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PNj0ELsnEeiK9K9WzJp_Mg" name="Serveur"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Ro5OELsnEeiK9K9WzJp_Mg" name="Barman"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SZ1i0LsnEeiK9K9WzJp_Mg" name="Glacier"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_T3vEMLsnEeiK9K9WzJp_Mg" name="Cuisinier"/>
+  <packagedElement xmi:type="uml:Abstraction" xmi:id="_bqcykLsnEeiK9K9WzJp_Mg" client="_T3vEMLsnEeiK9K9WzJp_Mg" supplier="_5uaK4LsmEeiK9K9WzJp_Mg"/>
+  <packagedElement xmi:type="uml:Abstraction" xmi:id="_cJhUMLsnEeiK9K9WzJp_Mg" client="_dYb7MLsjEeiK9K9WzJp_Mg" supplier="_5uaK4LsmEeiK9K9WzJp_Mg"/>
+  <packagedElement xmi:type="uml:Abstraction" xmi:id="_c-1yoLsnEeiK9K9WzJp_Mg" client="_SZ1i0LsnEeiK9K9WzJp_Mg" supplier="_dYb7MLsjEeiK9K9WzJp_Mg"/>
+</uml:Model>
