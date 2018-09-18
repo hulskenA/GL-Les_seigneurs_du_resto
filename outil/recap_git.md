@@ -1,5 +1,6 @@
 ### Récape commandes `GIT`
 
++ `git status` => voir la liste des fichiers et commits différents entre le repo local et le repo distant
 + `git add <fileName>` => ajout/indexation du fichier `<fileName>`
 + `git commit -m "type(where): what"` => nomination du/des changement(s) ajoutés précédemments (example en Karma commit)
 + `git merge <branchName>` => fusionne la branche actuelle avec la branche `<branchName>`
