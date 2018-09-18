@@ -1,5 +1,5 @@
 ### Bilan des tâches effectuées lors de la scéance 1
-##### *11X09X2018*
+##### *11 / 09 / 2018*
 
 ---
 
