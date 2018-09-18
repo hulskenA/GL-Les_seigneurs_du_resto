@@ -30,7 +30,10 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
 ## Table des matières
 
 1. [Tableau de suivi des tâches](tableau_de_suivi_des_taches.md)
-2. [Scénarios possibles d'utilisation](scenario/schema_scenario.md)
+2. [Bilans de scéance]()
+    1. [Bilan 11/09/2018](bilan/11_09_2018_bilan_seance_1.md)
+    2. [Bilan 18/09/2018](bilan/18_09_2018_bilan_seance_2.md)
+3. [Scénarios possibles d'utilisation](scenario/schema_scenario.md)
     1. [Prise de commande et notifications `Cas nominal`](scenario/scenario_1.md)
     2. [La commande se déroule comme prévu `Cas nominal`](scenario/scenario_2.md)
     3. [Le client ajoute un élément à sa commande](scenario/scenario_3.md)
