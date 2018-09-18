@@ -1,7 +1,5 @@
 ### <u>Scénario 9 :</u> Le client saisit lui même sa commande via une tablette
 
----
-
 > *Ce scénario décrit le déroulement d’une commande prise via une tablette via le client lui-même.*
 
 ---

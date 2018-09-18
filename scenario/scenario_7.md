@@ -1,7 +1,5 @@
 ### <u>Scénario 7 :</u> Ajout ou retrait des tables disponibles
 
----
-
 > *Ce scénario peut se dérouler à tout moment du service.*
 
 ---

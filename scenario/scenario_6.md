@@ -1,7 +1,5 @@
 ### <u>Scénario 6 :</u> Le plat commandé n’est plus disponible
 
----
-
 > *Ce scénario intervient apres que le client ait fait son choix de plat, a la place de l'étape 3 dans le scénario 1*
 
 ---

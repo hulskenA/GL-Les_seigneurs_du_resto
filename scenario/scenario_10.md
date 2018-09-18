@@ -1,4 +1,4 @@
-### <u>Scénario 10.1 :</u> Les responsables ajoutent/enlèvent des plats à la carte
+### <u>Scénario 10 :</u> Les responsables ajoutent/enlèvent des plats à la carte
 
 > *Ce scénario décrit la procédure d'ajout de boissons, repas ou glaces à la carte.*
 
