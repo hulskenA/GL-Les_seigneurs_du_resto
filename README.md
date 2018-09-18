@@ -12,7 +12,7 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
 ## Auteurs: Les  seigneurs du resto
 
 >>>
-+ Louisa Fodile
++ Louisa Fodil
 + Valentine Lejeune
 + Alexandre Hulsken
 + Martin Vasilev
