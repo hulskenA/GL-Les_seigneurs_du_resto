@@ -45,6 +45,9 @@ p2 --> t2
 
 + Diagramme de classes
 
+![diagramme classe trajet](http://www.plantuml.com/plantuml/png/7Oun3i8m34Ltdy97u0XbP8QzSXCFXiI9R9S1n85wZbwCjDANljxxovyyo6Aj1VmbsiceOYhaVeqmMTRWMsfwbm_Z1U1Sy67qvC0l86ghY_7S2oNsmPc2Hqc8xfkHs46zYSQSPpAJzxwTvX0yqia2VZ2nvd7Y3m00)
+
+<!--
 ```puml
 class Trajet {
   nombre_places
@@ -54,7 +57,7 @@ class Trajet {
   pont_de_depart
 }
 ```
-
+-->
 ---
 
 [:leftwards_arrow_with_hook: Retour à la page d'accueil](..XREADME.md)
