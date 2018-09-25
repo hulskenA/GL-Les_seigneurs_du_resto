@@ -33,6 +33,7 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
 2. [Bilans de séance]()
     1. [Bilan 11/09/2018](Bilan_de_seance/11_09_2018_bilan_seance_1.md)
     2. [Bilan 18/09/2018](Bilan_de_seance/18_09_2018_bilan_seance_2.md)
+    2. [Bilan 25/09/2018](Bilan_de_seance/25_09_2018_bilan_seance_3.md)
 3. [Scénarios possibles d'utilisation](scenario/schema_scenario.md)
     1. [Prise de commande et notifications `Cas nominal`](scenario/scenario_1.md)
     2. [La commande se déroule comme prévu `Cas nominal`](scenario/scenario_2.md)

@@ -1,4 +1,4 @@
-### Bilan des tâches effectuées lors de la scéance 1
+### Bilan des tâches effectuées lors de la scéance 2
 ##### *11 / 09 / 2018*
 
 ---
