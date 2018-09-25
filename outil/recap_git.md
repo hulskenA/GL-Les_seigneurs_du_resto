@@ -12,7 +12,4 @@
 + `git branch -d <branchName>` => supprime la branche `<branchName>`
 + `git checkout <branchName>` => se déplace sur la branche `<branchName>` locale
 + `git checkout -b <branchName>` => crée une nouvelle branch `<branchName>` et se déplace dessus
-
-***A vérifier:***
-+ `git reset HEAD` => supprime les modifications non indexé
-+ `git reset ~HEAD` => supprime le derniers commit local
++ `git reset HEAD` => supprime les commits locaux
