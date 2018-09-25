@@ -198,6 +198,7 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_xmcEkcAQEeiNS8OwADDMvg" name="menu" type="_u_X7sMAQEeiNS8OwADDMvg" association="_xmbdgMAQEeiNS8OwADDMvg"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JlrlUMCoEeiL2LHXeMMrmg"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_fErrgMAOEeiNS8OwADDMvg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fEsSkMAOEeiNS8OwADDMvg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
