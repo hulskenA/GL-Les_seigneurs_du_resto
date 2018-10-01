@@ -199,6 +199,93 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_xmcEkcAQEeiNS8OwADDMvg" name="menu" type="_u_X7sMAQEeiNS8OwADDMvg" association="_xmbdgMAQEeiNS8OwADDMvg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_JlrlUMCoEeiL2LHXeMMrmg"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_4pXb4MWOEeinKsbjFhrw5w" name="Serveur"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_8fk4cMWOEeinKsbjFhrw5w" name="SaisirCommande">
+      <include xmi:type="uml:Include" xmi:id="_oBoYIMWPEeinKsbjFhrw5w" addition="_fyd-UMWPEeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_-UImUMWOEeinKsbjFhrw5w" name="ModifierCommande">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_kx-lQMWPEeinKsbjFhrw5w" name="ExtensionPoint1"/>
+      <include xmi:type="uml:Include" xmi:id="_nArRcMWPEeinKsbjFhrw5w" addition="_fyd-UMWPEeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Gerl4MWPEeinKsbjFhrw5w" name="CloturerCommande">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_zHGbQMWQEeinKsbjFhrw5w" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_KqffAMWPEeinKsbjFhrw5w" name="Preparateur"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_NILpcMWPEeinKsbjFhrw5w" name="ReceptionCommande">
+      <include xmi:type="uml:Include" xmi:id="_rLdP0MWPEeinKsbjFhrw5w" addition="_fyd-UMWPEeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_RCCP4MWPEeinKsbjFhrw5w" name="CommandePrete">
+      <include xmi:type="uml:Include" xmi:id="_pnHIMMWPEeinKsbjFhrw5w" addition="_fyd-UMWPEeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_fyd-UMWPEeinKsbjFhrw5w" name="EnvoieAlerte"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2AKvkMWPEeinKsbjFhrw5w" memberEnd="_2ANy4MWPEeinKsbjFhrw5w _2ANy4cWPEeinKsbjFhrw5w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2ANL0MWPEeinKsbjFhrw5w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2ANL0cWPEeinKsbjFhrw5w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2ANy4MWPEeinKsbjFhrw5w" name="commandeprete" type="_RCCP4MWPEeinKsbjFhrw5w" association="_2AKvkMWPEeinKsbjFhrw5w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2ANy4cWPEeinKsbjFhrw5w" name="preparateur" type="_KqffAMWPEeinKsbjFhrw5w" association="_2AKvkMWPEeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2zj7YMWPEeinKsbjFhrw5w" memberEnd="_2zm-scWPEeinKsbjFhrw5w _2zm-ssWPEeinKsbjFhrw5w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2zmXoMWPEeinKsbjFhrw5w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2zm-sMWPEeinKsbjFhrw5w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2zm-scWPEeinKsbjFhrw5w" name="receptioncommande" type="_NILpcMWPEeinKsbjFhrw5w" association="_2zj7YMWPEeinKsbjFhrw5w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2zm-ssWPEeinKsbjFhrw5w" type="_KqffAMWPEeinKsbjFhrw5w" association="_2zj7YMWPEeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cNSx8MWQEeinKsbjFhrw5w" memberEnd="_cNY4ksWQEeinKsbjFhrw5w _cNY4k8WQEeinKsbjFhrw5w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cNY4kMWQEeinKsbjFhrw5w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cNY4kcWQEeinKsbjFhrw5w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_cNY4ksWQEeinKsbjFhrw5w" name="cloturercommande" type="_Gerl4MWPEeinKsbjFhrw5w" association="_cNSx8MWQEeinKsbjFhrw5w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_cNY4k8WQEeinKsbjFhrw5w" name="serveur" type="_4pXb4MWOEeinKsbjFhrw5w" association="_cNSx8MWQEeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_c1D8kMWQEeinKsbjFhrw5w" memberEnd="_c1I1EsWQEeinKsbjFhrw5w _c1JcIMWQEeinKsbjFhrw5w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_c1I1EMWQEeinKsbjFhrw5w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_c1I1EcWQEeinKsbjFhrw5w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_c1I1EsWQEeinKsbjFhrw5w" name="saisircommande" type="_8fk4cMWOEeinKsbjFhrw5w" association="_c1D8kMWQEeinKsbjFhrw5w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_c1JcIMWQEeinKsbjFhrw5w" type="_4pXb4MWOEeinKsbjFhrw5w" association="_c1D8kMWQEeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dYh2AMWQEeinKsbjFhrw5w" memberEnd="_dYnVkcWQEeinKsbjFhrw5w _dYnVksWQEeinKsbjFhrw5w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dYmugMWQEeinKsbjFhrw5w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dYnVkMWQEeinKsbjFhrw5w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dYnVkcWQEeinKsbjFhrw5w" name="modifiercommande" type="_-UImUMWOEeinKsbjFhrw5w" association="_dYh2AMWQEeinKsbjFhrw5w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dYnVksWQEeinKsbjFhrw5w" type="_c1D8kMWQEeinKsbjFhrw5w" association="_dYh2AMWQEeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jWZioMWQEeinKsbjFhrw5w" name="GenererAddition">
+      <extend xmi:type="uml:Extend" xmi:id="_zHFNIMWQEeinKsbjFhrw5w" extendedCase="_Gerl4MWPEeinKsbjFhrw5w" extensionLocation="_zHGbQMWQEeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_KtvVYMWREeinKsbjFhrw5w" name="Preparateur"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_M16i0MWREeinKsbjFhrw5w" name="AjouterConsommation"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_XiCHQMWREeinKsbjFhrw5w" name="RetirerConsommation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_aSjuIMWREeinKsbjFhrw5w" memberEnd="_aSp0wsWREeinKsbjFhrw5w _aSp0w8WREeinKsbjFhrw5w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aSp0wMWREeinKsbjFhrw5w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aSp0wcWREeinKsbjFhrw5w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_aSp0wsWREeinKsbjFhrw5w" name="ajouterconsommation" type="_M16i0MWREeinKsbjFhrw5w" association="_aSjuIMWREeinKsbjFhrw5w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_aSp0w8WREeinKsbjFhrw5w" name="preparateur" type="_KtvVYMWREeinKsbjFhrw5w" association="_aSjuIMWREeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_a4klQMWREeinKsbjFhrw5w" memberEnd="_a4shEMWREeinKsbjFhrw5w _a4shEcWREeinKsbjFhrw5w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a4r6AMWREeinKsbjFhrw5w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a4r6AcWREeinKsbjFhrw5w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_a4shEMWREeinKsbjFhrw5w" name="retirerconsommation" type="_XiCHQMWREeinKsbjFhrw5w" association="_a4klQMWREeinKsbjFhrw5w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_a4shEcWREeinKsbjFhrw5w" name="preparateur" type="_KtvVYMWREeinKsbjFhrw5w" association="_a4klQMWREeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_eO3ysMWREeinKsbjFhrw5w" name="ModifierConsommation">
+      <include xmi:type="uml:Include" xmi:id="_4A4_QMWREeinKsbjFhrw5w" addition="_yE9MUMWREeinKsbjFhrw5w"/>
+      <include xmi:type="uml:Include" xmi:id="_8RGQMMWREeinKsbjFhrw5w" addition="_vrHnIMWREeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lDT68MWREeinKsbjFhrw5w" memberEnd="_lDaoocWREeinKsbjFhrw5w _lDaoosWREeinKsbjFhrw5w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lDaBkMWREeinKsbjFhrw5w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lDaooMWREeinKsbjFhrw5w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_lDaoocWREeinKsbjFhrw5w" name="preparateur" type="_KtvVYMWREeinKsbjFhrw5w" association="_lDT68MWREeinKsbjFhrw5w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_lDaoosWREeinKsbjFhrw5w" name="modifierconsommation" type="_eO3ysMWREeinKsbjFhrw5w" association="_lDT68MWREeinKsbjFhrw5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_vrHnIMWREeinKsbjFhrw5w" name="ModifierContenu"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_yE9MUMWREeinKsbjFhrw5w" name="ModifierPrix"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_fErrgMAOEeiNS8OwADDMvg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fEsSkMAOEeiNS8OwADDMvg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
