@@ -29,7 +29,7 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
 
 ## Table des matières
 
-1. [Tableau de suivi des tâches](tableau_de_suivi_des_taches.md)
+1. [Tableau de suivi des tâches](Tableau_des_taches.ods)
 2. [Bilans de séance]()
     1. [Bilan 11/09/2018](Bilan_de_seance/11_09_2018_bilan_seance_1.md)
     2. [Bilan 18/09/2018](Bilan_de_seance/18_09_2018_bilan_seance_2.md)
@@ -48,3 +48,4 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
 
 + [Glossaire métier](glossaire/glossaire_metier.md)
 + [Glossaire technique](glossaire/glossaire_technique.md)
++ [Récapitulation de commandes `GIT` usuelles](outil/recap_git.md)
