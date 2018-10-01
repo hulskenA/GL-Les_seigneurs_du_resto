@@ -1,5 +1,7 @@
 ### Récape commandes `GIT`
 
+---
+
 + `git status` => voir la liste des fichiers et commits différents entre le repo local et le repo distant
 + `git add <fileName>` => ajout/indexation du fichier `<fileName>`
 + `git commit -m "type(where): what"` => nomination du/des changement(s) ajoutés précédemments (example en Karma commit)
@@ -13,3 +15,7 @@
 + `git checkout <branchName>` => se déplace sur la branche `<branchName>` locale
 + `git checkout -b <branchName>` => crée une nouvelle branch `<branchName>` et se déplace dessus
 + `git reset HEAD` => supprime les commits locaux
+
+---
+
+[:leftwards_arrow_with_hook: Retour à la page d'accueil](../README.md)
