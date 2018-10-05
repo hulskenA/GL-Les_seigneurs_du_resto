@@ -94,6 +94,12 @@ Livraison "1, *" -- "1" Commande
 Facture "1, *" -- "1" Livraison
 ```
 
+#### *<u>Note de TP :</u>*
+
+- travail sur les diagrammes de Cas d'Utilisation
+- travail d'équipe sur des choix de conception lors de diagramme UML
+- veille technologique et recherche sur des solutions d'exports pdf
+
 ---
 
 [:leftwards_arrow_with_hook: Retour à la page d'accueil](../README.md)

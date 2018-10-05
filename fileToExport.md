@@ -45,6 +45,9 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
     8. [Attribution d’une table à un serveur](scenario/scenario_8.md)
     9. [Le client saisit lui même sa commande via une tablette](scenario/scenario_9.md)
     10. [Les responsables ajoutent/enlèvent des plats à la carte](scenario/scenario_10.md)
+4. [Tableau Sujet/Concept/Type](tableau_sujet_concept_type.md)
+5. [Diagramme de Cas d'utilisations](./)
+6. [Diagramme de Classes](./)
 
 + [Glossaire métier](glossaire/glossaire_metier.md)
 + [Glossaire technique](glossaire/glossaire_technique.md)
@@ -170,79 +173,20 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
 
 ![Les produits pour chevaux](http://www.plantuml.com/plantuml/png/NOzDIaD13CVtEKMObKeBxROxyGC44S4JnDSWeRvCpMIAA1wev-Z5dBvEi-ZgvIM__yT0sOXkoMZ4uPDAkNKtUQ_EJqFMD_bXN01C5torlAxY-0k8B-JLU8KFMaSsRflYUTZ0NsUVvKDv8hyggOiVzcrky65lkKrRa--0x_8uagwv_zxpJahux8oaP0KunwVb36yIpZEczZbhSOMji0khG-pIueGUsMNgnbVTQ1RQwqQS6aFaHSnyaaR5HngEBxyuX-mV)
 
+---
+
+#### *<u>Note de TP :</u>*
+
+- travail sur les diagrammes de Cas d'Utilisation
+- travail d'équipe sur des choix de conception lors de diagramme UML
+- veille technologique et recherche sur des solutions d'exports pdf
+
 <div style="page-break-before: always;"> </div>
 
 ## Schéma de l'avancement des différents scénarios d'utilisation de l'application
 
-/!\ A FAIRE !!!!!
+:warning:<span style="background-color: #ff6d6d; align-item: middle">Ce schéma n'ayant pas été terminé, nous avons fait le choix de le sortir de ce premier rendu.</span>
 
-```puml
-@startuml
-start
-:Prise de commande\net notifications;
-
-if () then (yes)
-
-else (no)
-  :process only
-  __sequence__ and __activity__ diagrams;
-endif
-
-stop
-
-@enduml
-```
-
-```mermaid
-graph TB
-
-subgraph Cas Nominal
-s1("Prise de commande et notifications")
-s2("La commande se déroule comme prévu")
-s7("Ajout ou retrait des tables disponibles")
-s8("Attribution d’une table à un serveur")
-end
-
-s3("Le client ajoute un élément à sa commande")
-s4("La commande est modifiée")
-s5("Déroulement des commandes de plusieurs clients distincts")
-s6("Le plat commandé n’est plus disponible")
-s9("Le client saisit lui même sa commande via une tablette")
-s10("Les responsables ajoutent/enlèvent des plats à la carte")
-
-click s1 "./scenario_1.md" "Lien vers la description du scénario n°1"
-click s2 "./scenario_2.md" "Lien vers la description du scénario n°2"
-click s3 "./scenario_3.md" "Lien vers la description du scénario n°3"
-click s4 "./scenario_4.md" "Lien vers la description du scénario n°4"
-click s5 "./scenario_5.md" "Lien vers la description du scénario n°5"
-click s6 "./scenario_6.md" "Lien vers la description du scénario n°6"
-click s7 "./scenario_7.md" "Lien vers la description du scénario n°7"
-click s8 "./scenario_8.md" "Lien vers la description du scénario n°8"
-click s9 "./scenario_9.md" "Lien vers la description du scénario n°9"
-click s10 "./scenario_10.md" "Lien vers la description du scénario n°10"
-
-s1 --> s2
-s1 -.-> s4
-s1 -.-> s5
-
-s2 -.-> s3
-
-s3
-
-s4 -.-> s2
-
-s5
-
-s6
-
-s7
-
-s8
-
-s9
-
-s10
-```
 
 <div style="page-break-before: always;"> </div>
 
@@ -409,7 +353,82 @@ table et le serveur en est notifié.
 
 <div style="page-break-before: always;"> </div>
 
+## Tableau Sujet / Type / Concept correspondant à nos scénarios
 
+---
+
+| Sujet                     | Type                       | Concept            |
+| :-----------------------: | :------------------------: | :----------------: |
+| **Timoléon**              | Utilisateur                | Client             |
+| **Serveur**               | Acteur                     | Préparateur        |
+| **Alerte**                | Objet                      | Alerte             |
+| **Commande**              | Action / Cas d'utilisation | Commander          |
+| **Entrée**                | Objet                      | Choix              |
+| **Plat**                  | Objet                      | Choix              |
+| **Glace**                 | Objet                      | Choix              |
+| **Boisson**               | Objet                      | Choix              |
+| **Cuisinier**             | Acteur                     | Préparateur        |
+| **Barman**                | Acteur                     | Préparateur        |
+| **Notification**          | Objet                      | Alerte             |
+| **Glacier**               | Acteur                     | Préparateur        |
+| **File d'attente**        | Objet                      | Ordonnancement     |
+| **Clôturer commande**     | Action / Cas d'utilisation | Clôture            |
+| **Générer addition**      | Action                     | Payer              |
+| **Disponibilité plat**    | Contrainte                 | Contrainte binaire |
+| **Modification commande** | Action / Cas d'utilisation | Modifier           |
+| **Demande d'addition**    | Action / Cas d'utilisation | Payer              |
+| **Attribution table**     | Action                     | Attribuer          |
+| **Attribution serveur**   | Action                     | Attribuer          |
+| **Ajout d'un plat**       | Action / Cas d'utilisation | Ajouter            |
+| **Ingrédients**           | Donnée                     | Element du plat    |
+| **Demande d'ajout**       | Action                     | Ajouter            |
+| **Prix**                  | Donnée / Contrainte        | Prix               |
+| **Mise à jour carte**     | Action                     | Actualisation      |
+| **Consommation**          | Donnée                     | Element du menu    |
+| **Carte**                 | Objet                      | Liste de choix     |
+| **Profil**                | Objet                      | Profil             |
+
+<div style="page-break-before: always;"> </div>
+
+## Diagramme de Cas d'utilisations
+## Diagramme de Classes
+
+>>>
+Vous pourrez retrouver l'ensemble des diagrammes effectués sur la prise de commande sur notre git. vous pourrez retrouver l'adresse de celui-ci ci-dessous:
+https://gitlab-etu.fil.univ-lille1.fr/hulsken/GL
+>>>
+
+<div style="page-break-before: always;"> </div>
+
+## Glossaire technique
+
+>> *Ce glossaire donne une définition à chaque terme métier utilisé dans la conception de l'application.*
+
+---
+
+#### Carte
+Ensemble des consommations proposées aux clients.
+
+#### Consommation
+Ensemble des entrées, plats, desserts, boissons, disponible pour le restaurant.
+
+#### Commande
+Les consommations demandées par une table.
+
+#### Client
+Personne commandant des consommations dans le restaurant.
+
+#### Générer l'addition
+A partir des consommations d'une table ou d'un client, génère une liste de consommations, avec leur prix, et calcule le total.
+
+#### Serveur
+Personne s'occupant d'une ou plusieures tables.
+
+#### Table
+Composée de plusieurs clients.
+
+#### Tablette
+Outil éléctronique permettant d'accéder à l'application.
 
 <div style="page-break-before: always;"> </div>
 
