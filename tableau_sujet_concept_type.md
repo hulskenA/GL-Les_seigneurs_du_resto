@@ -1,4 +1,4 @@
-## Tableau Sujet / Type / Concept correspondant à nos scénarios 
+## Tableau Sujet / Type / Concept correspondant à nos scénarios
 
 | Sujet                 | Type                       | Concept            |
 | --------------------: | :------------------------- | :----------------- |
@@ -27,5 +27,8 @@
 | Demande d'ajout       | Action                     | Ajouter            |
 | Prix                  | Donnée / Contrainte        | Prix               |
 | Mise à jour carte     | Action                     | Actualisation      |
+| Consommation          | Donnée                     | Element du menu    |
+| Carte                 | Objet                      | Liste de choix     |
+| Profil                | Objet                      | Profil             |
 
 [:leftwards_arrow_with_hook: Retour à la page d'accueil](README.md)
