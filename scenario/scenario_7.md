@@ -1,21 +1,20 @@
-### <u>Scénario 7 :</u> Ajout ou retrait des tables disponibles
+### <u>Scénario 7 :</u> Gestion de la disponibilité des tables
 
-> *Ce scénario peut se dérouler à tout moment du service.*
+> *Le but de ce scénario est de mettre en évidence le fait que notre application gère la disponibilité des tables. Cette fonctionalité peut-être utile si le restaurant possède plusieurs étages.*
 
 ---
 
 1. Timoléon, client du restaurant, demande l'addition à son serveur.
 
-2. Lorsqu'il paye, la libération de la table est prise en compte par l'application.
+1. Lorsqu'il paye, la libération de la table est prise en compte par l'application.
 
-3. Dès lors, un jeune couple entre dans le restaurant et demande une table.
+1. Dès lors, un jeune couple entre dans le restaurant.
 
-4. Le serveur fait donc une demande à l'application pour une table pour 2.
+1. Le serveur consulte les tables disponibles sur l'application.
 
-5. Celle-ci lui répond qu'une table a été libérée il y a peu, et le serveur peut donc la réattribuer au jeune couple.
+1. Le serveur installe les clients.
 
-6. Une fois installés à leur table, notre serveur peut prendre en compte dans l'application que la table n'est plus libre.
-
+1. La table n'est désormais plus disponible sur l'application.
 ---
 
 [:leftwards_arrow_with_hook: Retour à la page d'accueil](../README.md)

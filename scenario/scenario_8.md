@@ -1,17 +1,9 @@
-### <u>Scénario 8 :</u> Attribution d’une table à un serveur
+### <u>Scénario 8 :</u> Attribution d’un groupe de table à un serveur
 
-> *Ce scénario décrit l'attribution d'un nouveau client à un serveur*
+> *Nous voulons inclure la possibilité de gérer la répartition des tables entre les serveurs*
 
 ---
-
-1. Sam rentre dans le restaurant. Un serveur est notifié de son
-arrivée et va l'accueillir.
-
-2. Le serveur place Sam à une table. Il rentre sur sa tablette le
-numéro de la table.
-
-3. La table est automatiquement attribuée au serveur assigné à cette
-table et le serveur en est notifié.
+:warning: {- Ce scénario sera explicité dans une version ultérieure de notre logiciel. -}
 
 ---
 

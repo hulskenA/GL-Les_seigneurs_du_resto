@@ -1,6 +1,6 @@
 ### <u>Scénario 4 :</u> La commande est modifiée
 
-> *Ce scénario peut intervenir à tout moment. Ici on le fera intervenir à la suite de l’étape 3 du scénario 1, avant le service.*
+> *Ce scénario peut intervenir à tout moment. Il nous semble important que le client puisse modifier sa commande*
 
 ---
 
