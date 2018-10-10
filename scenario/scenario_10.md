@@ -3,17 +3,44 @@
 > *Ce scénario décrit la procédure d'ajout de boissons, repas ou glaces à la carte.*
 
 ---
-1. Par souci de temps, le directeur autorise ses cuisiniers à ajouter des repas à la carte.
 
-2. Les cuisiniers ajoutent à la carte le repas du jour.
+#### Version : 2
 
-3. Ils renseignent les ingrédients et quantités et un prix de vente.
+#### Auteur : Rémi DELAVALLE
 
-4. Le directeur reçoit une notification concernant la demande d'ajout.
+#### Acteurs principaux : Préparateurs et directeur
 
-5. Le directeur modifie le prix de vente et valide l'ajout à la carte.
+#### Pré-condition : Le cuisinier à le droit d'ajouter un plat.
 
-6. La carte des repas est mise à jour automatiquement.
+#### Déclenchement : Un cuisinier veut ajouter le plat du jour à la carte.
+
+
+
+#### Scenario nominal
+
+1. Le cuisinier ajoute le repas du jour à la carte .
+
+1. Il renseigne les ingrédients et quantités et un prix de vente.
+
+1. Le directeur reçoit une notification concernant la demande d'ajout.
+
+1. Le directeur valide l'ajout à la carte.
+
+1. La carte des repas est mise à jour automatiquement.
+
+
+#### Post-condition : Le plat est disponible sur la carte.
+
+#### Scénarios alternatifs
+
+4. 
+   a. 
+      1. Le directeur modifie le prix de vente.
+      2. Retour à l'étape 5.
+   b. 
+      1. Le directeur refuse l'ajout du plat.
+      2. La demande d'ajout est supprimée.
+
 
 ---
 
