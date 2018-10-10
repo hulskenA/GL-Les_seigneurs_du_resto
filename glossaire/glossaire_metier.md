@@ -1,4 +1,4 @@
-## Glossaire technique
+## Glossaire métier
 
 >> *Ce glossaire donne une définition à chaque terme métier utilisé dans la conception de l'application.*
 

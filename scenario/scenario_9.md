@@ -4,12 +4,26 @@
 
 ---
 
-1. Bob arrive au restaurant. Il s’installe à une table. Il prend sa commande via une tablette correspondant à sa table.
+#### Version : 2
 
-2. Lorsque Bob valide sa commande, les plats, boissons et desserts sont transmis à leurs postes respectifs (cuisine, bar, glacier).
+#### Auteurs : Rémi DELAVALLE
 
-3. Reprise au point 3 du scénario 1 et 2 (cas nominaux)
+#### Acteur principal : Bob
 
+#### Pré-conditions : Une tablette avec accès à l'application ets disponible à la table de Bob.
+
+#### Déclenchement : Bob choisit la saisie de commande sur la tablette.
+
+#### Scénario nominal :
+
+1. Bob arrive au restaurant et il s'installe à une table. 
+
+1. Il prend sa commande via une tablette.
+
+1. Bob valide sa commande.
+
+
+#### Post-conditions : Les préparateurs voient la commande de Bob
 ---
 
 [:leftwards_arrow_with_hook: Retour à la page d'accueil](../README.md)

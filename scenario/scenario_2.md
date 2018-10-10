@@ -4,6 +4,18 @@
 
 ---
 
+#### Version : 2
+
+#### Auteurs : Martin VASILEV, Valentine LEJEUNE, Alexandre HULSKEN, Louisa FODIL, Rémi DELAVALLE
+
+#### Acteurs principaux : Les clients et le serveur
+
+#### Pré-conditions : Le serveur dispose d'une tablette avec accès à l'application.
+
+#### Déclenchement : Le serveur reçoit une notification de fin de préparation.
+
+#### Scénario nominal :
+
 1. Le serveur est notifié lorsque la boisson est prête.
 Le serveur amène la boisson à Timoléon.
 
@@ -17,6 +29,7 @@ Le serveur amène la boisson à Timoléon.
 
 1. Le serveur clôture la commande qui disparaît de l’application et peut générer l’addition.
 
+#### Pré-conditions : Le client peut payer l'addition.
 ---
 
 [:leftwards_arrow_with_hook: Retour à la page d'accueil](../README.md)
