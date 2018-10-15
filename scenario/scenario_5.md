@@ -1,6 +1,6 @@
 ### <u>Scénario 5 :</u> Déroulement des commandes de plusieurs clients distincts
 
-> *Ce scénario décrit le déroulement des commandes et du service en fonction de l’ordre d’arrivée des différents clients. Le but est de montrer que le logiciel traite les commandes de manière séquentielle.***
+> *Ce scénario décrit le déroulement des commandes et du service en fonction de l’ordre d’arrivée des différents clients. Le but est de montrer que le logiciel traite les commandes de manière séquentielle.*
 
 ---
 
