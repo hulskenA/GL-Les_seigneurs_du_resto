@@ -2,7 +2,7 @@
 <br/>
 Sujet 1 - Prise de commande dans un restaurant
 <br/>
-![PDF: V1.2](https://img.shields.io/badge/PDF-V1.2-blue.svg?longCache=true&style=popout)
+![PDF: V2](https://img.shields.io/badge/PDF-V2-blue.svg?longCache=true&style=popout)
 </h1>
 
 <table>
