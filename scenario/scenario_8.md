@@ -1,6 +1,6 @@
 ### <u>Scénario 8 :</u> Attribution d’un groupe de table à un serveur
 
-> *Nous voulons inclure la possibilité de gérer la répartition des tables entre les serveurs*
+> *Nous voulons inclure la possibilité de gérer la répartition des tables entre les serveurs. Ce scénario n'était pas présent dans le cahier des charges, cependant il est essentiel au bon fonctionnement du restaurant. *
 
 ---
 
