@@ -33,12 +33,15 @@
 
 #### Scénarios alternatifs
 
-4a. 
-        1. Le directeur modifie le prix de vente.  
-        2. Retour à l'étape 5.  
-4b. 
-        1. Le directeur refuse l'ajout du plat.  
-        2. La demande d'ajout est supprimée.  
+4a.  
+
+    1. Le directeur modifie le prix de vente.  
+    2. Retour à l'étape 5.  
+    
+4b.  
+
+    1. Le directeur refuse l'ajout du plat.  
+    2. La demande d'ajout est supprimée.  
 
 
 ---
