@@ -1,6 +1,6 @@
 ### <u>Scénario 3 :</u> Le client ajoute un élément à sa commande
 
-> *Il nous semble nécessaire qu'un client puisse ajouter un élément à sa commande.*
+> *Il nous semble nécessaire qu'un client puisse ajouter un élément à sa commande.  Ce scénario n'est pas dans le cahier des charges, il est cependant indispensable à la satisfaction des clients.*
 
 ---
 
