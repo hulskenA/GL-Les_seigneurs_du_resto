@@ -1,6 +1,6 @@
 ### <u>Scénario 4 :</u> La commande est modifiée
 
-> *Ce scénario peut intervenir à tout moment. Il nous semble important que le client puisse modifier sa commande*
+> *Ce scénario peut intervenir à tout moment. Il nous semble important que le client puisse modifier sa commande.  Ce scénario n'est pas dans le cahier des charges fourni.*
 
 ---
 #### Version : 2
