@@ -15,7 +15,9 @@
 
 #### Scénario nominal :
 
-1. Les cuisiniers recoivent la commande du client. Il s'appercoivent que le plat n'est plus disponible, ils envoient une notifications pour cet évenement.
+1. Les cuisiniers recoivent la commande du client. Il s'apercoivent que le plat n'est plus disponible, ils envoient une notification pour cet évenement.
+
+2. Le plat est retiré de la carte par le préparateur pour le reste du service.
 
 1. Le serveur est notifié de la situation, il informe le client de l'indisponibilié de son plat et lui propose de modifier son choix
 
