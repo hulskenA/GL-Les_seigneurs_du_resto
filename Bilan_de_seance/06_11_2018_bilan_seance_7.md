@@ -1,5 +1,5 @@
-### Bilan des tâches effectuées lors de la scéance 6
-##### *23 / 10 / 2018*
+### Bilan des tâches effectuées lors de la scéance 7
+##### *06 / 11 / 2018*
 
 ---
 

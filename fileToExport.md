@@ -1,6 +1,9 @@
 <h1 style="text-align:center">Génie Logiciel
 <br/>
-Sujet 1 - Prise de commande dans un restaurant</h1>
+Sujet 1 - Prise de commande dans un restaurant
+<br/>
+![PDF: V2](https://img.shields.io/badge/PDF-V2-blue.svg?longCache=true&style=popout)
+</h1>
 
 <table>
 <tbody>
@@ -30,10 +33,13 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
 ## Table des matières
 
 1. [Tableau de suivi des tâches](Tableau_des_taches.ods)
-2. [Bilans de séance](./README.md)
+2. [Bilans de séance]()
     1. [Bilan 11/09/2018](Bilan_de_seance/11_09_2018_bilan_seance_1.md)
-    2. [Bilan 18/09/2018](Bilan_de_seance/18_09_2018_bilan_seance_2.md)
     2. [Bilan 25/09/2018](Bilan_de_seance/25_09_2018_bilan_seance_3.md)
+    2. [Bilan 02/10/2018](Bilan_de_seance/02_10_2018_bilan_seance_4.md)
+    2. [Bilan 09/10/2018](Bilan_de_seance/09_10_2018_bilan_seance_5.md)
+    2. [Bilan 23/10/2018](Bilan_de_seance/23_10_2018_bilan_seance_6.md)
+    2. [Bilan 06/11/2018](Bilan_de_seance/06_11_2018_bilan_seance_7.md)
 3. [Scénarios possibles d'utilisation](scenario/schema_scenario.md)
     1. [Prise de commande et notifications `Cas nominal`](scenario/scenario_1.md)
     2. [La commande se déroule comme prévu `Cas nominal`](scenario/scenario_2.md)
@@ -45,17 +51,20 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
     8. [Attribution d’une table à un serveur](scenario/scenario_8.md)
     9. [Le client saisit lui même sa commande via une tablette](scenario/scenario_9.md)
     10. [Les responsables ajoutent/enlèvent des plats à la carte](scenario/scenario_10.md)
-4. [Tableau Sujet/Concept/Type](tableau_sujet_concept_type.md)
-5. [Diagramme de Cas d'utilisations](./)
-6. [Diagramme de Classes](./)
+4. [Tableau Sujet / Concept / Type correspondant à nos scénarios]()
+5. [Diagramme de Cas d'utilisations]()
+6. [Diagramme de Classes]()
+7. [Diagramme de Séquences]()
+8. [Diagramme de Séquences Détaillés]()
 
-+ [Glossaire métier](glossaire/glossaire_metier.md)
-+ [Glossaire technique](glossaire/glossaire_technique.md)
-+ [Récapitulation de commandes `GIT` usuelles](outil/recap_git.md)
++ [[Annexe] Glossaire métier](glossaire/glossaire_metier.md)
++ [[Annexe] Glossaire technique](glossaire/glossaire_technique.md)
++ [[Annexe] Glossaire ingenierie besoins](glossaire/glossaire_ingenierie_besoins.md)
++ [[Annexe] Récapitulation de commandes `GIT` usuelles](outil/recap_git.md)
 
 <div style="page-break-before: always;"> </div>
 
-### Bilan des tâches effectuées lors de la scéance 1
+### Bilan des tâches
 ##### *11/09/2018*
 
 ---
@@ -67,84 +76,12 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
 
 <div style="page-break-before: always;"> </div>
 
-### Bilan des tâches effectuées lors de la scéance 2
-##### *11 / 09 / 2018*
-
----
-
-#### Recherche CU, Classes et Acteurs
-
-+ Analyse de scénarion **TinCar**
-
-| SUJET | CONCEPT | TYPE |
-| :------------- | :-------------: | :-------------: |
-| Alice | Conducteur | Acteur |
-| Aller | Trajet | Concept |
-| Parents | Destination | Objet |
-| Nb places | X | Donnée |
-| TinCarXsite | Application | X |
-| Frais & compagnie | Motivation | Objectif |
-| Utilisateurs | Utilisateur | ConceptXObjet ? |
-| Proposer un trajet | Action | ActionXObjectif |
-| Chercher un trajet | Action | ActionXObjectif |
-| Itinéraire | X | Donnée du trajet |
-| Date | X | Donnée du trajet |
-| Formulaire | Message | Objet de médiation |
-| Point de départ | X | Donnée du trajet |
-| Point d'arrivé | X | Donnée du trajet |
-| "Continuer" | Validation | Action |
-| Passager | Passager | Acteur |
-| Passager | Passager | Acteur |
-
-+ Diagramme de CU **TinCar**
-
-![Diagramme de CU TinCar](http://www.plantuml.com/plantuml/png/PSuzZeD030NWtgTuvL9m0OeL4XT0shs0DJWmOPX17ayHHRbxG0cXI6SzV_vfix5QMG85kHWiGVqu6GQluiodI7dsSMNb1IkxcKVviriGx6sEOn2YfajnACwaQ4DDppblQYlfO_3lOyUAEm4_lQOrPL6K25E-YbNWVERLZhf9r4tVwCWhUX2TTr7NlpWMqFk5LtfCK2kRNi8J)
-
-<div style="page-break-before: always;"> </div>
 <div style="page-break-beore: always;"> </div>
 
-### Bilan des tâches effectuées lors de la scéance 3
+### Bilan des tâches
 ##### *25 / 09 / 2018*
 
 ---
-
-#### Recherche CU, Classes et Acteurs
-
-+ Analyse de scénarion **TinCar**
-
-| SUJET | TYPE | CONCEPT |
-| :---- | :--: | :-----: |
-| Bob | Acteur | Passager |
-| Mennecy | Objet | Destination / Objet de recherche |
-| Budjet | Contrainte | Max |
-| Page de recherche | Interface | Recherche de trajets |
-| Lille | Objet | Départ / Objet de recherche |
-| Résultats | Objet | Liste Résultats |
-| Prix | Donnée / Float | Prix |
-| Le trajet d'Alice | Objet | Choix |
-| Trier | Acteur | Trier / Ordonner |
-| Date | Donée / Contrainte | Critère |
-| Profil d'Alice | Objet | Profil |
-| Taille des bagages | Données / contrainte | Contrainte |
-| Niveau d'experience | Donnée | Donnée du profil |
-| Réserver | Action / Cas d'utilisation | Réserver |
-| Payer | Action | Payer |
-| Demande de réservation | Objet |  |
-| Mail de récap | Objet mail |  |
-
-<div style="page-break-before: always;"> </div>
-
-+ Diagramme de CU **TinCar**
-
-![Diagramme de CU TinCar](http://www.plantuml.com/plantuml/png/RP91Si8m34NtEeMMOG47OC7GikYgCmpb0Y8HmSLnKjdf34CvKC_HYzL4eJGcYqoi_zz4NtAMFf24jh9WUHymr2YcF0GiZ70UJEt07urhIAZ2Xl8ZbVmMJfRnQfChBGFCdwp9UOxaiJl1_BdUTMLynuBSHwks7W4w3AVJhmM-ShKJXaWEQe2_1hWrRaM2Pm34RCFvWIK-4oJ_lxoQB-olcR5WZutKUsEzOgKQwqwRG6Jldp_72Z5Rqub5QJsglFdvzYoVBDWw34Bl71GILdshMazprLZJiTg_PrNMzZswgfrlRU07EE-D8RuL4r7B7kKsiiwcpgt_pSE2axIzSOzxWGj0flkUnEKFbZdGq-qb0ivcYyVOurIoYNjBzTES8qG_BcJwCsb2lR5XwZ4jlRGbkwAjx2y0)
-
-+ Diagramme de classes
-
-![Diagramme de classes](http://www.plantuml.com/plantuml/png/bPBDJiCm48JlVeezygD8SEsX2C45YKf8HRrldL5hI9neRLVbfm-KvyYB4P6iafGJbyWxysKoTXpUdQzPk2HRS0ZtCOhRfeWdM_cr-mJTcDwX5SgjGATdXwJhb-x1EuZE6-oTBK1VXeWosbH5Ah7Yew6J8W-LpvEDIA9K3IbTc22lmc-8QkSSyOYQ9VRp7abcWY2ov4EMkECyoGUsqLL-hEnGmiSrvE3iKFMwapyWT75tIOlvMoTZZ3RAij_TTqZUDds1FmwBk4FROBIMkbfGsqIk4UZAcEb1P9cUNCTiUSSxX7DY3BabguOO_GLpf1x4OCnqDnqp2VsFfLyvQ_MzrCkXn4py0G00)
-
----
-
-#### Bilan TP
 
 - ***Diagramme use case :*** Description des principales fonctionnalités de l'application sous forme de diagramme.
 - ***Diagramme UML :*** Premier jet d'équipe sur le diagramme UML.
@@ -152,30 +89,10 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
 
 <div style="page-break-before: always;"> </div>
 
-### Bilan des tâches effectuées lors de la scéance 4
+### Bilan des tâches
 ##### *02 / 10 / 2018*
 
 ---
-
-#### *<u>Note de TD :</u>*
-
-+ **L'hippodrome (CU)**
-
-![L'hippodrome (CU)](http://www.plantuml.com/plantuml/png/NP11QiGm34NtEeMMyM8kuDN0K2ZTj30d48wQYd7i8Dk5Kdht4giD9hllzuI_hMkffBMj4IA_LwmPLPQFYhCeXoevGNb8saXfnOt2WnQ-rw_8k6jAIsG0Vul2gNgaWXR1l-JmOEt88lYdq5Iu8ulWNtMX98KgDviT0S3HWS-oRNdMl39-0o1EzoQVoZXpmP2R5YuEgVppMqTk7tmZ5LQJbZlU9rIC7uTT_Bs0zNpte1p03y1aVtLukPnxHtMqmcIRC7fqJhQC4uMXhPjnCmwkdEQsnby0)
-
-+ **La hiérarchie des chevaux**
-
-![La hiérarchie des chevaux](http://www.plantuml.com/plantuml/png/RKzBIWGn4Dtd54MMOa1TIYE8A2W8WbwWZ0KTpAT99xqOva1pZxdOTAShanwONUhbVTuR_uqVCA83RN4SdrEAvZSdUjV1VviTmPqe7_0JGnu8CvylFKre1L-VQ8cVhmbjy7nyXMpH-4fx8qVspFp8ZdpQC8tkIGXHaq3UImXAWNoulP6S28-WWqzcKGg6khrIQuKjm64LaxE5KeidLvoTXkCXNY5mivdW2a4itgifhsj0NSXf1MJz1ROTo1fGJwtA7qrb4qTtJT0-Jm00)
-
-<div style="page-break-before: always;"> </div>
-
-+ **Les produits pour chevaux**
-
-![Les produits pour chevaux](http://www.plantuml.com/plantuml/png/NOzDIaD13CVtEKMObKeBxROxyGC44S4JnDSWeRvCpMIAA1wev-Z5dBvEi-ZgvIM__yT0sOXkoMZ4uPDAkNKtUQ_EJqFMD_bXN01C5torlAxY-0k8B-JLU8KFMaSsRflYUTZ0NsUVvKDv8hyggOiVzcrky65lkKrRa--0x_8uagwv_zxpJahux8oaP0KunwVb36yIpZEczZbhSOMji0khG-pIueGUsMNgnbVTQ1RQwqQS6aFaHSnyaaR5HngEBxyuX-mV)
-
----
-
-#### *<u>Note de TP :</u>*
 
 - travail sur les diagrammes de Cas d'Utilisation
 - travail d'équipe sur des choix de conception lors de diagramme UML
@@ -183,73 +100,147 @@ Sujet 1 - Prise de commande dans un restaurant</h1>
 
 <div style="page-break-before: always;"> </div>
 
-## Schéma de l'avancement des différents scénarios d'utilisation de l'application
+### Bilan des tâches
+##### *09 / 10 / 2018*
 
-:warning:<span style="background-color: #ff6d6d; align-item: middle">Ce schéma n'ayant pas été terminé, nous avons fait le choix de le sortir de ce premier rendu.</span>
+---
 
++ Présentation de rendu n°1
++ Refonte des scénarios 1 à 8
 
 <div style="page-break-before: always;"> </div>
+
+### Bilan des tâches
+##### *23 / 10 / 2018*
+
+---
+
++ Préparation des diagrammes de séquences
+
+<div style="page-break-before: always;"> </div>
+
+### Bilan des tâches
+##### *06 / 11 / 2018*
+
+---
+
++ Travail de groupe sur les diagrammes de séquences
++ Reflexion sur l'architecture de l'application
++ Préparation des diagrammes de séquences détaillés
++ Préparation de différentes maquettes
+
+<div style="page-break-before: always;"> </div>
+
+## Scénarios possibles d'utilisation
 
 ### <u>Scénario 1 :</u> Prise de commande et notifications `Cas nominal`
 
 > *Ce scénario décrit le déroulement du début à la fin d’une commande et du repas d’un client.*
 
 ---
-1. Timoléon se rend au restaurant. Le serveur reçoit une alerte sur sa tablette et va prendre la commande de Timoléon.
 
-2. Timoléon souhaite une entrée, un plat, une glace ainsi qu’une boisson.
+#### Version : 2
+
+#### Auteurs : Martin VASILEV, Valentine LEJEUNE, Alexandre HULSKEN, Louisa FODIL, Rémi DELAVALLE
+
+#### Acteurs principaux : Les clients et le serveur
+
+#### Pré-conditions : Le serveur dispose d'une tablette avec accès à l'application.
+
+#### Déclenchement : Les clients souhaitent prendre une commande.
+
+#### Scénario nominal :
+
+1. Timoléon se rend au restaurant. Un serveur installe Timoléon à une table et prend sa commande.
+
+1. Timoléon souhaite une entrée, un plat, une glace ainsi qu’une boisson.
 Le serveur saisit la commande sur sa tablette.
 
-3. Les cuisiniers reçoivent la commande de l’entrée et le plat et commencent leurs préparations.
+1. Le serveur valide la commande.
+
+1. Les cuisiniers reçoivent la commande de l’entrée et le plat et commencent leurs préparations.
 Le barman est notifié de la commande de boisson.
 Le glacier reçoit la commande de la glace dans la file d’attente.
+
+
+#### Post-conditions : Les préparateurs visualisent la commande.
 
 <div style="page-break-before: always;"> </div>
 
 ### <u>Scénario 2 :</u> La commande se déroule comme prévu `Cas nominal`
 
-> *Suite du scénario 1 après l’étape 3 lorsque le client ne change pas d’avis et que le serveur ne se trompe pas dans la saisie.*
+> *Déroulement normal d'un service*
 
 ---
 
-***[Scénario 4 optionnel]***
+#### Version : 2
 
-4. Le serveur est notifié lorsque la boisson est prête.
+#### Auteurs : Martin VASILEV, Valentine LEJEUNE, Alexandre HULSKEN, Louisa FODIL, Rémi DELAVALLE
+
+#### Acteurs principaux : Les clients et le serveur
+
+#### Pré-conditions : Le serveur dispose d'une tablette avec accès à l'application.
+
+#### Déclenchement : Le serveur reçoit une notification de fin de préparation.
+
+#### Scénario nominal :
+
+1. Le serveur est notifié lorsque la boisson est prête.
 Le serveur amène la boisson à Timoléon.
 
-5. Le serveur est notifié lorsque l’entrée est prête. Il la sert à Timoléon.
-Lorsque Timoléon a fini son entrée, le serveur débarrasse la table. Il sert le plat.
+1. Le serveur est notifié lorsque l’entrée est prête. Il la sert à Timoléon.
 
-6. Lorsque le serveur débarrasse le plat, il notifie le glacier qu’il doit préparer la glace.
-Le serveur apporte le dessert.
-Timoléon finit son dessert, il est débarrassé.
+1. Lorsque Timoléon a fini son entrée, le serveur débarrasse la table. Il sert le plat.
 
-***[Scénario 3 optionnel]***
+1. Le serveur débarrasse le plat et apporte le dessert.
 
-7. Le serveur clôture la commande qui disparaît de l’application et peut générer l’addition.
+1. Timoléon finit son dessert, il est débarrassé.
+
+1. Le serveur clôture la commande qui disparaît de l’application et peut générer l’addition.
+
+#### Pré-conditions : Le client peut payer l'addition.
 
 <div style="page-break-before: always;"> </div>
 
 ### <u>Scénario 3 :</u> Le client ajoute un élément à sa commande
 
-> *On reprend à l’étape 6 du scénario 1. Le client demande un dessert supplémentaire.*
+> *Il nous semble nécessaire qu'un client puisse ajouter un élément à sa commande.  Ce scénario n'est pas dans le cahier des charges, il est cependant indispensable à la satisfaction des clients.*
 
 ---
 
-7. Le serveur demande si Timoléon désire autre chose.
+#### Version : 2
 
-8. Timoléon répond qu’il désire une autre glace ainsi qu’un café.
+#### Auteurs : Martin VASILEV, Valentine LEJEUNE, Alexandre HULSKEN, Louisa FODIL, Rémi DELAVALLE
 
-9. Le serveur notifie le barman et le glacier qui prépare la glace sans attendre.
+#### Acteurs principaux : Les clients et le serveur
+
+#### Pré-conditions : Le serveur dispose d'une tablette avec accès à l'application.
+
+#### Déclenchement : Le client désire autre chose.
+
+#### Scénario nominal :
+
+1. Timoléon vient de terminer son repas. Il est débarrassé par le serveur.
+
+1. Le serveur demande si Timoléon désire autre chose.
+
+1. Timoléon répond qu’il désire une autre glace ainsi qu’un café.
+
+1. Le serveur notifie le barman et le glacier qui prépare la glace sans attendre.
 Le serveur amène la glace et le café à Timoléon.
+
+#### Post-conditions : les préparateurs voient la suite de la commande.
 
 <div style="page-break-before: always;"> </div>
 
 ### <u>Scénario 4 :</u> La commande est modifiée
 
-> *Ce scénario peut intervenir à tout moment. Ici on le fera intervenir à la suite de l’étape 3 du scénario 1, avant le service.*
+> *Ce scénario peut intervenir à tout moment. Il nous semble important que le client puisse modifier sa commande.  Ce scénario n'est pas dans le cahier des charges fourni.*
 
 ---
+#### Version : 2
+
+#### Auteurs : Martin VASILEV, Valentine LEJEUNE, Alexandre HULSKEN, Louisa FODIL, Rémi DELAVALLE
 
 :warning:<span style="background-color: #ff6d6d; align-item: middle">Ce scénario sera explicité dans une version ultérieure de notre logiciel. </span>
 
@@ -257,66 +248,106 @@ Le serveur amène la glace et le café à Timoléon.
 
 ### <u>Scénario 5 :</u> Déroulement des commandes de plusieurs clients distincts
 
-> *Ce scénario décrit le déroulement des commandes et du service en fonction de l’ordre d’arrivée des différents clients. On reprend après l’étape 3 du scénario 1. Le but est de montrer que le logiciel traite les commandes de manière séquentielle.***
+> *Ce scénario décrit le déroulement des commandes et du service en fonction de l’ordre d’arrivée des différents clients. Le but est de montrer que le logiciel traite les commandes de manière séquentielle.*
 
 ---
 
-4. Bob arrive au restaurant, le serveur prend sa commande : entrée, plat, dessert.
+#### Version : 2
 
-5. La commande est envoyée à la cuisine (resp. bar, resp. glacier). La commande de Bob apparaît après celle de Timoléon dans la file des plats (resp. boisson, resp. glaces) à préparer.
+#### Auteurs : Martin VASILEV, Valentine LEJEUNE, Alexandre HULSKEN, Louisa FODIL, Rémi DELAVALLE
 
-6. Bob est servi après Timoléon.
+#### Acteurs principaux : Bob, Timoléon et un serveur.
+
+#### Pré-conditions : Timoléon a réalisé une commande.
+
+#### Déclenchement : Bob prend une commande.
+
+#### Scénario nominal :
+
+1. Bob arrive au restaurant, le serveur prend sa commande : entrée, plat, dessert.
+
+1. La commande est envoyée à la cuisine (resp. bar, resp. glacier). La commande de Bob apparaît après celle de Timoléon dans la file des plats (resp. boisson, resp. glaces) à préparer.
+
+1. Bob est servi après Timoléon.
+
+#### Post-conditions : Les préparateurs voient les commandes par ordre d'arrivée
 
 <div style="page-break-before: always;"> </div>
 
 ### <u>Scénario 6 :</u> Le plat commandé n’est plus disponible
 
-> *Ce scénario intervient apres que le client ait fait son choix de plat, a la place de l'étape 3 dans le scénario 1*
+> *Ce scénario intervient apres que le client ait fait son choix de plat, dans le cas où la commande est déja envoyée et les préparateurs ne sont plus en mesure de réaliser le plat. Ce scénario n'est pas explicité dans le cahier des charges fourni, mais est indispensable au bon fonctionnement du restaurant.*
 
 ---
+#### Version : 2
 
-1. Les cuisiniers recoivent la commande du client. Il s'appercoivent que le plat n'est plus disponible, ils envoient une notifications pour cet évenement.
+#### Auteurs : Martin VASILEV, Valentine LEJEUNE, Alexandre HULSKEN, Louisa FODIL, Rémi DELAVALLE
 
-2. Le serveur est notifié de la situation, il informe le client de l'indisponibilié de son plat et lui propose de modifier son choix
+#### Acteurs principaux : Préparateurs et le serveur.
 
-3. Le serveur modifie la commande et le cuisinier est notifié à nouveau.  
+#### Pré-conditions : Une commande est reçue par les préparateurs.
+
+#### Déclenchement : Les préparateurs n'ont plus les ingrédients pour confectionner le plat souhaité.
+
+#### Scénario nominal :
+
+1. Les cuisiniers recoivent la commande du client. Il s'apercoivent que le plat n'est plus disponible, ils envoient une notification pour cet évenement.
+
+2. Le plat est retiré de la carte par le préparateur pour le reste du service.
+
+1. Le serveur est notifié de la situation, il informe le client de l'indisponibilié de son plat et lui propose de modifier son choix
+
+1. Le serveur modifie la commande et le cuisinier est notifié à nouveau.
+
+#### Post-conditions : Le préparateurs visualisent le nouveau choix.
 
 <div style="page-break-before: always;"> </div>
 
-### <u>Scénario 7 :</u> Ajout ou retrait des tables disponibles
+### <u>Scénario 7 :</u> Gestion de la disponibilité des tables
 
-> *Ce scénario peut se dérouler à tout moment du service.*
+> *Le but de ce scénario est de mettre en évidence le fait que notre application gère la disponibilité des tables. Cette fonctionalité peut-être utile si le restaurant possède plusieurs étages par exemple. Ce cas n'est pas dans le cahier des charges fourni.*
 
 ---
+
+#### Version : 2
+
+#### Auteurs : Martin VASILEV, Valentine LEJEUNE, Alexandre HULSKEN, Louisa FODIL, Rémi DELAVALLE
+
+#### Acteurs principaux : Deux groupes de clients et un serveur.
+
+#### Pré-conditions : Des clients sont sur le départ et un groupe de client arrive.
+
+#### Déclenchement : Des clients viennent de finir leur repas.
+
+#### Scénario nominal :
 
 1. Timoléon, client du restaurant, demande l'addition à son serveur.
 
-2. Lorsqu'il paye, la libération de la table est prise en compte par l'application.
+1. Lorsqu'il paye, la libération de la table est prise en compte par l'application.
 
-3. Dès lors, un jeune couple entre dans le restaurant et demande une table.
+1. Dès lors, un jeune couple entre dans le restaurant.
 
-4. Le serveur fait donc une demande à l'application pour une table pour 2.
+1. Le serveur consulte les tables disponibles sur l'application.
 
-5. Celle-ci lui répond qu'une table a été libérée il y a peu, et le serveur peut donc la réattribuer au jeune couple.
+1. Le serveur installe les clients.
 
-6. Une fois installés à leur table, notre serveur peut prendre en compte dans l'application que la table n'est plus libre.
+1. La table n'est désormais plus disponible sur l'application.
+
+#### Post-conditions : Le groupe de client venant d'arriver est installé.
 
 <div style="page-break-before: always;"> </div>
 
-### <u>Scénario 8 :</u> Attribution d’une table à un serveur
+### <u>Scénario 8 :</u> Attribution d’un groupe de table à un serveur
 
-> *Ce scénario décrit l'attribution d'un nouveau client à un serveur*
+> *Nous voulons inclure la possibilité de gérer la répartition des tables entre les serveurs. Ce scénario n'était pas présent dans le cahier des charges, cependant il est essentiel au bon fonctionnement du restaurant.*
 
 ---
 
-1. Sam rentre dans le restaurant. Un serveur est notifié de son
-arrivée et va l'accueillir.
+#### Version : 2
 
-2. Le serveur place Sam à une table. Il rentre sur sa tablette le
-numéro de la table.
+#### Auteurs : Martin VASILEV, Valentine LEJEUNE, Alexandre HULSKEN, Louisa FODIL, Rémi DELAVALLE
 
-3. La table est automatiquement attribuée au serveur assigné à cette
-table et le serveur en est notifié.
+:warning:<span style="background-color: #ff6d6d; align-item: middle">Ce scénario sera explicité dans une version ultérieure de notre logiciel. </span>
 
 <div style="page-break-before: always;"> </div>
 
@@ -326,11 +357,26 @@ table et le serveur en est notifié.
 
 ---
 
-1. Bob arrive au restaurant. Il s’installe à une table. Il prend sa commande via une tablette correspondant à sa table.
+#### Version : 2
 
-2. Lorsque Bob valide sa commande, les plats, boissons et desserts sont transmis à leurs postes respectifs (cuisine, bar, glacier).
+#### Auteurs : Rémi DELAVALLE
 
-3. Reprise au point 3 du scénario 1 et 2 (cas nominaux)
+#### Acteur principal : Bob
+
+#### Pré-conditions : Une tablette avec accès à l'application ets disponible à la table de Bob.
+
+#### Déclenchement : Bob choisit la saisie de commande sur la tablette.
+
+#### Scénario nominal :
+
+1. Bob arrive au restaurant et il s'installe à une table.
+
+1. Il prend sa commande via une tablette.
+
+1. Bob valide sa commande.
+
+
+#### Post-conditions : Les préparateurs voient la commande de Bob
 
 <div style="page-break-before: always;"> </div>
 
@@ -339,17 +385,43 @@ table et le serveur en est notifié.
 > *Ce scénario décrit la procédure d'ajout de boissons, repas ou glaces à la carte.*
 
 ---
-1. Par souci de temps, le directeur autorise ses cuisiniers à ajouter des repas à la carte.
 
-2. Les cuisiniers ajoutent à la carte le repas du jour.
+#### Version : 2
 
-3. Ils renseignent les ingrédients et quantités et un prix de vente.
+#### Auteur : Rémi DELAVALLE
 
-4. Le directeur reçoit une notification concernant la demande d'ajout.
+#### Acteurs principaux : Préparateurs et directeur
 
-5. Le directeur modifie le prix de vente et valide l'ajout à la carte.
+#### Pré-condition : Le cuisinier à le droit d'ajouter un plat.
 
-6. La carte des repas est mise à jour automatiquement.
+#### Déclenchement : Un cuisinier veut ajouter le plat du jour à la carte.
+
+
+
+#### Scenario nominal
+
+1. Le cuisinier ajoute le repas du jour à la carte .
+
+1. Il renseigne les ingrédients et quantités et un prix de vente.
+
+1. Le directeur reçoit une notification concernant la demande d'ajout.
+
+1. Le directeur valide l'ajout à la carte.
+
+1. La carte des repas est mise à jour automatiquement.
+
+
+#### Post-condition : Le plat est disponible sur la carte.
+
+#### Scénarios alternatifs
+
+4. *A.*
+    1. Le directeur modifie le prix de vente.
+    2. Retour à l'étape 5.
+
+4. *B.*
+    1. Le directeur refuse l'ajout du plat.
+    2. La demande d'ajout est supprimée.
 
 <div style="page-break-before: always;"> </div>
 
@@ -357,50 +429,64 @@ table et le serveur en est notifié.
 
 ---
 
-| Sujet                     | Type                       | Concept            |
-| :-----------------------: | :------------------------: | :----------------: |
-| **Timoléon**              | Utilisateur                | Client             |
-| **Serveur**               | Acteur                     | Préparateur        |
-| **Alerte**                | Objet                      | Alerte             |
-| **Commande**              | Action / Cas d'utilisation | Commander          |
-| **Entrée**                | Objet                      | Choix              |
-| **Plat**                  | Objet                      | Choix              |
-| **Glace**                 | Objet                      | Choix              |
-| **Boisson**               | Objet                      | Choix              |
-| **Cuisinier**             | Acteur                     | Préparateur        |
-| **Barman**                | Acteur                     | Préparateur        |
-| **Notification**          | Objet                      | Alerte             |
-| **Glacier**               | Acteur                     | Préparateur        |
-| **File d'attente**        | Objet                      | Ordonnancement     |
-| **Clôturer commande**     | Action / Cas d'utilisation | Clôture            |
-| **Générer addition**      | Action                     | Payer              |
-| **Disponibilité plat**    | Contrainte                 | Contrainte binaire |
+|           Sujet           | Type                       | Concept            |
+|:-------------------------:|:-------------------------- |:------------------ |
+|       **Timoléon**        | Utilisateur                | Client             |
+|        **Serveur**        | Acteur                     | Préparateur        |
+|        **Alerte**         | Objet                      | Alerte             |
+|       **Commande**        | Action / Cas d'utilisation | Commander          |
+|        **Entrée**         | Objet                      | Choix              |
+|         **Plat**          | Objet                      | Choix              |
+|         **Glace**         | Objet                      | Choix              |
+|        **Boisson**        | Objet                      | Choix              |
+|       **Cuisinier**       | Acteur                     | Préparateur        |
+|        **Barman**         | Acteur                     | Préparateur        |
+|     **Notification**      | Objet                      | Alerte             |
+|        **Glacier**        | Acteur                     | Préparateur        |
+|    **File d'attente**     | Objet                      | Ordonnancement     |
+|   **Clôturer commande**   | Action / Cas d'utilisation | Clôture            |
+|   **Générer addition**    | Action                     | Payer              |
+|  **Disponibilité plat**   | Contrainte                 | Contrainte binaire |
 | **Modification commande** | Action / Cas d'utilisation | Modifier           |
-| **Demande d'addition**    | Action / Cas d'utilisation | Payer              |
-| **Attribution table**     | Action                     | Attribuer          |
-| **Attribution serveur**   | Action                     | Attribuer          |
-| **Ajout d'un plat**       | Action / Cas d'utilisation | Ajouter            |
-| **Ingrédients**           | Donnée                     | Element du plat    |
-| **Demande d'ajout**       | Action                     | Ajouter            |
-| **Prix**                  | Donnée / Contrainte        | Prix               |
-| **Mise à jour carte**     | Action                     | Actualisation      |
-| **Consommation**          | Donnée                     | Element du menu    |
-| **Carte**                 | Objet                      | Liste de choix     |
-| **Profil**                | Objet                      | Profil             |
+|  **Demande d'addition**   | Action / Cas d'utilisation | Payer              |
+|   **Attribution table**   | Action                     | Attribuer          |
+|  **Attribution serveur**  | Action                     | Attribuer          |
+|    **Ajout d'un plat**    | Action / Cas d'utilisation | Ajouter            |
+|      **Ingrédients**      | Donnée                     | Element du plat    |
+|    **Demande d'ajout**    | Action                     | Ajouter            |
+|         **Prix**          | Donnée / Contrainte        | Prix               |
+|   **Mise à jour carte**   | Action                     | Actualisation      |
+|     **Consommation**      | Donnée                     | Element du menu    |
+|         **Carte**         | Objet                      | Liste de choix     |
+|        **Profil**         | Objet                      | Profil             |
 
 <div style="page-break-before: always;"> </div>
 
 ## Diagramme de Cas d'utilisations
-## Diagramme de Classes
 
 >>>
-Vous pourrez retrouver l'ensemble des diagrammes effectués sur la prise de commande sur notre git. vous pourrez retrouver l'adresse de celui-ci ci-dessous:
+Vous pourrez retrouver l'ensemble des diagrammes de cas d'utilisation effectués sur la prise de commande sur notre git. vous pourrez retrouver l'adresse de celui-ci ci-dessous:
 https://gitlab-etu.fil.univ-lille1.fr/hulsken/GL
 >>>
 
+## Diagramme de Classes
+![](diagrammes/prise_de_commandes/class_diagram_v2.png)
+
 <div style="page-break-before: always;"> </div>
 
-## Glossaire technique
+## Diagramme de Séquences
+
+
+
+<div style="page-break-before: always;"> </div>
+
+## Diagramme de Séquences Détaillés
+
+
+
+<div style="page-break-before: always;"> </div>
+
+## [Annexe] *Glossaire métier*
 
 >> *Ce glossaire donne une définition à chaque terme métier utilisé dans la conception de l'application.*
 
@@ -432,7 +518,7 @@ Outil éléctronique permettant d'accéder à l'application.
 
 <div style="page-break-before: always;"> </div>
 
-### Glossaire technique
+### [Annexe] *Glossaire technique*
 
 >> *Ce glossaire donne une définition à chaque terme technique utilisé dans la conception de l'application.*
 
@@ -485,7 +571,64 @@ Profession d'un employé de l'entreprise. (Barman/cuisinier/glacier/serveur/dire
 
 <div style="page-break-before: always;"> </div>
 
-### Récapitulation de commandes `GIT` usuelles
+## [Annexe] *Glossaire de l'ingénierie des besoins*
+
+>> *Ce glossaire définit chaque terme technique utilisé dans les étapes de conception de l'application .*
+
+---
+
+#### Alerte
+
+Message textuel pouvant être reçu par l'ensemble des employés de l'entreprise.
+
+#### Notification
+
+Alerte pour avertir d'un évènement.
+
+#### Profil
+
+Profession d'un employé de l'entreprise. (Barman/cuisinier/glacier/serveur/directeur)
+
+#### Modèle
+
+Partie de l'application contenant les données devant figurer dans l'interface graphique.
+
+#### Vue
+
+Partie frontale de l'application, aussi appelée interface graphique.
+
+#### Contrôleur
+
+Partie de l'application où sont codées les actions pouvant être effectuées par l'utilisateur
+
+#### DAO : Data Access Object
+
+Patron de conception permettant de regrouper les accès aux données dans une partie distincte de l'application.
+
+#### Boundary
+
+Interface permettant de faire le lien entre les différents acteurs au sein d'une application.
+
+#### BLL : Business Logic Layer
+
+Couche métier de l'application.
+
+#### UI : User interface
+
+Interface graphique de l'application
+
+#### UX : User Experience (Expérience Utilisateur)
+
+Expérience de l'utilisateur utilisant l'application. Celle-ci est prise en compte lors de la phase conception de l'interface graphique dans laquelle nous identifions les besoins des utilisateurs.
+
+#### Paquetage
+
+Diviser l'architecture applicative en paquetages permets de distinguer les différentes partie de notre application et de séparer les différentes fonctionnalités proposées.
+
+
+<div style="page-break-before: always;"> </div>
+
+### [Annexe] *Récapitulation de commandes `GIT` usuelles*
 
 ---
 

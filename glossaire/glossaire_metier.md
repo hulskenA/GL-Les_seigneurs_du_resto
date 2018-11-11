@@ -28,7 +28,6 @@ Composée de plusieurs clients.
 #### Tablette
 Outil éléctronique permettant d'accéder à l'application.
 
-
 ---
 
 [:leftwards_arrow_with_hook: Retour à la page d'accueil](../README.md)
