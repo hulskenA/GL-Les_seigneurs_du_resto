@@ -1,9 +1,8 @@
 <h1 style="text-align:center">Génie Logiciel
 <br/>
 Sujet 1 - Prise de commande dans un restaurant
-<br/>
-![PDF: V2](https://img.shields.io/badge/PDF-V2-blue.svg?longCache=true&style=popout)
 </h1>
+![Rendu: 2](https://img.shields.io/badge/Rendu-2-green.jpg?longCache=true&style=for-the-badge) ![PDF: V3](https://img.shields.io/badge/PDF-V3-blue.jpg?longCache=true&style=for-the-badge)
 
 <table>
 <tbody>
@@ -24,16 +23,20 @@ Sujet 1 - Prise de commande dans un restaurant
 
 #### M1S1 - Gr.1
 
+---
+
 > Ce projet porte sur l'analyse et la conception d'une application de commande pour un restaurateur.
 
 > L’objectif de l’application est de faciliter la communication entre les différents membres de l’équipe restauratrice et ainsi d’améliorer leur coordination. La réactivité de l’équipe sera améliorée.
 
 ---
 
+<div style="page-break-before: always;"> </div>
+
 ## Table des matières
 
 1. [Tableau de suivi des tâches](Tableau_des_taches.ods)
-2. [Bilans de séance]()
+2. [Bilans de séance](./)
     1. [Bilan 11/09/2018](Bilan_de_seance/11_09_2018_bilan_seance_1.md)
     2. [Bilan 25/09/2018](Bilan_de_seance/25_09_2018_bilan_seance_3.md)
     2. [Bilan 02/10/2018](Bilan_de_seance/02_10_2018_bilan_seance_4.md)
@@ -51,11 +54,16 @@ Sujet 1 - Prise de commande dans un restaurant
     8. [Attribution d’une table à un serveur](scenario/scenario_8.md)
     9. [Le client saisit lui même sa commande via une tablette](scenario/scenario_9.md)
     10. [Les responsables ajoutent/enlèvent des plats à la carte](scenario/scenario_10.md)
-4. [Tableau Sujet / Concept / Type correspondant à nos scénarios]()
-5. [Diagramme de Cas d'utilisations]()
-6. [Diagramme de Classes]()
-7. [Diagramme de Séquences]()
-8. [Diagramme de Séquences Détaillés]()
+4. [Tableau Sujet / Concept / Type correspondant à nos scénarios](./)
+5. [Diagramme de Cas d'utilisations](./)
+6. [Diagramme de Classes](./)
+7. [Diagramme de Séquences](./)
+8. [Diagramme de Séquences Détaillés](./)
+9. [Maquettes de l'application](./)
+    1. [Maquettes de l'interface Gérant](./)
+    2. [Maquettes de l'interface Préparateur](./)
+    3. [Maquettes de l'interface Serveur](./)
+    4. [Maquettes de l'interface Client](./)
 
 + [[Annexe] Glossaire métier](glossaire/glossaire_metier.md)
 + [[Annexe] Glossaire technique](glossaire/glossaire_technique.md)
@@ -75,8 +83,6 @@ Sujet 1 - Prise de commande dans un restaurant
 - Définition des scénarios à préparer pour la séance du 18 septembre.
 
 <div style="page-break-before: always;"> </div>
-
-<div style="page-break-beore: always;"> </div>
 
 ### Bilan des tâches
 ##### *25 / 09 / 2018*
@@ -470,19 +476,93 @@ https://gitlab-etu.fil.univ-lille1.fr/hulsken/GL
 >>>
 
 ## Diagramme de Classes
+
+---
+
 ![](diagrammes/prise_de_commandes/class_diagram_v2.png)
 
 <div style="page-break-before: always;"> </div>
 
 ## Diagramme de Séquences
 
+---
 
+![Scénario 1]()
+![Scénario 2]()
+![Scénario 3](https://www.plantuml.com/plantuml/img/ZPAzRi8m4CTtFyM93an8j6m8LI3QhKCb697GuLoQgumTsHVKL-8vUB6UGmWWEZIJBV_-7pvddWIZD7jdAYu8oX1a5twCi3Y2xNPbJqUFaGDCjbjZq4g8C9Wk7PEN0M02souXn88YF8zxP4NnG4ricNHUTz3B5VgCfsED4UL2rf4k-uwUZ8qMWgSF_gfavneoe9z2mfPhrEZ1T57NZYqA1z-wO5rViyWN-KQcApfwxUjCOKrnpvuW1G-rGxb0iz4Dz4Pxz3gRD6G7nUcOEDB6OoEHm5OXqP_Mox0_onhr_t9eLKEYEx1Odex6N51LvRvJU2zO21o2xQGzCXkDClCeMNo79cleR0eQu73ZspXzBMLwT1rHxJVU3J6BzDG99ExQv9bs-EqJQ2b_24o03UmmQgls4fhdWt39PCWboZRdo7_OP90fFlZueYzyBrsK9TlgVZ1chdp-QNy1)
+![Scénario 4]()
+![Scénario 5]()
+![Scénario 6](https://www.plantuml.com/plantuml/img/RLB1JYCn3BtdAomuzB98NP0uL0ZH8n92ICiHgKeJ3_KgjOV46Utkrt3jTyoFhJCgq0AtnFQpttlsJL6VjMwJsr14w4HqBN-SaYQ4rUfN67ViCmbShbREzLPBWNhF2YUBHxzEg8edu0kyVK1on0m_vyu7bMnb3tdS6T0hrZoL7WRsvHTpvsmkdDxHyqRNgQ83E9wsxFj4mIi9JrqE_licvtE771jzTvWykpwUk81brr7O82GFGRPRpn4TYt5FsEa2xZx2W4KXZhlVuoiKJyK22iY3_1rtpXsr_JhcmLZwKl3V4ySPyRDb8o7h5zmXsmNSSgINQcGC4wdqmhIcH6tW9rd7ECsUz5lO-swkpZvXxaMf8_m1ouHP9tKH9-LFREuqoOGGPvM1fGxeAuIDa3ay-IM3sVxMtJPs6yWyX92QpCaxRnLAK4neyMsdMVgCeE_NKXkWO1xC2yiF4pBDaFVGR7RRMN9eZAqWLclMzv8RquyzLJMjnSJQ1K3ZvjoDFTjX_mS0)
+![Scénario 7](https://www.plantuml.com/plantuml/img/VPDDJiCm48NtFiMeB5XLQWC8AKAeQK5ika1aMoboaYcrvDgHFK5m6vRq7BaOjlDJIWDPMPxllNaUEmjBt52zbsmdIeIjrfJhTqQ294AMfKLpKDm83RTPnXWlI1kO9F5A2bGq0MwXNIQWJOa6vhCUMfv3omwAPeDLEezJD6zOcy1rwta7NWrkQJJ6HHrtxGnTRBXOYzSTvR961kwhtD548Igk22PnKbLI59o4Li63LrKdlvanLAK_D-k3Jk-FMM9um3rNRZpoafUby0vig3hIEyNmv4RLV9bnwcxQKSbsAuhT2TJtTCpFdbgfKUmqsZF_m94mQv6tMJWGpoKolprKLr9JtLOBlGzdsoWaaBzLhB_TOzF8wHyLESe9ocumjOlQAWPgQ3OC3-r61SX2AMobbV3he-9yHjmbieIkJUjkJ-pxR4601VaMK8HDQ3x_pVI2rk_zCHuoN50eckRWmV1e65kuL-9_bMy0)
+![Scénario 8]()
+![Scénario 9]()
+![Scénario 10](https://www.plantuml.com/plantuml/img/TPDDJiCm48NtFiMeB5XLAh2h46h5WWqWHAHkAzUP98DSst9iYUEmpJboCSPk6aW3MUJFtynxyvnisY1zY4Sj6YeHAcl3mNwAG44ZxFU5wZiZFLcuMUttGWYfWlMmMB_vldFIou3HBq2syFi5M5-Yvv8HV-exBqt8v70_G7Sh8LWHhfwfRi91HnJ01xSAfCWbSB7UEgT9oK3Mv1RIkQ7yTYNGbCcoc3XOFcHe3O-DfPO2j98l7g81fsMOmlVB0TvM5Qa6GKisK2Dm8eh1B9mUvgMZJY6pZCOMoDICb8Ji7TChS9xOO097ViSfK4LPAtj3SMagk_f7RYTrsYyzU9hstdxO6A2Cmzevy77CLnkoT7bIZtMDRHfn97-cwZkDAgsPp9fSUTg9UTynlj6L3b3GEG5W5Gv7MU-v9s_pJEx5bgTCXiZIbp23BaPFp7pwSHtwhsHSyVU4atxdV56tc4nwh2BVwMkPwlzoztv9J6IBwDZpyRUncPGfXTZmcV-tRm00)
 
 <div style="page-break-before: always;"> </div>
 
 ## Diagramme de Séquences Détaillés
 
+---
 
+![Scénario 1]()
+![Scénario 2]()
+![Scénario 3](https://www.plantuml.com/plantuml/img/bPJBRjim44Nt_8g1kkZAWDlq1I4k8jXU5AZZmdci2XWqDR9OqAHAKK5_oT_X7-j8ecHASO9MApxkkHpU8NHJEcvTTL0ibob2PepRcJ_CIQSGjjixSJfgRgM1g-sMCSQ5CnQYUAuaQXS1Bq4qGp0sHGllfhta3kqJLhRHbEtOYzwVHJ_iwLXmorsdB2nsSw_-CcLK4KH9KIWfk9D6H_3ckzpdRgSgP40V8KuAMN0g98eVAmmFFq-zuzNq0ZGtsbcZ5BRGUUgX3vUXmu7h51V9sbFzt6CVNyC6Z0S-NGBe2i-I6grv_FEKeKxh5ZBVcCdNFluOxj4Uf4OeZOP2STU9hYU1Q85jGULRgI0z7KjfyQVcbRC88ZSbNhJkxr6H_rvnGGmwce7WsUd8M2SbAcX93CjKEWJ5GNW75coJE6W5dP9pkwTHA0y4ZVpSWnWs-Bl2aRsmI97rGXOIWG4RR5nF9Y7HdnYkaowilTtgbFtzAUl1_PCiao8VblXYMCalKzNNmJPLe8I9Q-9-BRQLIMKcyPzZUoXIFagDSUMWbBwRzHiT6epV8pLMFnawarUmuvPCclT0bMlZwc8OgX9hnxRw_tEi6OdscQLE6HjpP1N-Lbv8V3Q3pV9-_R21vUtZ-XlCrwjLShjOmcp6s0qPqq_oBm00)
+![Scénario 4]()
+![Scénario 5]()
+![Scénario 6](https://www.plantuml.com/plantuml/img/XLJBZjim3BphAuZqa4i3fAyz68jYW_QomA9Te8_J0e4YCHiMYkHAbD7sQthDT_Z7IZbEx3o0ta9wXXoHmzmbrf7prgaDMOHr2BmAlnGJEuJbyejfTrv72d2pN2fL2vOCrTepJAglUkMG6IUW4nm22D5YX5TpfGs7AB37sEw4g1bpxA3ZH0-_cIibVM6og6j7HZC5Fu4N3_IyuPNBg01EUt_FUD9-5FSbNyylI1-2vnYSmxsE8UmfRwvG9CAFYyzxGX_qyBUNS95nyTopN4z-DrVeRPcryg68RYGvA9BA3nfCs6wrbxrWOh3jxaVx5vAc90a6z4tutUvA6IWbb3hlD7j_EkiAFWMcDNLqlLwJsI2ueOtw3_jHNgDJmZzFtax9FyjNI-ZvWdSkf89xR-bdbcx2ivJgu6b5ZaJ-DTMZpLJ0KHDVPOvWXNJOJWNVQgjv_xII70DlPxCZyhp2s4J3hEpLtaVWxUmwxoKif2ntixROpVV9YwAolr9rchsiBJUeCvXDe8CHOl7yyPp41_U6G8xHk3BgpWbQlC84IOQLTF5W37L4uEC1v49861kPftnlEgQRek-fKSmZj-vDkJC1s2p5wZh48dLmNMPvR3gns9tyb7-BVm00)
+![Scénario 7](https://www.plantuml.com/plantuml/img/ZPLBRjim48RtFCN0NNHbmtOVQOMuYEmKHO40BUosgm06BOrZ0ZJ9KcJGtgRB9DVGnKf9b4IviXgj-FZ-8UUVaNIL6QgDFN9oO2d2Nagpax-8OOOZRBUR97yKL3C95zij8JGnKiCeZbQSeJ0Ze1bKmnYaJb73R5f3ot-XfOVcqoRKPXPjKD-ZrINdnpCFlcgYRUPztDnphrr0TsrtCwKuIwXXKepWnGsxEvWTjqZ0FSeboXAcg30mYdvO30EsKn_opRH7j9B2QCavLg9swaLl-qJVw8xZTVobbDGJBxZeF-Luf29jDC7SozuDoJeQBtW_9IZIehAaBiNuG-js1DTOuVmbJLDM-4UQNKS6zaJmoVL4_g0xS00uF30cWjM1whiE76oNS9jU16lyQVCdSyAtH20eOakH6MsP0KuXyUiT_d8yRWJXmU6wuy84ggsQR7su77TzYFTxbXowD_NcEZGqLmhHYtLhy9N-nlEkhxWqjZ0zI7J8zHvyoFUDLKgpurd1gL_TM4rRHt33TbLpK335wccG6YLaCfcGnG9YfVE73Anm4fKXkC8QFAeC5eiI8VKNfdLhxixvwA8Ye75yrGtMULoTs52d7gxHrKkNDSFiLfHq1YdBb1Ii63-ZZqjHe3dlHD7AQ8OL7KSwFTWzV8tYNhAUM4skfztvVqMHeBUsR6PCYjSE8IaN8VyJM3haQLQCsteFMBZaqbdIsnfTwxwhb9fdz92GvPNtnca-9wmHG6hhD9QtGg5rwJmL_KBBDFD7Dsg8c90hztLqFy6_)
+![Scénario 8]()
+![Scénario 9]()
+![Scénario 10](https://www.plantuml.com/plantuml/img/ZLNBgjim4DthAuPqqTM5bBvDAJUa3mejlTHmLuMWs9CR5KLoPRdS_ast_Wx_M4UoBR-Ka2o2vJddpCoPKN9RMcviTPBiA7A4WzPshn-P5LOYx7PfrjIA6w7XsNgtOupnp6e3g-JED7N13RTOcHNm4iOlG9iS3L42_7DJ6wwiHtRF0RHcZ5B2QbCKKcJS2grMyEIhU3ZQlQoG0Nr8sOfC58wtIkuhNEIVlUlKdwyZz4_Qd2h9XS6KYrBWdUHjPR509_GY9hJLoXej9ROb3CUEz396Sg8VDjzRqzhd3lxg73nWE-3hQ35qmbwuFtI4Dp42EJOUot3iI6_N35Nkje6nYRKtxnTk9x0zQhBCGkcSCr0fAAXWDWSID-Ro0lVkvYOEdA4YbMmE1v4T4QHRvrxXYWvy4akq4eHwe5WkaCn0zmeA8nuN6gE19t3FfRj1BTqbzfjSChOrI0m_FpPY4D-FbAmZsQRsMMOOvuBdHOXkkWbyKIKQstD_AbImvoMo74l2_rraxHM9FHSTBK027zKVBQYRfvoYL3rrbb6PlYSsGX9l80NdEIXjnQ6xpMCyJMp0fqqjCNCGjIJDiaoyJZ7mJCotYKK6VrTeCU1O7necu5eRAVM0OFyP0w_m3yCrkEnONnkN5bBHRnpG56cRCcqCzKjtU2GoIVTDv-GSXarrj_qSDYngcz91BrWzRGHEFb5JUzgq__2RGstzqjNWE3J_t7Gp5v_pd9qzSLwAZmNef2SN6f0CPOdEDeE7glHRwmguuDUFEV0g1xmyc_SzR5fQ5UJ-QUpjcSsPQaogO-UxL3bZj_HDVzV_0G00)
+
+<div style="page-break-before: always;"> </div>
+
+## Maquettes
+
+### Maquettes de l'interface Gérant
+
+---
+
+![](./maquette/maquetteGerant/maquetteGerant-1.jpg)
+![](./maquette/maquetteGerant/maquetteGerant-2.jpg)
+![](./maquette/maquetteGerant/maquetteGerant-3.jpg)
+![](./maquette/maquetteGerant/maquetteGerant-4.jpg)
+![](./maquette/maquetteGerant/maquetteGerant-5.jpg)
+![](./maquette/maquetteGerant/maquetteGerant-6.jpg)
+
+<div style="page-break-before: always;"> </div>
+
+### Maquettes de l'interface Préparateur
+
+---
+
+![](./maquette/maquettePreparateur/maquettePreparateur-1.jpg)
+![](./maquette/maquettePreparateur/maquettePreparateur-2.jpg)
+![](./maquette/maquettePreparateur/maquettePreparateur-3.jpg)
+
+<div style="page-break-before: always;"> </div>
+
+### Maquettes de l'interface Serveur
+
+---
+
+![](./maquette/maquetteTabletteServeur/maquetteTabletteServeur-1.jpg)
+![](./maquette/maquetteTabletteServeur/maquetteTabletteServeur-2.jpg)
+![](./maquette/maquetteTabletteServeur/maquetteTabletteServeur-3.jpg)
+![](./maquette/maquetteTabletteServeur/maquetteTabletteServeur-4.jpg)
+![](./maquette/maquetteTabletteServeur/maquetteTabletteServeur-5.jpg)
+![](./maquette/maquetteTabletteServeur/maquetteTabletteServeur-6.jpg)
+![](./maquette/maquetteTabletteServeur/maquetteTabletteServeur-7.jpg)
+
+<div style="page-break-before: always;"> </div>
+
+### Maquettes de l'interface Client
+
+---
+
+![](./maquette/maquetteTabletteClient/maquetteTabletteClient-1.jpg)
+![](./maquette/maquetteTabletteClient/maquetteTabletteClient-2.jpg)
+![](./maquette/maquetteTabletteClient/maquetteTabletteClient-3.jpg)
 
 <div style="page-break-before: always;"> </div>
 
