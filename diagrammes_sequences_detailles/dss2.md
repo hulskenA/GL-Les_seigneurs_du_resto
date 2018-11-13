@@ -22,7 +22,7 @@ Préparateur ->> VuePréparateur : Indique que le\nplat est prêt
 
 VuePréparateur ->> Controller : La commande X est prête
 
-Controller ->> VueServeur : Envoi une\nalerte
+Controller ->> VueServeur : Envoie une\nalerte
 
 VueServeur ->> Serveur : Alerte sonore\nou visuelle
 
