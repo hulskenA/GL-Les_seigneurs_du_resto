@@ -20,7 +20,7 @@ Client <-- Serveur : L'installe
 Client <- Serveur : Prend la commande
 Client --> Serveur
 
-Serveur -> VueServeur : Saisie la commande\net la valide
+Serveur -> VueServeur : Saisit la commande\net la valide
 VueServeur -> Controller : transfert les détails\nde la commande
 Controller -> CommandeDAO : transfert\nles détails
 activate CommandeDAO
@@ -28,7 +28,7 @@ activate CommandeDAO
 create Commande
 CommandeDAO -> Commande : Créé la\ncommande
 CommandeDAO <-- Commande
-CommandeDAO <- CommandeDAO : insert en\nbase
+CommandeDAO <- CommandeDAO : insère en\nbase
 CommandeDAO --> Controller
 destroy Commande
 deactivate CommandeDAO
