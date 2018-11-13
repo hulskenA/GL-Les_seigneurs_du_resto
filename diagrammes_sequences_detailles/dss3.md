@@ -21,8 +21,8 @@ client <- serveur : Demande s'il désire\nautre chose
 client -> serveur : Commande une glace\net un café
 
 serveur -> VueServeur : Edite la commande
-VueServeur -> Controller : Charger la commande
-Controller -> CommandeDAO : Requete la commande
+VueServeur -> Controller : Charge la commande
+Controller -> CommandeDAO : Requête la commande
 create Commande
 CommandeDAO -> Commande
 
