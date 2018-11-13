@@ -14,11 +14,11 @@ box "Application" #Lightblue
 endbox
 
 note over Controller
-  La commande est déjà saise et envoyé
+  La commande est déjà saisie et envoyée
 end note
 
 VuePréparateur -> Préparateur : Notifie et affiche la commande
-Préparateur -> Préparateur : Pas assez\nd'ingrédient
+Préparateur -> Préparateur : Pas assez\nd'ingrédients
 Préparateur -> VuePréparateur : Indique l'indisponibilié
 
 VuePréparateur -> Controller : traite l'indisponibilié
