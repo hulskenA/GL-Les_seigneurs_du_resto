@@ -22,14 +22,14 @@ Préparateur -> VuePréparateur : Choisit saisir un plat
 VuePréparateur -> FormulaireSaisiePlat
 VuePréparateur <-- FormulaireSaisiePlat
 Préparateur <- VuePréparateur : Affiche le formulaire
-Préparateur -> VuePréparateur : Saisit les ingrédient et le prix
+Préparateur -> VuePréparateur : Saisit les ingrédients et le prix
 Préparateur -> Controller : Valide les informations
 
 Create Plat
 Controller -> Plat : Créé le plat
 Controller <-- Plat
 
-Controller -> PlatDAO : Insert le plat\nen base
+Controller -> PlatDAO : Insère le plat\nen base
 destroy Plat
 Controller <-- PlatDAO
 
@@ -37,8 +37,8 @@ Controller -> VueGérant : Envoie l'alerte de création
 VueGérant -> Gérant : Affiche la notification
 VueGérant <- Gérant : Sélectionne la notification
 
-VueGérant -> Controller : Selectionner le plat
-Controller -> PlatDAO : requete le plat
+VueGérant -> Controller : Sélectionne le plat
+Controller -> PlatDAO : requête le plat
 
 PlatDAO -> Plat : créer le plat
 PlatDAO <-- Plat
