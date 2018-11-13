@@ -15,18 +15,18 @@ box "Application" #Lightblue
     participant ":VuePréparateur" as VuePréparateur order 60
 endbox
 
-Client ->> VueTabletteClient : Saisie une entrée
-Client ->> VueTabletteClient : Saisie un plat
-Client -> VueTabletteClient : Valide sonchoix
+Client ->> VueTabletteClient : Saisit une entrée
+Client ->> VueTabletteClient : Saisit un plat
+Client -> VueTabletteClient : Valide son choix
 
-VueTabletteClient -> Controller : Envoi les détails\nde la commande
+VueTabletteClient -> Controller : Envoie les détails\nde la commande
 
 Controller -> CommandeDAO : Demande l'enregistrement\nen base
 
 create Commande
 CommandeDAO -> Commande
 CommandeDAO <-- Commande
-CommandeDAO -> CommandeDAO : Insert en base
+CommandeDAO -> CommandeDAO : Insère en base
 destroy Commande
 CommandeDAO --> Controller : Confirme la\ncréation
 
