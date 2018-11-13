@@ -41,14 +41,14 @@ Controller <-- TableDAO
 
 ClientA -> Serveur2 : Entre et demande une table
 Serveur2 -> VueServeur : Recherche les\ntables disponibles
-VueServeur -> Controller : Charge table disponible
-Controller -> TableDAO : Requete table disponible
+VueServeur -> Controller : Charge les tables disponibles
+Controller -> TableDAO : Requete les tables disponibles
 Controller <-- TableDAO
-VueServeur <- Controller : Renvoie table disponible
-Serveur2 <- VueServeur : Renvoie table disponible
+VueServeur <- Controller : Renvoie les tables disponibles
+Serveur2 <- VueServeur : Renvoie les tables disponibles
 Serveur2 -> ClientA : Affecte le client à une table
 
-Serveur2 -> VueServeur : Reserve la table
+Serveur2 -> VueServeur : Réserve la table
 VueServeur -> Controller : Bloque la table
 Controller -> TableDAO : Update la table
 Controller <-- TableDAO
