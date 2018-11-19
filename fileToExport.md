@@ -1,8 +1,20 @@
+---
+phantomjs:
+    header:
+        height: "9mm"
+        contents: "<div style='text-align: right;'>GL - Les Seigneurs du resto</div>"
+    footer:
+        height: "9mm"
+        contents:
+            default: '<span style="color: #444;"><u>Page :</u> {{page}}</span>/<span>{{pages}}</span>'
+---
+
 <h1 style="text-align:center">Génie Logiciel
 <br/>
 Sujet 1 - Prise de commande dans un restaurant
 </h1>
-![Rendu: 2](https://img.shields.io/badge/Rendu-2-green.jpg?longCache=true&style=for-the-badge) ![PDF: V3](https://img.shields.io/badge/PDF-V3-blue.jpg?longCache=true&style=for-the-badge)
+
+![Rendu: 2](https://img.shields.io/badge/Rendu-2-green.svg?longCache=true&style=for-the-badge)  ![PDF: V3.1](https://img.shields.io/badge/PDF-V3.1-blue.svg?longCache=true&style=for-the-badge)
 
 <table>
 <tbody>
@@ -35,45 +47,44 @@ Sujet 1 - Prise de commande dans un restaurant
 
 ## Table des matières
 
-1. [Tableau de suivi des tâches](Tableau_des_taches.ods)
-2. [Bilans de séance](./)
-    1. [Bilan 11/09/2018](Bilan_de_seance/11_09_2018_bilan_seance_1.md)
-    2. [Bilan 25/09/2018](Bilan_de_seance/25_09_2018_bilan_seance_3.md)
-    2. [Bilan 02/10/2018](Bilan_de_seance/02_10_2018_bilan_seance_4.md)
-    2. [Bilan 09/10/2018](Bilan_de_seance/09_10_2018_bilan_seance_5.md)
-    2. [Bilan 23/10/2018](Bilan_de_seance/23_10_2018_bilan_seance_6.md)
-    2. [Bilan 06/11/2018](Bilan_de_seance/06_11_2018_bilan_seance_7.md)
-3. [Scénarios possibles d'utilisation](scenario/schema_scenario.md)
-    1. [Prise de commande et notifications `Cas nominal`](scenario/scenario_1.md)
-    2. [La commande se déroule comme prévu `Cas nominal`](scenario/scenario_2.md)
-    3. [Le client ajoute un élément à sa commande](scenario/scenario_3.md)
-    4. [La commande est modifiée](scenario/scenario_4.md)
-    5. [Déroulement des commandes de plusieurs clients distincts](scenario/scenario_5.md)
-    6. [Le plat commandé n’est plus disponible](scenario/scenario_6.md)
-    7. [Ajout ou retrait des tables disponibles](scenario/scenario_7.md)
-    8. [Attribution d’une table à un serveur](scenario/scenario_8.md)
-    9. [Le client saisit lui même sa commande via une tablette](scenario/scenario_9.md)
-    10. [Les responsables ajoutent/enlèvent des plats à la carte](scenario/scenario_10.md)
-4. [Tableau Sujet / Concept / Type correspondant à nos scénarios](./)
-5. [Diagramme de Cas d'utilisations](./)
-6. [Diagramme de Classes](./)
-7. [Diagramme de Séquences](./)
-    1. [Diagramme de Séquences Simples](./)
-    2. [Diagramme de Séquences Détaillés](./)
-8. [Maquettes de l'application](./)
-    1. [Maquettes de l'interface Gérant](./)
-    2. [Maquettes de l'interface Préparateur](./)
-    3. [Maquettes de l'interface Serveur](./)
-    4. [Maquettes de l'interface Client](./)
+1. [Bilans de séance](#Bilan1)
+    1. [Bilan 11/09/2018](#Bilan1)
+    2. [Bilan 25/09/2018](Bilan2)
+    2. [Bilan 02/10/2018](Bilan3)
+    2. [Bilan 09/10/2018](Bilan4)
+    2. [Bilan 23/10/2018](Bilan5)
+    2. [Bilan 06/11/2018](Bilan6)
+3. [Scénarios possibles d'utilisation](#scenario1)
+    1. [Prise de commande et notifications](#scenario1)
+    2. [La commande se déroule comme prévu](#scenario2)
+    3. [Le client ajoute un élément à sa commande](#scenario3)
+    4. [La commande est modifiée](#scenario4)
+    5. [Déroulement des commandes de plusieurs clients distincts](#scenario5)
+    6. [Le plat commandé n’est plus disponible](#scenario6)
+    7. [Ajout ou retrait des tables disponibles](#scenario7)
+    8. [Attribution d’une table à un serveur](#scenario8)
+    9. [Le client saisit lui même sa commande via une tablette](#scenario9)
+    10. [Les responsables ajoutent/enlèvent des plats à la carte](#scenario10)
+4. [Tableau Sujet / Concept / Type correspondant à nos scénarios](#tableau)
+5. [Diagramme de Cas d'utilisations](#CU)
+6. [Diagramme de Classes](#DC)
+7. [Diagramme de Séquences](#DS)
+    1. [Diagramme de Séquences Simples](#DSS)
+    2. [Diagramme de Séquences Détaillés](#DSD)
+8. [Maquettes de l'application](#maquette)
+    1. [Maquettes de l'interface Gérant](#maquetteGerant)
+    2. [Maquettes de l'interface Préparateur](#maquettePreparateur)
+    3. [Maquettes de l'interface Serveur](#maquetteTabletteServeur)
+    4. [Maquettes de l'interface Client](#maquetteTabletteClient)
 
-+ [[Annexe] Glossaire métier](glossaire/glossaire_metier.md)
-+ [[Annexe] Glossaire technique](glossaire/glossaire_technique.md)
-+ [[Annexe] Glossaire ingenierie besoins](glossaire/glossaire_ingenierie_besoins.md)
-+ [[Annexe] Récapitulation de commandes `GIT` usuelles](outil/recap_git.md)
++ [[Annexe] Glossaire métier](#glossaire_metier)
++ [[Annexe] Glossaire technique](#glossaire_technique)
++ [[Annexe] Glossaire ingenierie besoins](#glossaire_ingenierie_besoins)
++ [[Annexe] Récapitulation de commandes `GIT` usuelles](#recap_git)
 
 <div style="page-break-before: always;"> </div>
 
-### Bilan des tâches
+### Bilan des tâches {#Bilan1}
 ##### *11/09/2018*
 
 ---
@@ -85,7 +96,7 @@ Sujet 1 - Prise de commande dans un restaurant
 
 <div style="page-break-before: always;"> </div>
 
-### Bilan des tâches
+### Bilan des tâches {#Bilan2}
 ##### *25 / 09 / 2018*
 
 ---
@@ -96,7 +107,7 @@ Sujet 1 - Prise de commande dans un restaurant
 
 <div style="page-break-before: always;"> </div>
 
-### Bilan des tâches
+### Bilan des tâches {#Bilan3}
 ##### *02 / 10 / 2018*
 
 ---
@@ -107,7 +118,7 @@ Sujet 1 - Prise de commande dans un restaurant
 
 <div style="page-break-before: always;"> </div>
 
-### Bilan des tâches
+### Bilan des tâches {#Bilan4}
 ##### *09 / 10 / 2018*
 
 ---
@@ -117,7 +128,7 @@ Sujet 1 - Prise de commande dans un restaurant
 
 <div style="page-break-before: always;"> </div>
 
-### Bilan des tâches
+### Bilan des tâches {#Bilan5}
 ##### *23 / 10 / 2018*
 
 ---
@@ -126,7 +137,7 @@ Sujet 1 - Prise de commande dans un restaurant
 
 <div style="page-break-before: always;"> </div>
 
-### Bilan des tâches
+### Bilan des tâches {#Bilan6}
 ##### *06 / 11 / 2018*
 
 ---
@@ -138,9 +149,9 @@ Sujet 1 - Prise de commande dans un restaurant
 
 <div style="page-break-before: always;"> </div>
 
-## Scénarios possibles d'utilisation
+## Scénarios possibles d'utilisation {#scenario1}
 
-### <u>Scénario 1 :</u> Prise de commande et notifications `Cas nominal`
+### <u>Scénario 1 :</u> Prise de commande et notifications
 
 > *Ce scénario décrit le déroulement du début à la fin d’une commande et du repas d’un client.*
 
@@ -174,7 +185,7 @@ Le glacier reçoit la commande de la glace dans la file d’attente.
 
 <div style="page-break-before: always;"> </div>
 
-### <u>Scénario 2 :</u> La commande se déroule comme prévu `Cas nominal`
+### <u>Scénario 2 :</u> La commande se déroule comme prévu {#scenario2}
 
 > *Déroulement normal d'un service*
 
@@ -209,7 +220,7 @@ Le serveur amène la boisson à Timoléon.
 
 <div style="page-break-before: always;"> </div>
 
-### <u>Scénario 3 :</u> Le client ajoute un élément à sa commande
+### <u>Scénario 3 :</u> Le client ajoute un élément à sa commande {#scenario3}
 
 > *Il nous semble nécessaire qu'un client puisse ajouter un élément à sa commande.  Ce scénario n'est pas dans le cahier des charges, il est cependant indispensable à la satisfaction des clients.*
 
@@ -240,7 +251,7 @@ Le serveur amène la glace et le café à Timoléon.
 
 <div style="page-break-before: always;"> </div>
 
-### <u>Scénario 4 :</u> La commande est modifiée
+### <u>Scénario 4 :</u> La commande est modifiée {#scenario4}
 
 > *Ce scénario peut intervenir à tout moment. Il nous semble important que le client puisse modifier sa commande.  Ce scénario n'est pas dans le cahier des charges fourni.*
 
@@ -253,7 +264,7 @@ Le serveur amène la glace et le café à Timoléon.
 
 <div style="page-break-before: always;"> </div>
 
-### <u>Scénario 5 :</u> Déroulement des commandes de plusieurs clients distincts
+### <u>Scénario 5 :</u> Déroulement des commandes de plusieurs clients distincts {#scenario5}
 
 > *Ce scénario décrit le déroulement des commandes et du service en fonction de l’ordre d’arrivée des différents clients. Le but est de montrer que le logiciel traite les commandes de manière séquentielle.*
 
@@ -277,7 +288,7 @@ Le serveur amène la glace et le café à Timoléon.
 
 1. Bob est servi après Timoléon.
 
-#### Post-conditions : Les préparateurs voient les commandes par ordre d'arrivée
+#### Post-conditions : Les préparateurs voient les commandes par ordre d'arrivée {#scenario6}
 
 <div style="page-break-before: always;"> </div>
 
@@ -310,7 +321,7 @@ Le serveur amène la glace et le café à Timoléon.
 
 <div style="page-break-before: always;"> </div>
 
-### <u>Scénario 7 :</u> Gestion de la disponibilité des tables
+### <u>Scénario 7 :</u> Gestion de la disponibilité des tables {#scenario7}
 
 > *Le but de ce scénario est de mettre en évidence le fait que notre application gère la disponibilité des tables. Cette fonctionalité peut-être utile si le restaurant possède plusieurs étages par exemple. Ce cas n'est pas dans le cahier des charges fourni.*
 
@@ -344,7 +355,7 @@ Le serveur amène la glace et le café à Timoléon.
 
 <div style="page-break-before: always;"> </div>
 
-### <u>Scénario 8 :</u> Attribution d’un groupe de table à un serveur
+### <u>Scénario 8 :</u> Attribution d’un groupe de table à un serveur {#scenario8}
 
 > *Nous voulons inclure la possibilité de gérer la répartition des tables entre les serveurs. Ce scénario n'était pas présent dans le cahier des charges, cependant il est essentiel au bon fonctionnement du restaurant.*
 
@@ -358,7 +369,7 @@ Le serveur amène la glace et le café à Timoléon.
 
 <div style="page-break-before: always;"> </div>
 
-### <u>Scénario 9 :</u> Le client saisit lui même sa commande via une tablette
+### <u>Scénario 9 :</u> Le client saisit lui même sa commande via une tablette {#scenario9}
 
 > *Ce scénario décrit le déroulement d’une commande prise via une tablette via le client lui-même.*
 
@@ -387,7 +398,7 @@ Le serveur amène la glace et le café à Timoléon.
 
 <div style="page-break-before: always;"> </div>
 
-### <u>Scénario 10 :</u> Les responsables ajoutent/enlèvent des plats à la carte
+### <u>Scénario 10 :</u> Les responsables ajoutent/enlèvent des plats à la carte {#scenario10}
 
 > *Ce scénario décrit la procédure d'ajout de boissons, repas ou glaces à la carte.*
 
@@ -432,7 +443,7 @@ Le serveur amène la glace et le café à Timoléon.
 
 <div style="page-break-before: always;"> </div>
 
-## Tableau Sujet / Type / Concept correspondant à nos scénarios
+## Tableau Sujet / Type / Concept correspondant à nos scénarios {#tableau}
 
 ---
 
@@ -469,26 +480,31 @@ Le serveur amène la glace et le café à Timoléon.
 
 <div style="page-break-before: always;"> </div>
 
-## Diagramme de Cas d'utilisations
+## Diagramme de Cas d'utilisations {#CU}
 
 >>>
 Vous pourrez retrouver l'ensemble des diagrammes de cas d'utilisation effectués sur la prise de commande sur notre git. vous pourrez retrouver l'adresse de celui-ci ci-dessous:
 https://gitlab-etu.fil.univ-lille1.fr/hulsken/GL
 >>>
 
-## Diagramme de Classes
+## Diagramme de Classes {#DC}
 
 ---
 
+@import "diagrammes/diagramme.md"
+
+<!--
 ![](diagrammes/prise_de_commandes/class_diagram_v2.png)
+-->
 
 <div style="page-break-before: always;"> </div>
 
-## Diagramme de Séquences
-### Diagramme de Séquences
+## Diagramme de Séquences {#DS}
+### Diagramme de Séquences Simples {#DSS}
 
 ---
 
+<!--
 ![Scénario 1](https://www.plantuml.com/plantuml/img/LPB1Ri8m38RlUGgB7NQg1DjErLI1s6uSaBWYLQ7rm59mCZT1l5AVeo-sjBGilLdnv___RMNTU2q-N8swK8tmOwq_sRlov0r2MHwghcKjP65Lbahfobk1HRurXEmNe1jub62bHe7LyeaSK6uOP636UeJU_g6zTAtJelr4fWyZ_h5KAaQ2bnsTB_va0Yg0o7YgoEbelSWtpXcgj2VBWufsRXn-Nohakjz8ZK6puXadXo-yQevh1qRm-cHmeZwpBC5shyJnJYRj9-szH0ym6Yfx7VIUNdCpoz6cIJ0rDREY64Bdi8szmFGRyCYfOhmOtU9PUaprQ3PDVBFWcHelE8lmO8hvHNlwPcdOLnkKNY_SZ-mIg8aQNA5mrpQgnfcnMiTDusVv0m00)
 ![Scénario 2](https://www.plantuml.com/plantuml/img/PPAnRi8m48PtFyM93an8b7RAWAZQfHAgAh5qG497V1HNZctC1RLlqpLzZRnOpoI1f1sGBlRt_-V_5uiZO-Ioi6flDC7EUzxwJyM6BS5ciyhhoc4q7cQRZLAOiuymoXwj8SSZm2Cq8_YeASBjz8AiA9weZ6UcdLjeTeLUOrq5ZCWTsJzeyVkfKl8ak5cQzprlRKaAG1WskGaegqVPGmZMvCZ6kxCBXj2AxwQAd4w9rC1wCf-VgGoUdJQ7ak1GZeq51APO65TNQwSfD1BniGYvBmgKGtYJ7aIQBBfW6RnuDZkJR6W8hnqT6SJfXqbr_51x4dvFCVr0MWyMUK2s5MSWENraka1Iepb9e9PGpiiSKqtT2S2I86_qWKe6_F2bH9GBJKUeArjNXLpA-0qvGU7JL-eCafbgLq_wptsY9feTezOcbQuq_NrABq1Rz7yPf2zSkrwp5nlHD2rVL_UtfElBXibyK80_IO-TPb00Vj4rcbh8A7_yNm00)
 ![Scénario 3](https://www.plantuml.com/plantuml/img/ZPAzRi8m4CTtFyM93an8j6m8LI3QhKCb697GuLoQgumTsHVKL-8vUB6UGmWWEZIJBV_-7pvddWIZD7jdAYu8oX1a5twCi3Y2xNPbJqUFaGDCjbjZq4g8C9Wk7PEN0M02souXn88YF8zxP4NnG4ricNHUTz3B5VgCfsED4UL2rf4k-uwUZ8qMWgSF_gfavneoe9z2mfPhrEZ1T57NZYqA1z-wO5rViyWN-KQcApfwxUjCOKrnpvuW1G-rGxb0iz4Dz4Pxz3gRD6G7nUcOEDB6OoEHm5OXqP_Mox0_onhr_t9eLKEYEx1Odex6N51LvRvJU2zO21o2xQGzCXkDClCeMNo79cleR0eQu73ZspXzBMLwT1rHxJVU3J6BzDG99ExQv9bs-EqJQ2b_24o03UmmQgls4fhdWt39PCWboZRdo7_OP90fFlZueYzyBrsK9TlgVZ1chdp-QNy1)
@@ -497,13 +513,24 @@ https://gitlab-etu.fil.univ-lille1.fr/hulsken/GL
 ![Scénario 7](https://www.plantuml.com/plantuml/img/VPDDJiCm48NtFiMeB5XLQWC8AKAeQK5ika1aMoboaYcrvDgHFK5m6vRq7BaOjlDJIWDPMPxllNaUEmjBt52zbsmdIeIjrfJhTqQ294AMfKLpKDm83RTPnXWlI1kO9F5A2bGq0MwXNIQWJOa6vhCUMfv3omwAPeDLEezJD6zOcy1rwta7NWrkQJJ6HHrtxGnTRBXOYzSTvR961kwhtD548Igk22PnKbLI59o4Li63LrKdlvanLAK_D-k3Jk-FMM9um3rNRZpoafUby0vig3hIEyNmv4RLV9bnwcxQKSbsAuhT2TJtTCpFdbgfKUmqsZF_m94mQv6tMJWGpoKolprKLr9JtLOBlGzdsoWaaBzLhB_TOzF8wHyLESe9ocumjOlQAWPgQ3OC3-r61SX2AMobbV3he-9yHjmbieIkJUjkJ-pxR4601VaMK8HDQ3x_pVI2rk_zCHuoN50eckRWmV1e65kuL-9_bMy0)
 ![Scénario 9]()
 ![Scénario 10](https://www.plantuml.com/plantuml/img/TPDDJiCm48NtFiMeB5XLAh2h46h5WWqWHAHkAzUP98DSst9iYUEmpJboCSPk6aW3MUJFtynxyvnisY1zY4Sj6YeHAcl3mNwAG44ZxFU5wZiZFLcuMUttGWYfWlMmMB_vldFIou3HBq2syFi5M5-Yvv8HV-exBqt8v70_G7Sh8LWHhfwfRi91HnJ01xSAfCWbSB7UEgT9oK3Mv1RIkQ7yTYNGbCcoc3XOFcHe3O-DfPO2j98l7g81fsMOmlVB0TvM5Qa6GKisK2Dm8eh1B9mUvgMZJY6pZCOMoDICb8Ji7TChS9xOO097ViSfK4LPAtj3SMagk_f7RYTrsYyzU9hstdxO6A2Cmzevy77CLnkoT7bIZtMDRHfn97-cwZkDAgsPp9fSUTg9UTynlj6L3b3GEG5W5Gv7MU-v9s_pJEx5bgTCXiZIbp23BaPFp7pwSHtwhsHSyVU4atxdV56tc4nwh2BVwMkPwlzoztv9J6IBwDZpyRUncPGfXTZmcV-tRm00)
+-->
+
+@import "diagrammes_sequences/ds1.md"
+@import "diagrammes_sequences/ds2.md"
+@import "diagrammes_sequences/ds3.md"
+@import "diagrammes_sequences/ds5.md"
+@import "diagrammes_sequences/ds6.md"
+@import "diagrammes_sequences/ds7.md"
+@import "diagrammes_sequences/ds10.md"
+
 
 <div style="page-break-before: always;"> </div>
 
-### Diagramme de Séquences Détaillés
+### Diagramme de Séquences Détaillés {#DSD}
 
 ---
 
+<!--
 ![Scénario 1](https://www.plantuml.com/plantuml/img/TLHDQyCm3BthLuZii5EX-nvXZ9NkEDYWi5EWkB6w6Loxs4xPVb9_H__OvDPDdBIxMVPxJzAJaXSVX0lDIiEtaeHBQyF2_a1GGHFEvxDwjpN2AOjNypc0g8DrM9HJhSY40eN7mn6ja-JmQjn2PkGsrBWz9fqJwBe3VRZTTYsS24TaVf7WZsC0BWcBoNgjLIs2igR0YpVrzHqMkY50P4PGjLeBBgGeFnlAatTX4hmPdr2crWHdjQO3fGiJvVOSPRKIHjBhv3rnsZYHxludzHW9VdyAvz9F71hS9VB36CZ8E3b80nazjxQN-4g7J8qX36AXwOXw6eqosDkbChmFEd_FdZySvq0ji4wLjxcwP017FDzbrfSu4yehokcLeH3ZZT2yUv2XcPlDeCJWXF5BSWmdZtAt3K9fNyMMUkLqdBr2Dv5CeZAvHbn5jM4hSpX0xIY_WrmhasRTAGzZj-KoAbEVGqU7pyeyZGOLilUnGpALMGW_oDbp12HvFlvsmfBEzv4xCXm8losLMnqiv2xsNrPl2lbOUzu-dwnXB7zfevhi2wAyZ5lNUZCaHh61qeIJS2FU6kjuIMo36-KRYci9Bxo2_BVw0m00)
 ![Scénario 2]()
 ![Scénario 3](https://www.plantuml.com/plantuml/img/bPJBRjim44Nt_8g1kkZAWDlq1I4k8jXU5AZZmdci2XWqDR9OqAHAKK5_oT_X7-j8ecHASO9MApxkkHpU8NHJEcvTTL0ibob2PepRcJ_CIQSGjjixSJfgRgM1g-sMCSQ5CnQYUAuaQXS1Bq4qGp0sHGllfhta3kqJLhRHbEtOYzwVHJ_iwLXmorsdB2nsSw_-CcLK4KH9KIWfk9D6H_3ckzpdRgSgP40V8KuAMN0g98eVAmmFFq-zuzNq0ZGtsbcZ5BRGUUgX3vUXmu7h51V9sbFzt6CVNyC6Z0S-NGBe2i-I6grv_FEKeKxh5ZBVcCdNFluOxj4Uf4OeZOP2STU9hYU1Q85jGULRgI0z7KjfyQVcbRC88ZSbNhJkxr6H_rvnGGmwce7WsUd8M2SbAcX93CjKEWJ5GNW75coJE6W5dP9pkwTHA0y4ZVpSWnWs-Bl2aRsmI97rGXOIWG4RR5nF9Y7HdnYkaowilTtgbFtzAUl1_PCiao8VblXYMCalKzNNmJPLe8I9Q-9-BRQLIMKcyPzZUoXIFagDSUMWbBwRzHiT6epV8pLMFnawarUmuvPCclT0bMlZwc8OgX9hnxRw_tEi6OdscQLE6HjpP1N-Lbv8V3Q3pV9-_R21vUtZ-XlCrwjLShjOmcp6s0qPqq_oBm00)
@@ -512,15 +539,29 @@ https://gitlab-etu.fil.univ-lille1.fr/hulsken/GL
 ![Scénario 7](https://www.plantuml.com/plantuml/img/ZPLBRjim48RtFCN0NNHbmtOVQOMuYEmKHO40BUosgm06BOrZ0ZJ9KcJGtgRB9DVGnKf9b4IviXgj-FZ-8UUVaNIL6QgDFN9oO2d2Nagpax-8OOOZRBUR97yKL3C95zij8JGnKiCeZbQSeJ0Ze1bKmnYaJb73R5f3ot-XfOVcqoRKPXPjKD-ZrINdnpCFlcgYRUPztDnphrr0TsrtCwKuIwXXKepWnGsxEvWTjqZ0FSeboXAcg30mYdvO30EsKn_opRH7j9B2QCavLg9swaLl-qJVw8xZTVobbDGJBxZeF-Luf29jDC7SozuDoJeQBtW_9IZIehAaBiNuG-js1DTOuVmbJLDM-4UQNKS6zaJmoVL4_g0xS00uF30cWjM1whiE76oNS9jU16lyQVCdSyAtH20eOakH6MsP0KuXyUiT_d8yRWJXmU6wuy84ggsQR7su77TzYFTxbXowD_NcEZGqLmhHYtLhy9N-nlEkhxWqjZ0zI7J8zHvyoFUDLKgpurd1gL_TM4rRHt33TbLpK335wccG6YLaCfcGnG9YfVE73Anm4fKXkC8QFAeC5eiI8VKNfdLhxixvwA8Ye75yrGtMULoTs52d7gxHrKkNDSFiLfHq1YdBb1Ii63-ZZqjHe3dlHD7AQ8OL7KSwFTWzV8tYNhAUM4skfztvVqMHeBUsR6PCYjSE8IaN8VyJM3haQLQCsteFMBZaqbdIsnfTwxwhb9fdz92GvPNtnca-9wmHG6hhD9QtGg5rwJmL_KBBDFD7Dsg8c90hztLqFy6_)
 ![Scénario 9](https://www.plantuml.com/plantuml/img/ZPJFYjim4CRlUeh1FVGKIFzJKy8kkpqKIblOiYT3KEJ9Pa2MN6cyj8-KvyYBTMIhYUDus_fa3VERR-ORsLUHTU2kiMf7DSBMUzxudug9BS9wVMSEUwS3UNY_NYkbj64Ve2XlBA7Z0dI4uHLyg370Y-KnvLiux5iTD6CN-iHn8AU_MoebSb1SjwqbevcyA-3PPthOySPsg40UOPWCjLfKYlA-m-zwOv4PHqrSHBF0o-LCYHllE7XhSUZhTCpGgtceQRIhyVRwQwQEvuoz_XjsncJWpHmWarmuDubb_ErIeQlJjbIUUR5QpJXHmfscI0YTGv20LCB_9g2rca_PiydtsgQx4xqpEq_IpcMIa2ERI_Ze7Zs1nGZrOS-QRAoIBrQ3oHx9K2UWnqz-bt2BWv7sERg03nGvO2D2bKC76nq5Dm75hIEdnWL6zSxY7nQBVm930vzSnC3mHwr6wS3_UWAUJY-7BOKcpLiv8_leB_vaujN5saluufcsifTirP4SWqyiAMls-S9Nxgo0cceb_LdnuIDDo_P1glWE7YbsADgpUq-ZJrf0q1sOFbYv7ztPrcL_aQ4D5DDLJU6MfV2LN7JvH_q6)
 ![Scénario 10](https://www.plantuml.com/plantuml/img/ZLNBgjim4DthAuPqqTM5bBvDAJUa3mejlTHmLuMWs9CR5KLoPRdS_ast_Wx_M4UoBR-Ka2o2vJddpCoPKN9RMcviTPBiA7A4WzPshn-P5LOYx7PfrjIA6w7XsNgtOupnp6e3g-JED7N13RTOcHNm4iOlG9iS3L42_7DJ6wwiHtRF0RHcZ5B2QbCKKcJS2grMyEIhU3ZQlQoG0Nr8sOfC58wtIkuhNEIVlUlKdwyZz4_Qd2h9XS6KYrBWdUHjPR509_GY9hJLoXej9ROb3CUEz396Sg8VDjzRqzhd3lxg73nWE-3hQ35qmbwuFtI4Dp42EJOUot3iI6_N35Nkje6nYRKtxnTk9x0zQhBCGkcSCr0fAAXWDWSID-Ro0lVkvYOEdA4YbMmE1v4T4QHRvrxXYWvy4akq4eHwe5WkaCn0zmeA8nuN6gE19t3FfRj1BTqbzfjSChOrI0m_FpPY4D-FbAmZsQRsMMOOvuBdHOXkkWbyKIKQstD_AbImvoMo74l2_rraxHM9FHSTBK027zKVBQYRfvoYL3rrbb6PlYSsGX9l80NdEIXjnQ6xpMCyJMp0fqqjCNCGjIJDiaoyJZ7mJCotYKK6VrTeCU1O7necu5eRAVM0OFyP0w_m3yCrkEnONnkN5bBHRnpG56cRCcqCzKjtU2GoIVTDv-GSXarrj_qSDYngcz91BrWzRGHEFb5JUzgq__2RGstzqjNWE3J_t7Gp5v_pd9qzSLwAZmNef2SN6f0CPOdEDeE7glHRwmguuDUFEV0g1xmyc_SzR5fQ5UJ-QUpjcSsPQaogO-UxL3bZj_HDVzV_0G00)
+-->
+
+@import "diagrammes_sequences_detailles/dss1.md"
+@import "diagrammes_sequences_detailles/dss2.md"
+@import "diagrammes_sequences_detailles/dss3.md"
+@import "diagrammes_sequences_detailles/dss5.md"
+@import "diagrammes_sequences_detailles/dss6.md"
+@import "diagrammes_sequences_detailles/dss7.md"
+@import "diagrammes_sequences_detailles/dss9.md"
+@import "diagrammes_sequences_detailles/dss10.md"
+
 
 <div style="page-break-before: always;"> </div>
 
-## Maquettes
+## Maquettes {#maquette}
 
-### Maquettes de l'interface Gérant
+### Maquettes de l'interface Gérant {#maquetteGerant}
 
 ---
 
+[:open_file_folder: open pdf file](./maquette/maquetteGerant.pdf)
+
+<!--
 ![](./maquette/maquetteGerant/maquetteGerant-1.jpg)
 ![](./maquette/maquetteGerant/maquetteGerant-2.jpg)
 ![](./maquette/maquetteGerant/maquetteGerant-3.jpg)
@@ -529,21 +570,33 @@ https://gitlab-etu.fil.univ-lille1.fr/hulsken/GL
 ![](./maquette/maquetteGerant/maquetteGerant-6.jpg)
 
 <div style="page-break-before: always;"> </div>
-
-### Maquettes de l'interface Préparateur
+-->
 
 ---
 
+### Maquettes de l'interface Préparateur {#maquettePreparateur}
+
+---
+
+[:open_file_folder: open pdf file](./maquette/maquettePreparateur.pdf)
+
+<!--
 ![](./maquette/maquettePreparateur/maquettePreparateur-1.jpg)
 ![](./maquette/maquettePreparateur/maquettePreparateur-2.jpg)
 ![](./maquette/maquettePreparateur/maquettePreparateur-3.jpg)
 
 <div style="page-break-before: always;"> </div>
-
-### Maquettes de l'interface Serveur
+-->
 
 ---
 
+### Maquettes de l'interface Serveur {#maquetteTabletteServeur}
+
+---
+
+[:open_file_folder: open pdf file](./maquette/maquetteTabletteServeur.pdf)
+
+<!--
 ![](./maquette/maquetteTabletteServeur/maquetteTabletteServeur-1.jpg)
 ![](./maquette/maquetteTabletteServeur/maquetteTabletteServeur-2.jpg)
 ![](./maquette/maquetteTabletteServeur/maquetteTabletteServeur-3.jpg)
@@ -553,18 +606,25 @@ https://gitlab-etu.fil.univ-lille1.fr/hulsken/GL
 ![](./maquette/maquetteTabletteServeur/maquetteTabletteServeur-7.jpg)
 
 <div style="page-break-before: always;"> </div>
-
-### Maquettes de l'interface Client
+-->
 
 ---
 
+### Maquettes de l'interface Client {#maquetteTabletteClient}
+
+---
+
+[:open_file_folder: open pdf file](./maquette/maquetteTabletteClient.pdf)
+
+<!--
 ![](./maquette/maquetteTabletteClient/maquetteTabletteClient-1.jpg)
 ![](./maquette/maquetteTabletteClient/maquetteTabletteClient-2.jpg)
 ![](./maquette/maquetteTabletteClient/maquetteTabletteClient-3.jpg)
+-->
 
 <div style="page-break-before: always;"> </div>
 
-## [Annexe] *Glossaire métier*
+## [Annexe] *Glossaire métier* {#glossaire_metier}
 
 >> *Ce glossaire donne une définition à chaque terme métier utilisé dans la conception de l'application.*
 
@@ -596,7 +656,7 @@ Outil éléctronique permettant d'accéder à l'application.
 
 <div style="page-break-before: always;"> </div>
 
-### [Annexe] *Glossaire technique*
+### [Annexe] *Glossaire technique* {#glossaire_technique}
 
 >> *Ce glossaire donne une définition à chaque terme technique utilisé dans la conception de l'application.*
 
@@ -649,7 +709,7 @@ Profession d'un employé de l'entreprise. (Barman/cuisinier/glacier/serveur/dire
 
 <div style="page-break-before: always;"> </div>
 
-## [Annexe] *Glossaire de l'ingénierie des besoins*
+## [Annexe] *Glossaire de l'ingénierie des besoins* {#glossaire_ingenierie_besoins}
 
 >> *Ce glossaire définit chaque terme technique utilisé dans les étapes de conception de l'application .*
 
@@ -706,7 +766,7 @@ Diviser l'architecture applicative en paquetages permets de distinguer les diff�
 
 <div style="page-break-before: always;"> </div>
 
-### [Annexe] *Récapitulation de commandes `GIT` usuelles*
+### [Annexe] *Récapitulation de commandes `GIT` usuelles* {#recap_git}
 
 ---
 
