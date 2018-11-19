@@ -21,19 +21,21 @@ activate ClientA
 Serveur <-- ClientA
 deactivate ClientA
 
-Serveur -> VueServeur : Saisit et valide\nla commande
+Serveur -> VueServeur : Saisie et valide\nla commande
 
 group Envoie d'une commande
-  VueServeur -> Controller : Envoie les détails\nde la commande
+  VueServeur -> Controller : Envoi les détails\nde la commande
   Controller -> CommandeDAO : Demande de l'enregistrer
 
-  create Commande
-  CommandeDAO -> Commande
-  CommandeDAO <-- Commande
-  destroy Commande
+  activate CommandeDAO    
+    create Commande
+    CommandeDAO -> Commande
+    CommandeDAO <-- Commande
+    destroy Commande
 
-  CommandeDAO ->> CommandeDAO : Insère\nen base
-  CommandeDAO --> Controller
+    CommandeDAO ->> CommandeDAO : Insert\nen base
+    CommandeDAO --> Controller
+  deactivate CommandeDAO
 
   Controller ->> VuePréparateur : Indique la création
   VuePréparateur ->> Préparateur : Alerte sonore\nou visuelle
@@ -46,7 +48,7 @@ activate ClientB
 Serveur <-- ClientB
 deactivate ClientB
 
-Serveur -> VueServeur : Saisit et valide\nla commande
+Serveur -> VueServeur : Saisie et valide\nla commande
 
 ref over VueServeur
     Envoie d'une commande
@@ -56,7 +58,7 @@ note over CommandeDAO
   Ce qu'on veut mettre en évidence
   est que les commandes arrivent au
   préparateur dans l'ordre dans
-  lequel elles ont été prises.
+  lequel elles sont été prises.
 end note
 
 @enduml

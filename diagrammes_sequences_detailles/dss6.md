@@ -13,22 +13,24 @@ box "Application" #Lightblue
   participant ":VuePréparateur" as VuePréparateur order 50
 endbox
 
-note over Controller
-  La commande est déjà saisie et envoyée
-end note
+== La commande est déjà saisie et envoyée ==
 
 VuePréparateur -> Préparateur : Notifie et affiche la commande
-Préparateur -> Préparateur : Pas assez\nd'ingrédients
-Préparateur -> VuePréparateur : Indique l'indisponibilié
+activate VuePréparateur
+  Préparateur -> Préparateur : Pas assez\nd'ingrédient
+  Préparateur --> VuePréparateur : Indique l'indisponibilié
+  VuePréparateur --> Controller : Indique l'indisponibilié
+deactivate VuePréparateur
 
-VuePréparateur -> Controller : traite l'indisponibilié
 
 Controller -> CarteDAO : Update la carte
+activate CarteDAO
 Controller <-- CarteDAO
+deactivate CarteDAO
 
 Controller -> VueTablette : Notifie de l'indisponibilié
 
-Tablette <- VueTablette : Notifie, Alerte et demande\nla saisie d'un nouveau choix
+Tablette <- VueTablette : Notifie, alerte et demande\nla saisie d'un nouveau choix
 
 note right Tablette
   Ici le client est averti sur sa

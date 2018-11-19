@@ -20,28 +20,38 @@ client -> serveur : Termine son plat
 client <- serveur : Demande s'il désire\nautre chose
 client -> serveur : Commande une glace\net un café
 
-serveur -> VueServeur : Edite la commande
-VueServeur -> Controller : Charge la commande
-Controller -> CommandeDAO : Requête la commande
-create Commande
-CommandeDAO -> Commande
+serveur -> VueServeur : Ajout d'une liste de consommations \nà la commande\n(liste de consommations, commande)
+VueServeur -> Controller : Ajout d'une liste de consommations \nà la commande\n(liste de consommations, commande)
+activate Controller
+Controller -> CommandeDAO : Ajout d'une liste de consommations \nà la commande\n(liste de consommations, commande)
 
-CommandeDAO <-- Commande
+activate CommandeDAO
+  create Commande
+    CommandeDAO -> Commande
+    CommandeDAO <-- Commande
+    CommandeDAO -> Commande : Ajout de consommations\n(liste de consommations)
+    Commande --> CommandeDAO
+  destroy Commande
+CommandeDAO --> CommandeDAO :  Update base de données
 Controller <-- CommandeDAO
-VueServeur <-- Controller
-serveur <- VueServeur : Affiche la commande
+deactivate CommandeDAO
 
-serveur -> VueServeur : Ajoute le café et la glace
-VueServeur -> Controller : Modifie la commande
-Controller -> CommandeDAO : Update la commande
 
 alt si café
     Controller -> VuePréparateur : Envoie au barman\net le notifie
+    VuePréparateur --> Controller
 else si glace
     Controller -> VuePréparateur : Envoie au glacier\net le notifie
+    VuePréparateur --> Controller
 end
 
+
 VuePréparateur -> preparateur : Affiche la commande
+
+Controller --> VueServeur
+deactivate Controller
+
+VueServeur -> Serveur : Affiche la confirmation de l'ajout des consommations
 
 == RETOUR ENVOI COMMANDE ==
 

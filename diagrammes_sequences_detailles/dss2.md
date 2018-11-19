@@ -1,61 +1,52 @@
 ```puml
 @startuml
 hide footbox
-title __Scénario 2__
+title __Générer l'addition__
 
-actor ":Client" as Client order 10
-actor ":Serveur" as Serveur order 20
-actor ":Préparateur" as Préparateur order 90
+actor ":Tablette" as Tablette order 10
 
 box "Application" #Lightblue
-  participant ":VueServeur" as VueServeur order 30
+  participant ":VueTablette" as VueTablette order 30
   participant ":Controller" as Controller order 40
-  participant ":CarteDAO" as CarteDAO order 50
   participant ":CommandeDAO" as CommandeDAO order 60
-  participant ":Commande" as Commande order 70
-  participant ":VuePréparateur" as VuePréparateur order 80
+  participant ":Addition" as Addition order 70
 endbox
 
 == Le client a déjà passé sa commande ==
 
-Préparateur ->> VuePréparateur : Indique que le\nplat est prêt
+note right VueTablette
+  La VueTablette peut désigner
+  à la fois la VueServeur ou la
+  VueServeur ou la VueTabletteClient
+end note
 
-VuePréparateur ->> Controller : La commande X est prête
+Tablette -> VueTablette : Demande l'addition pour la commande C\n(C)
 
-Controller ->> VueServeur : Envoie une\nalerte
-
-VueServeur ->> Serveur : Alerte sonore\nou visuelle
-
-Serveur ->> Client : Amène le plat
-activate Client
-Client -> Serveur : Demande l'addition
-deactivate Client
-
-Serveur -> VueServeur : Demande l'addition\npour la commande X
-
-VueServeur -> Controller : Demande l'addition X
+VueTablette -> Controller : Demande l'addition\n(C)
 activate Controller
 
-Controller -> CommandeDAO : Demande l'objet commande
+create Addition
+Controller -> Addition : Créée l'addition\n(c)
+Controller <-- Addition
+destroy Addition
 
-create Commande
-CommandeDAO -> Commande
-CommandeDAO <-- Commande
 
-Controller <-- CommandeDAO
-Controller -> CarteDAO : Récupère le prix\nde chaque élément\nde la commande
-Controller <-- CarteDAO
-Controller -> Controller : Construit la liste\ndes consommations\net leurs prix
-Controller --> VueServeur
+Controller -> CommandeDAO : Change le statut de la commande\n(FINI)
+activate CommandeDAO
+CommandeDAO -> CommandeDAO : Met à jour le statut de la commande\n(FINI)
+CommandeDAO --> Controller
+deactivate CommandeDAO
+
+Controller --> VueTablette
 deactivate Controller
 
-VueServeur --> Serveur
-note right Serveur
+VueTablette --> Tablette
+
+note right Tablette
   Ici le serveur peut soit imprimer l'addition
   ou la présenter au client sur une tablette
 end note
 
-Serveur --> Client
 
 @enduml
 ```
