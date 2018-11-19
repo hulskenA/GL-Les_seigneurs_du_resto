@@ -523,6 +523,8 @@ https://gitlab-etu.fil.univ-lille1.fr/hulsken/GL
 @import "diagrammes_sequences/ds6.md"
 @import "diagrammes_sequences/ds7.md"
 @import "diagrammes_sequences/ds10.md"
+@import "diagrammes_sequences/ds11.md"
+@import "diagrammes_sequences/ds12.md"
 
 
 <div style="page-break-before: always;"> </div>
@@ -550,6 +552,8 @@ https://gitlab-etu.fil.univ-lille1.fr/hulsken/GL
 @import "diagrammes_sequences_detailles/dss7.md"
 @import "diagrammes_sequences_detailles/dss9.md"
 @import "diagrammes_sequences_detailles/dss10.md"
+@import "diagrammes_sequences_detailles/dss11.md"
+@import "diagrammes_sequences_detailles/dss12.md"
 
 
 <div style="page-break-before: always;"> </div>
