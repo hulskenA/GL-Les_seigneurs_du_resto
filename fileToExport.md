@@ -491,9 +491,10 @@ https://gitlab-etu.fil.univ-lille1.fr/hulsken/GL
 
 ---
 
-@import "diagrammes/diagramme.md"
+![](diagrammes/prise_de_commandes/class_diagram_v3.png)
 
 <!--
+@import "diagrammes/diagramme.md"
 ![](diagrammes/prise_de_commandes/class_diagram_v2.png)
 -->
 
