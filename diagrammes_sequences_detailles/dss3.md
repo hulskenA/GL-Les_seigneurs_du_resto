@@ -1,7 +1,7 @@
 ```puml
 @startuml
 hide footbox
-title __Scénario 3__
+title __Scénario 3__: Le client ajoute un élément à sa commande
 
 
 actor ":Client" as client order 10

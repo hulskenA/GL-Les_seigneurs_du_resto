@@ -1,7 +1,7 @@
 ```puml
 @startuml
 hide footbox
-title __Générer l'addition__
+title __Générer l'addition__: La commande se déroule comme prévu
 
 actor ":Tablette" as Tablette order 10
 

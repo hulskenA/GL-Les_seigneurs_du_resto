@@ -1,7 +1,7 @@
 ```puml
 @startuml
 hide footbox
-title __Scénario 9__
+title __Scénario 9__: Le client saisit lui même sa commande via une tablette
 
 
 actor ":Client" as Client order 10

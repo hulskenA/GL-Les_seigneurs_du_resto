@@ -1,7 +1,7 @@
 ```puml
 @startuml
 hide footbox
-title __Scénario 2__
+title __Scénario 2__: La commande se déroule comme prévu
 
 actor ":Client" as Client order 10
 actor ":Serveur" as Serveur order 20

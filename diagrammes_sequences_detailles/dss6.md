@@ -1,7 +1,7 @@
 ```puml
 @startuml
 hide footbox
-title __Scénario 6__
+title __Scénario 6__: Le plat commandé n’est plus disponible
 
 actor ":Client/Serveur" as Tablette order 10
 actor ":Préparateur" as Préparateur order 20

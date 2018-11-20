@@ -1,7 +1,7 @@
 ```puml
 @startuml
 hide footbox
-title __Scénario 10__
+title __Scénario 10__: Les responsables ajoutent/enlèvent des plats à la carte
 
 
 actor ":Préparateur" as Préparateur order 10

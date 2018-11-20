@@ -1,7 +1,7 @@
 ```puml
 @startuml
 hide footbox
-title __Scénario 7__
+title __Scénario 7__: Gestion de la disponibilité des tables
 
 actor "A:Client" as ClientA order 10
 actor "B:Client" as ClientB order 20

@@ -1,7 +1,7 @@
 ```puml
 @startuml
 hide footbox
-title __Scénario 1__
+title __Scénario 1__: Prise de commande et notifications
 
 actor ":Client" as Client order 10
 actor ":Serveur" as Serveur order 20

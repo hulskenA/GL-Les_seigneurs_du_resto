@@ -1,7 +1,7 @@
 ```puml
 @startuml
 hide footbox
-title __Scénario 5__
+title __Scénario 5__: Déroulement des commandes de plusieurs clients distincts
 
 actor "A:Client" as ClientA order 10
 actor "B:Client" as ClientB order 20
