@@ -27,7 +27,7 @@ deactivate ClientA
 Serveur -> VueServeur : Saisie et valide\nla commande
 activate VueServeur
 
-group Envoie d'une commande
+group #transparent Envoie d'une commande
   VueServeur -> Controller : Envoi les détails\nde la commande
   activate Controller
   Controller -> CommandeDAO : Demande de l'enregistrer

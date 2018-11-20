@@ -62,7 +62,7 @@ deactivate Controller
 VueGérant -> Gérant : Affiche le plat
 deactivate VueGérant
 
-alt Si le prix est incorrect
+alt #transparent Si le prix est incorrect
     Gérant -> VueGérant : Modifie le prix
     activate VueGérant
     Gérant -> VueGérant : Valide le plat

@@ -40,7 +40,7 @@ Controller <-- CommandeDAO
 deactivate CommandeDAO
 
 
-alt si café
+alt #transparent si café
     Controller -> VuePréparateur : Envoie au barman\net le notifie
     VuePréparateur --> Controller
 else si glace
