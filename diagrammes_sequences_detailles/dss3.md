@@ -6,14 +6,17 @@ title __Scénario 3__
 
 actor ":Client" as client order 10
 actor ":Serveur" as serveur order 20
-actor ":Préparateur" as preparateur order 80
+actor ":Préparateur" as preparateur order 30
 
 box "Application" #Lightblue
-    participant ":VueServeur" as VueServeur order 30
-    participant ":Controller" as Controller order 40
-    participant ":CommandeDAO" as CommandeDAO order 50
-    participant ":Commande" as Commande order 60
-    participant ":VuePréparateur" as VuePréparateur order 70
+    participant ":VueServeur" as VueServeur order 40
+    participant ":VuePréparateur" as VuePréparateur order 50
+    participant ":Controller" as Controller order 60
+    participant ":CommandeDAO" as CommandeDAO order 70
+endbox
+
+box "Application" #Lightblue
+  participant ":Commande" as Commande order 80
 endbox
 
 client -> serveur : Termine son plat
@@ -31,7 +34,6 @@ activate CommandeDAO
     CommandeDAO <-- Commande
     CommandeDAO -> Commande : Ajout de consommations\n(liste de consommations)
     Commande --> CommandeDAO
-  destroy Commande
 CommandeDAO --> CommandeDAO :  Update base de données
 Controller <-- CommandeDAO
 deactivate CommandeDAO
@@ -51,7 +53,7 @@ VuePréparateur -> preparateur : Affiche la commande
 Controller --> VueServeur
 deactivate Controller
 
-VueServeur -> Serveur : Affiche la confirmation de l'ajout des consommations
+VueServeur -> serveur : Affiche la confirmation de l'ajout des consommations
 
 == RETOUR ENVOI COMMANDE ==
 

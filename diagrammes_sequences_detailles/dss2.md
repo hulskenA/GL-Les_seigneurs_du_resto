@@ -9,6 +9,9 @@ box "Application" #Lightblue
   participant ":VueTablette" as VueTablette order 30
   participant ":Controller" as Controller order 40
   participant ":CommandeDAO" as CommandeDAO order 60
+endbox
+
+box "Base de données" #Lightblue
   participant ":Addition" as Addition order 70
 endbox
 
@@ -28,8 +31,6 @@ activate Controller
 create Addition
 Controller -> Addition : Créée l'addition\n(c)
 Controller <-- Addition
-destroy Addition
-
 
 Controller -> CommandeDAO : Change le statut de la commande\n(FINI)
 activate CommandeDAO
@@ -46,7 +47,7 @@ note right Tablette
   Ici le serveur peut soit imprimer l'addition
   ou la présenter au client sur une tablette
 end note
-
+destroy Addition
 
 @enduml
 ```

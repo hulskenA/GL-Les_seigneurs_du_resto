@@ -5,14 +5,17 @@ title __Scénario 9__
 
 
 actor ":Client" as Client order 10
-actor ":Préparateur" as Préparateur order 70
+actor ":Préparateur" as Préparateur order 20
 
 box "Application" #Lightblue
-    participant ":VueTabletteClient" as VueTabletteClient order 20
-    participant ":Controller" as Controller order 30
-    participant ":CommandeDAO" as CommandeDAO order 40
-    participant ":Commande" as Commande order 50
-    participant ":VuePréparateur" as VuePréparateur order 60
+    participant ":VueTabletteClient" as VueTabletteClient order 30
+    participant ":VuePréparateur" as VuePréparateur order 40
+    participant ":Controller" as Controller order 50
+    participant ":CommandeDAO" as CommandeDAO order 60
+endbox
+
+box "Base de données" #Lightblue
+  participant ":Commande" as Commande order 70
 endbox
 
 Client ->> VueTabletteClient : Saisie une entrée
@@ -27,7 +30,6 @@ create Commande
 CommandeDAO -> Commande
 CommandeDAO <-- Commande
 CommandeDAO -> CommandeDAO : Insert en base
-destroy Commande
 CommandeDAO --> Controller : Confirme la\ncréation
 
 Controller ->> VuePréparateur : Notifie de la création

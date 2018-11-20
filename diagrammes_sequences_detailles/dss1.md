@@ -5,17 +5,17 @@ title __Scénario 1__
 
 actor ":Client" as Client order 10
 actor ":Serveur" as Serveur order 20
-actor ":Préparateur" as Préparateur order 80
+actor ":Préparateur" as Préparateur order 30
 
 box "Application" #Lightblue
-  participant ":VueServeur" as VueServeur order 30
-  participant ":Controller" as Controller order 40
-  participant ":CommandeDAO" as CommandeDAO order 50
-  participant ":VuePréparateur" as VuePréparateur order 60
-  participant ":Commande" as Commande order 70
+  participant ":VueServeur" as VueServeur order 40
+  participant ":VuePréparateur" as VuePréparateur order 50
+  participant ":Controller" as Controller order 60
+  participant ":CommandeDAO" as CommandeDAO order 70
 endbox
 
 box "Base de données" #Lightblue
+  participant ":Commande" as Commande order 80
 endbox
 
 Client -> Serveur : Demande une table
@@ -33,7 +33,6 @@ activate CommandeDAO
   CommandeDAO <-- Commande
   CommandeDAO <- CommandeDAO : insert en\nbase
   CommandeDAO --> Controller : Confirme la création
-  destroy Commande
 deactivate CommandeDAO
 
 Controller --> VueServeur : Confirme la création

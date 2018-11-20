@@ -3,17 +3,20 @@
 hide footbox
 title __Scénario 5__
 
-actor "A:Client" as ClientA order 10
-actor "B:Client" as ClientB order 20
+actor "a:Client" as ClientA order 10
+actor "b:Client" as ClientB order 20
 actor ":Serveur" as Serveur order 30
-actor ":Préparateur" as Préparateur order 90
+actor ":Préparateur" as Préparateur order 40
 
 box "Application" #Lightblue
-  participant ":VueServeur" as VueServeur order 40
-  participant ":Controller" as Controller order 50
-  participant ":CommandeDAO" as CommandeDAO order 60
-  participant ":Commande" as Commande order 70
-  participant ":VuePréparateur" as VuePréparateur order 80
+  participant ":VueServeur" as VueServeur order 50
+  participant ":VuePréparateur" as VuePréparateur order 60
+  participant ":Controller" as Controller order 70
+  participant ":CommandeDAO" as CommandeDAO order 80
+endbox
+
+box "Base de données" #Lightblue
+  participant ":Commande" as Commande order 90
 endbox
 
 Serveur -> ClientA : prend la commande
@@ -31,7 +34,6 @@ group Envoie d'une commande
     create Commande
     CommandeDAO -> Commande
     CommandeDAO <-- Commande
-    destroy Commande
 
     CommandeDAO ->> CommandeDAO : Insert\nen base
     CommandeDAO --> Controller
