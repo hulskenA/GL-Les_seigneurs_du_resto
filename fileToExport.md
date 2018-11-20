@@ -49,11 +49,11 @@ Sujet 1 - Prise de commande dans un restaurant
 
 1. [Bilans de séance](#Bilan1)
     1. [Bilan 11/09/2018](#Bilan1)
-    2. [Bilan 25/09/2018](Bilan2)
-    2. [Bilan 02/10/2018](Bilan3)
-    2. [Bilan 09/10/2018](Bilan4)
-    2. [Bilan 23/10/2018](Bilan5)
-    2. [Bilan 06/11/2018](Bilan6)
+    2. [Bilan 25/09/2018](#Bilan2)
+    2. [Bilan 02/10/2018](#Bilan3)
+    2. [Bilan 09/10/2018](#Bilan4)
+    2. [Bilan 23/10/2018](#Bilan5)
+    2. [Bilan 06/11/2018](#Bilan6)
 3. [Scénarios possibles d'utilisation](#scenario1)
     1. [Prise de commande et notifications](#scenario1)
     2. [La commande se déroule comme prévu](#scenario2)
@@ -65,6 +65,8 @@ Sujet 1 - Prise de commande dans un restaurant
     8. [Attribution d’une table à un serveur](#scenario8)
     9. [Le client saisit lui même sa commande via une tablette](#scenario9)
     10. [Les responsables ajoutent/enlèvent des plats à la carte](#scenario10)
+    10. [Le gérant ajoute un utilisateur](#scenario11)
+    10. [Le gérant supprimer un utilisateur](#scenario12)
 4. [Tableau Sujet / Concept / Type correspondant à nos scénarios](#tableau)
 5. [Diagramme de Cas d'utilisations](#CU)
 6. [Diagramme de Classes](#DC)
@@ -440,6 +442,74 @@ Le serveur amène la glace et le café à Timoléon.
 4. *B.*
     1. Le directeur refuse l'ajout du plat.
     2. La demande d'ajout est supprimée.
+
+<div style="page-break-before: always;"> </div>
+
+### <u>Scénario 11 :</u> Le gérant ajoute un utilisateur {#scenario11}
+
+---
+
+#### Version : 1
+
+#### Auteur : Rémi DELAVALLE
+
+#### Acteur principal : Gérant/Directeur
+
+#### Pré-condition : Le directeur à un accès à l'application en tant qu'administrateur.
+
+#### Déclenchement : Le gérant veut ajouter un utilisateur dans l' application.
+
+
+
+#### Scenario nominal
+
+1. Le gérant du restaurant veut ajouter un nouvel employé dans l'application.
+
+1. Le gérant édite la liste des employés.
+
+1. Le gérant ajoute un utilisateur.
+
+1. Le gérant saisie les informations relatives à l'employé.
+
+1. Le gérant valide la saisie.
+
+1. La page est redirigée vers la liste des utlisateurs.
+
+
+#### Post-condition : L'employé possède un profil et un droit d'accès sur l'application.
+
+<div style="page-break-before: always;"> </div>
+
+### <u>Scénario 12 :</u> Le gérant supprimer un utilisateur {#scenario12}
+
+---
+
+#### Version : 1
+
+#### Auteur : Rémi DELAVALLE
+
+#### Acteur principal : Gérant/Directeur
+
+#### Pré-condition : Le directeur à un accès à l'application en tant qu'administrateur.
+
+#### Déclenchement : Le gérant veut supprimer un utilisateur de l' application.
+
+
+
+#### Scenario nominal
+
+1. Le gérant du restaurant veut l'accès d'un employé à l'application.
+
+1. Le gérant édite la liste des employés.
+
+1. Le gérant supprime l'utilisateur A.
+
+1. Le gérant confirme la suppression.
+
+1. Le gérant est redirigé vers la liste des employés.
+
+
+#### Post-condition : L'employé A n'a plus de profil, ni d'accès sur l'application.
 
 <div style="page-break-before: always;"> </div>
 
