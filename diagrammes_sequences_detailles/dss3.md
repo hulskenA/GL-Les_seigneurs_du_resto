@@ -24,6 +24,7 @@ client <- serveur : Demande s'il désire\nautre chose
 client -> serveur : Commande une glace\net un café
 
 serveur -> VueServeur : Ajout d'une liste de consommations \nà la commande\n(liste de consommations, commande)
+activate VueServeur
 VueServeur -> Controller : Ajout d'une liste de consommations \nà la commande\n(liste de consommations, commande)
 activate Controller
 Controller -> CommandeDAO : Ajout d'une liste de consommations \nà la commande\n(liste de consommations, commande)
@@ -47,13 +48,13 @@ else si glace
     VuePréparateur --> Controller
 end
 
-
 VuePréparateur -> preparateur : Affiche la commande
 
 Controller --> VueServeur
 deactivate Controller
 
 VueServeur -> serveur : Affiche la confirmation de l'ajout des consommations
+deactivate VueServeur
 
 == RETOUR ENVOI COMMANDE ==
 

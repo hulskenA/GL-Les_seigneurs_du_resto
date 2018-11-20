@@ -24,6 +24,7 @@ note right VueTablette
 end note
 
 Tablette -> VueTablette : Demande l'addition pour la commande C\n(C)
+activate VueTablette
 
 VueTablette -> Controller : Demande l'addition\n(C)
 activate Controller
@@ -42,6 +43,7 @@ Controller --> VueTablette
 deactivate Controller
 
 VueTablette --> Tablette
+deactivate VueTablette
 
 note right Tablette
   Ici le serveur peut soit imprimer l'addition

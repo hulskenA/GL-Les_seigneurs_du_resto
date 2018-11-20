@@ -25,9 +25,11 @@ Serveur <-- ClientA
 deactivate ClientA
 
 Serveur -> VueServeur : Saisie et valide\nla commande
+activate VueServeur
 
 group Envoie d'une commande
   VueServeur -> Controller : Envoi les détails\nde la commande
+  activate Controller
   Controller -> CommandeDAO : Demande de l'enregistrer
 
   activate CommandeDAO    
@@ -42,7 +44,9 @@ group Envoie d'une commande
   Controller ->> VuePréparateur : Indique la création
   VuePréparateur ->> Préparateur : Alerte sonore\nou visuelle
   Controller --> VueServeur
+  deactivate Controller
   VueServeur --> Serveur
+  deactivate VueServeur
 end
 
 Serveur -> ClientB : prend la commande

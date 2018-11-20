@@ -18,13 +18,17 @@ box "Base de données" #Lightblue
   participant ":Commande" as Commande order 80
 endbox
 
+activate VuePréparateur
+
 Client -> Serveur : Demande une table
 Client <-- Serveur : L'installe
 Client <- Serveur : Prend la commande
 Client --> Serveur
 
 Serveur -> VueServeur : Saisie la commande\net la valide
+activate VueServeur
 VueServeur -> Controller : transfert les détails\nde la commande\n(liste_de_consommations)
+activate Controller
 Controller -> CommandeDAO : transfert les détails\nde la commande\n(liste_de_consommations)
 
 activate CommandeDAO
@@ -37,8 +41,10 @@ deactivate CommandeDAO
 
 Controller --> VueServeur : Confirme la création
 VueServeur --> Serveur : Confirme la création
+deactivate VueServeur
 
 Controller ->> VuePréparateur : informe de la création d'une commande
+deactivate Controller
 VuePréparateur ->> Préparateur : Alerte sonore\nou visuelle
 
 @enduml

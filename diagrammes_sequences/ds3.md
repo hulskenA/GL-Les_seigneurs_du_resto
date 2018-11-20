@@ -15,6 +15,7 @@ client <- serveur : Demande s'il désire\nautre chose
 client -> serveur : Commande une glace\net un café
 
 serveur -> app : Edite la commande
+activate app
 serveur <-- app
 serveur -> app : Ajoute le café et la\nglace
 
@@ -27,6 +28,7 @@ else si glace
 end
 
 app -> preparateur : Affiche la commande
+deactivate app
 
 @enduml
 ```

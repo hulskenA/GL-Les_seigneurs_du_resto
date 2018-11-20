@@ -15,18 +15,26 @@ endbox
 
 ClientB -> Serveur1 : Demande l'addition
 Serveur1 -> app : Génère l'addition
+activate app
 Serveur1 <- app : Affiche l'addition
+deactivate app
 ClientB <- Serveur1 : Donne l'addition
 ClientB -> Serveur1 : Paye
 Serveur1 -> app : Libère la table
+activate app
 app -> app : Cloture la commande\net libère la table
+deactivate app
 
 ClientA -> Serveur2 : Entre et demande une table
 Serveur2 -> app : Demande les\ntables disponibles
+activate app
 Serveur2 <- app : Affiche la liste de tables
+deactivate app
 Serveur2 -> ClientA : Affecte le client à une table
 Serveur2 -> app : Reserve la table
+activate app
 app -> app : traite la réservation
+deactivate app
 
 @enduml
 ```

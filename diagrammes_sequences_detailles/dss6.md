@@ -22,10 +22,9 @@ endbox
 VuePréparateur -> Préparateur : Notifie et affiche la commande
 activate VuePréparateur
   Préparateur -> Préparateur : Pas assez\nd'ingrédient
-  Préparateur --> VuePréparateur : Indique l'indisponibilié
-  VuePréparateur --> Controller : Indique l'indisponibilié
-deactivate VuePréparateur
-
+  Préparateur -> VuePréparateur : Indique l'indisponibilié
+  VuePréparateur -> Controller : Indique l'indisponibilié
+activate Controller
 
 Controller -> CarteDAO : Update la carte
 activate CarteDAO
@@ -35,6 +34,9 @@ Controller <-- CarteDAO
 deactivate CarteDAO
 
 Controller -> VueTablette : Notifie de l'indisponibilié
+Controller --> VuePréparateur
+deactivate VuePréparateur
+deactivate Controller
 
 Tablette <- VueTablette : Notifie, alerte et demande\nla saisie d'un nouveau choix
 
