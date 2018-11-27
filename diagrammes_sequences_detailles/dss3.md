@@ -9,13 +9,13 @@ actor ":Serveur" as serveur order 20
 actor ":Préparateur" as preparateur order 30
 
 box "Application" #Lightblue
-    participant ":VueServeur" as VueServeur order 40
+    participant ":VueTabletteServeur" as VueServeur order 40
     participant ":VuePréparateur" as VuePréparateur order 50
     participant ":Controller" as Controller order 60
     participant ":CommandeDAO" as CommandeDAO order 70
 endbox
 
-box "Application" #Lightblue
+box "Base de données" #Lightblue
   participant ":Commande" as Commande order 80
 endbox
 
@@ -30,12 +30,8 @@ activate Controller
 Controller -> CommandeDAO : Ajout d'une liste de consommations \nà la commande\n(liste de consommations, commande)
 
 activate CommandeDAO
-  create Commande
-    CommandeDAO -> Commande
-    CommandeDAO <-- Commande
-    CommandeDAO -> Commande : Ajout de consommations\n(liste de consommations)
-    Commande --> CommandeDAO
-CommandeDAO --> CommandeDAO :  Update base de données
+    CommandeDAO -> Commande : modifierCommande\n(listeConsommations)
+    Commande --> CommandeDAO : commande
 Controller <-- CommandeDAO
 deactivate CommandeDAO
 
