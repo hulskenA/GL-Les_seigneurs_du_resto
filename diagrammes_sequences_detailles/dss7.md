@@ -21,7 +21,7 @@ box "Base de données" #Lightblue
 endbox
 
 ref over ClientB
-  Voir diagramme 1 : Demande de l'addition
+  Voir diagramme 2 : Demande de l'addition
 end
 
 ClientB -> Serveur1 : Paye
