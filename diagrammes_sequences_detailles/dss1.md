@@ -8,7 +8,7 @@ actor ":Serveur" as Serveur order 20
 actor ":Préparateur" as Préparateur order 30
 
 box "Application" #Lightblue
-  participant ":VueServeur" as VueServeur order 40
+  participant ":VueTabletteServeur" as VueServeur order 40
   participant ":VuePréparateur" as VuePréparateur order 50
   participant ":Controller" as Controller order 60
   participant ":CommandeDAO" as CommandeDAO order 70
@@ -21,21 +21,21 @@ endbox
 activate VuePréparateur
 
 Client -> Serveur : Demande une table
-Client <-- Serveur : L'installe
+Client <-- Serveur : L'installe à une table
 Client <- Serveur : Prend la commande
 Client --> Serveur
 
-Serveur -> VueServeur : Saisie la commande\net la valide
+Serveur -> VueServeur : Saisit la commande\net la valide
 activate VueServeur
-VueServeur -> Controller : transfert les détails\nde la commande\n(liste_de_consommations)
+VueServeur -> Controller : nouvelleCommande\n(listeConsommations)
 activate Controller
-Controller -> CommandeDAO : transfert les détails\nde la commande\n(liste_de_consommations)
+Controller -> CommandeDAO : creerUneCommande\n(listeConsommations,table)
 
 activate CommandeDAO
   create Commande
-  CommandeDAO -> Commande : Créé la\ncommande
-  CommandeDAO <-- Commande
-  CommandeDAO <- CommandeDAO : insert en\nbase
+  CommandeDAO -> Commande : creerUneCommande\n(listesConsommations,table)
+  CommandeDAO <-- Commande : commande
+  CommandeDAO <- CommandeDAO : insereCommande\n(commande)
   CommandeDAO --> Controller : Confirme la création
 deactivate CommandeDAO
 
@@ -43,7 +43,7 @@ Controller --> VueServeur : Confirme la création
 VueServeur --> Serveur : Confirme la création
 deactivate VueServeur
 
-Controller ->> VuePréparateur : informe de la création d'une commande
+Controller ->> VuePréparateur : informeNouvelleCommande\n(commande)
 deactivate Controller
 VuePréparateur ->> Préparateur : Alerte sonore\nou visuelle
 
