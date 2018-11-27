@@ -13,6 +13,7 @@ endbox
 
 box "Base de données" #Lightblue
   participant ":Addition" as Addition order 70
+  participant ":Commande" as Commande order 80
 endbox
 
 == Le client a déjà passé sa commande ==
@@ -26,20 +27,21 @@ end note
 Tablette -> VueTablette : Demande l'addition pour la commande C\n(C)
 activate VueTablette
 
-VueTablette -> Controller : Demande l'addition\n(C)
+VueTablette -> Controller : demanderAddition \n(commande)
 activate Controller
 
 create Addition
-Controller -> Addition : Créée l'addition\n(c)
-Controller <-- Addition
+Controller -> Addition : genererAddition\n(commande)
+Controller <-- Addition : addition
 
-Controller -> CommandeDAO : Change le statut de la commande\n(FINI)
+Controller -> CommandeDAO : modifierCommande\n(commande)
 activate CommandeDAO
-CommandeDAO -> CommandeDAO : Met à jour le statut de la commande\n(FINI)
+CommandeDAO -> Commande :  modifierCommande\n(commande)
+CommandeDAO <-- Commande
 CommandeDAO --> Controller
 deactivate CommandeDAO
 
-Controller --> VueTablette
+Controller --> VueTablette : addiion
 deactivate Controller
 
 VueTablette --> Tablette
