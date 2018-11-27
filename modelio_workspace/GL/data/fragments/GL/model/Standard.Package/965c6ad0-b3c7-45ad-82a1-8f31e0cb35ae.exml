@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Vues" version="4">
+  <OBJECT>
+    <ID name="Vues" mc="Standard.Package" uid="965c6ad0-b3c7-45ad-82a1-8f31e0cb35ae"/>
+    <PID name="gl" mc="Standard.Package" uid="757d5508-7b8f-47ad-9ffc-6bc26e481cb8"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Vues]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="VueGerant" mc="Standard.Class" uid="00d198f2-6345-4a7d-9d64-0441d53c43be"/>
+        <COMPID name="VuePreparateur" mc="Standard.Class" uid="7a9390c4-3466-485f-a4c4-65488afccd87"/>
+        <COMPID name="VueTabletteServeur" mc="Standard.Class" uid="7d81945a-3c85-4261-a420-7a338ad6a675"/>
+        <COMPID name="VueTabletteClient" mc="Standard.Class" uid="2fc8cd3d-7b8a-428b-a2e6-4c6409b4195d"/>
+        <COMPID name="VueFormulaireAjoutElmploye" mc="Standard.Class" uid="3bfe0786-237d-410b-b7b6-bd0e36c21afc"/>
+        <COMPID name="VueFormulaireAjoutConsommation" mc="Standard.Class" uid="bfd1884c-daae-445a-965e-9a02827f71a2"/>
+        <COMPID name="VueAjoutCommande" mc="Standard.Class" uid="8eebd724-6f1f-49af-bf5f-1db4bef03092"/>
+        <COMPID name="VueListeEmployes" mc="Standard.Class" uid="e8497322-0b21-4773-9946-d0d97fcb052e"/>
+        <COMPID name="VueDetailCommande" mc="Standard.Class" uid="999b4c2c-e037-41f0-9aed-2e8ee173a95d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

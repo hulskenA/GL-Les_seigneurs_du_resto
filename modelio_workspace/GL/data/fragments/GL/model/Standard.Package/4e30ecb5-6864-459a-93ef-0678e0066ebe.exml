@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="AlertesApplcation" version="4">
+  <OBJECT>
+    <ID name="AlertesApplcation" mc="Standard.Package" uid="4e30ecb5-6864-459a-93ef-0678e0066ebe"/>
+    <PID name="gl" mc="Standard.Package" uid="757d5508-7b8f-47ad-9ffc-6bc26e481cb8"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[AlertesApplcation]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Alerte" mc="Standard.Class" uid="867d6adb-c50a-49de-8003-826d1ddc1494"/>
+        <COMPID name="AlerteManager" mc="Standard.Class" uid="137299fb-070f-42de-b75d-4d7b7620395e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

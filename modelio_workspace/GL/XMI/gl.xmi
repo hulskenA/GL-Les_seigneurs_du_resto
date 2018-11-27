@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_Va1XsPInEeiLpqU04QBFMA" name="gl">
+  <eAnnotations xmi:id="_Va1XsfInEeiLpqU04QBFMA" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_Va1XsvInEeiLpqU04QBFMA" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1Xs_InEeiLpqU04QBFMA" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Va1XtPInEeiLpqU04QBFMA" name="Vues">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1XtfInEeiLpqU04QBFMA" name="VueGerant"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1XtvInEeiLpqU04QBFMA" memberEnd="_Va1Xt_InEeiLpqU04QBFMA _Va1XuPInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1Xt_InEeiLpqU04QBFMA" visibility="public" type="_Va1X7vInEeiLpqU04QBFMA" association="_Va1XtvInEeiLpqU04QBFMA"/>
+      <ownedEnd xmi:id="_Va1XuPInEeiLpqU04QBFMA" name="vueGerant" visibility="public" type="_Va1XtfInEeiLpqU04QBFMA" association="_Va1XtvInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1XufInEeiLpqU04QBFMA" memberEnd="_Va1XuvInEeiLpqU04QBFMA _Va1Xu_InEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1XuvInEeiLpqU04QBFMA" visibility="public" type="_Va1X8fInEeiLpqU04QBFMA" association="_Va1XufInEeiLpqU04QBFMA"/>
+      <ownedEnd xmi:id="_Va1Xu_InEeiLpqU04QBFMA" name="vueGerant" visibility="public" type="_Va1XtfInEeiLpqU04QBFMA" association="_Va1XufInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1XvPInEeiLpqU04QBFMA" memberEnd="_Va1XvfInEeiLpqU04QBFMA _Va1XvvInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1XvfInEeiLpqU04QBFMA" visibility="public" type="_Va1X8PInEeiLpqU04QBFMA" association="_Va1XvPInEeiLpqU04QBFMA"/>
+      <ownedEnd xmi:id="_Va1XvvInEeiLpqU04QBFMA" name="vueGerant" visibility="public" type="_Va1XtfInEeiLpqU04QBFMA" association="_Va1XvPInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1Xv_InEeiLpqU04QBFMA" name="VuePreparateur">
+      <ownedOperation xmi:id="_Va1XwPInEeiLpqU04QBFMA" name="informeNouvelleCommande" visibility="public">
+        <ownedParameter xmi:id="_Va1XwfInEeiLpqU04QBFMA" name="commande" type="_Va1YkvInEeiLpqU04QBFMA" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1XwvInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1Xw_InEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1XxPInEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1XxfInEeiLpqU04QBFMA" memberEnd="_Va1XxvInEeiLpqU04QBFMA _Va1Xx_InEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1XxvInEeiLpqU04QBFMA" visibility="public" type="_Va1X8PInEeiLpqU04QBFMA" association="_Va1XxfInEeiLpqU04QBFMA"/>
+      <ownedEnd xmi:id="_Va1Xx_InEeiLpqU04QBFMA" name="vuePreparateur" visibility="public" type="_Va1Xv_InEeiLpqU04QBFMA" association="_Va1XxfInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1XyPInEeiLpqU04QBFMA" name="VueTabletteServeur">
+      <generalization xmi:id="_Va1XyfInEeiLpqU04QBFMA" general="_Va1X8_InEeiLpqU04QBFMA"/>
+      <ownedOperation xmi:id="_Va1XyvInEeiLpqU04QBFMA" name="nouvelleCommande" visibility="public">
+        <ownedParameter xmi:id="_Va1Xy_InEeiLpqU04QBFMA" name="listeConsommations" type="_Va1ZHfInEeiLpqU04QBFMA" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1XzPInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1XzfInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1XzvInEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Va1Xz_InEeiLpqU04QBFMA" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1X0PInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1X0fInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1X0vInEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Va1X0_InEeiLpqU04QBFMA" name="ajoutConsommations" visibility="public">
+        <ownedParameter xmi:id="_Va1X1PInEeiLpqU04QBFMA" name="listeConsommations" type="_Va1ZHfInEeiLpqU04QBFMA" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1X1fInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1X1vInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1X1_InEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Va1X2PInEeiLpqU04QBFMA" name="commande" type="_Va1YkvInEeiLpqU04QBFMA" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1X2fInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1X2vInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1X2_InEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Va1X3PInEeiLpqU04QBFMA" type="_Va1YkvInEeiLpqU04QBFMA" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1X3fInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1X3vInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1X3_InEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1X4PInEeiLpqU04QBFMA" memberEnd="_Va1X4fInEeiLpqU04QBFMA _Va1X4vInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1X4fInEeiLpqU04QBFMA" visibility="public" type="_Va1X7_InEeiLpqU04QBFMA" association="_Va1X4PInEeiLpqU04QBFMA"/>
+      <ownedEnd xmi:id="_Va1X4vInEeiLpqU04QBFMA" name="vueTabletteServeur" visibility="public" type="_Va1XyPInEeiLpqU04QBFMA" association="_Va1X4PInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1X4_InEeiLpqU04QBFMA" memberEnd="_Va1X5PInEeiLpqU04QBFMA _Va1X5fInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1X5PInEeiLpqU04QBFMA" name="creer une commande" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1X4_InEeiLpqU04QBFMA"/>
+      <ownedEnd xmi:id="_Va1X5fInEeiLpqU04QBFMA" visibility="public" type="_Va1XyPInEeiLpqU04QBFMA" association="_Va1X4_InEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1X5vInEeiLpqU04QBFMA" name="VueTabletteClient">
+      <generalization xmi:id="_Va1X5_InEeiLpqU04QBFMA" general="_Va1X8_InEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1X6PInEeiLpqU04QBFMA" memberEnd="_Va1X6fInEeiLpqU04QBFMA _Va1X6vInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1X6fInEeiLpqU04QBFMA" visibility="public" type="_Va1X7_InEeiLpqU04QBFMA" association="_Va1X6PInEeiLpqU04QBFMA"/>
+      <ownedEnd xmi:id="_Va1X6vInEeiLpqU04QBFMA" name="vueTabletteClient" visibility="public" type="_Va1X5vInEeiLpqU04QBFMA" association="_Va1X6PInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1X6_InEeiLpqU04QBFMA" memberEnd="_Va1X7PInEeiLpqU04QBFMA _Va1X7fInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1X7PInEeiLpqU04QBFMA" visibility="public" type="_Va1X8vInEeiLpqU04QBFMA" association="_Va1X6_InEeiLpqU04QBFMA"/>
+      <ownedEnd xmi:id="_Va1X7fInEeiLpqU04QBFMA" name="vueTabletteClient" visibility="public" type="_Va1X5vInEeiLpqU04QBFMA" association="_Va1X6_InEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1X7vInEeiLpqU04QBFMA" name="VueFormulaireAjoutElmploye"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1X7_InEeiLpqU04QBFMA" name="VueFormulaireAjoutConsommation"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1X8PInEeiLpqU04QBFMA" name="VueAjoutCommande"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1X8fInEeiLpqU04QBFMA" name="VueListeEmployes"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1X8vInEeiLpqU04QBFMA" name="VueDetailCommande"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1X8_InEeiLpqU04QBFMA" name="VueTablette" isAbstract="true">
+      <ownedComment xmi:id="_Va1X9PInEeiLpqU04QBFMA">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedOperation xmi:id="_Va1X9fInEeiLpqU04QBFMA" name="nouvelleCommande" visibility="public">
+        <ownedParameter xmi:id="_Va1X9vInEeiLpqU04QBFMA" name="listeConsommations" type="_Va1ZHfInEeiLpqU04QBFMA" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1X9_InEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1X-PInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1X-fInEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Va1X-vInEeiLpqU04QBFMA" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1X-_InEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1X_PInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1X_fInEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Va1X_vInEeiLpqU04QBFMA" name="demanderAddition" visibility="public"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1X__InEeiLpqU04QBFMA" memberEnd="_Va1YAPInEeiLpqU04QBFMA _Va1YAfInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YAPInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1X__InEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YAfInEeiLpqU04QBFMA" name="alerte le preparateur" visibility="public" type="_Va1Xv_InEeiLpqU04QBFMA" association="_Va1X__InEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YAvInEeiLpqU04QBFMA" memberEnd="_Va1YA_InEeiLpqU04QBFMA _Va1YBPInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YA_InEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YAvInEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YBPInEeiLpqU04QBFMA" name="informe le preparateur " visibility="public" type="_Va1Xv_InEeiLpqU04QBFMA" association="_Va1YAvInEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YBfInEeiLpqU04QBFMA" memberEnd="_Va1YBvInEeiLpqU04QBFMA _Va1YB_InEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YBvInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YBfInEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YB_InEeiLpqU04QBFMA" name="ajoute des consommations" visibility="public" type="_Va1XyPInEeiLpqU04QBFMA" association="_Va1YBfInEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YCPInEeiLpqU04QBFMA" memberEnd="_Va1YCfInEeiLpqU04QBFMA _Va1YCvInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YCfInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YCPInEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YCvInEeiLpqU04QBFMA" name="vueFormulaireAjoutElmploye" visibility="public" type="_Va1X7vInEeiLpqU04QBFMA" association="_Va1YCPInEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YC_InEeiLpqU04QBFMA" memberEnd="_Va1YDPInEeiLpqU04QBFMA _Va1YDfInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YDPInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YC_InEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YDfInEeiLpqU04QBFMA" name="vueFormulaireAjoutConsommation" visibility="public" type="_Va1X7_InEeiLpqU04QBFMA" association="_Va1YC_InEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YDvInEeiLpqU04QBFMA" memberEnd="_Va1YD_InEeiLpqU04QBFMA _Va1YEPInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YD_InEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YDvInEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YEPInEeiLpqU04QBFMA" name="vueAjoutCommande" visibility="public" type="_Va1X8PInEeiLpqU04QBFMA" association="_Va1YDvInEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YEfInEeiLpqU04QBFMA" memberEnd="_Va1YEvInEeiLpqU04QBFMA _Va1YE_InEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YEvInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YEfInEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YE_InEeiLpqU04QBFMA" name="vueListeEmployes" visibility="public" type="_Va1X8fInEeiLpqU04QBFMA" association="_Va1YEfInEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YFPInEeiLpqU04QBFMA" memberEnd="_Va1YFfInEeiLpqU04QBFMA _Va1YFvInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YFfInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YFPInEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YFvInEeiLpqU04QBFMA" name="vueDetailCommande" visibility="public" type="_Va1X8vInEeiLpqU04QBFMA" association="_Va1YFPInEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YF_InEeiLpqU04QBFMA" memberEnd="_Va1YGPInEeiLpqU04QBFMA _Va1YGfInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YGPInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YF_InEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YGfInEeiLpqU04QBFMA" name="demande l'addition" visibility="public" type="_Va1X8_InEeiLpqU04QBFMA" association="_Va1YF_InEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Va1YGvInEeiLpqU04QBFMA" name="DAOs">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YG_InEeiLpqU04QBFMA" name="DAOCommande">
+      <ownedAttribute xmi:id="_Va1YHPInEeiLpqU04QBFMA" name="commande" visibility="public" type="_Va1YkvInEeiLpqU04QBFMA" association="_Va1YiPInEeiLpqU04QBFMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YHfInEeiLpqU04QBFMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YHvInEeiLpqU04QBFMA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Va1YH_InEeiLpqU04QBFMA" name="nouvelle commande" visibility="public" type="_Va1YkvInEeiLpqU04QBFMA" association="_Va1YSfInEeiLpqU04QBFMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YIPInEeiLpqU04QBFMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YIfInEeiLpqU04QBFMA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Va1YIvInEeiLpqU04QBFMA" name="cloturer la commande" visibility="public" type="_Va1YkvInEeiLpqU04QBFMA" association="_Va1YS_InEeiLpqU04QBFMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YI_InEeiLpqU04QBFMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YJPInEeiLpqU04QBFMA"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_Va1YJfInEeiLpqU04QBFMA" name="modifierCommande" visibility="public">
+        <ownedParameter xmi:id="_Va1YJvInEeiLpqU04QBFMA" name="c" type="_Va1YkvInEeiLpqU04QBFMA" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YJ_InEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YKPInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1YKfInEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Va1YKvInEeiLpqU04QBFMA" name="cloturerCommande" visibility="public">
+        <ownedParameter xmi:id="_Va1YK_InEeiLpqU04QBFMA" name="commande" type="_Va1YkvInEeiLpqU04QBFMA" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YLPInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YLfInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1YLvInEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Va1YL_InEeiLpqU04QBFMA" name="creerCommande" visibility="public">
+        <ownedParameter xmi:id="_Va1YMPInEeiLpqU04QBFMA" name="listeConsommation" type="_Va1ZHfInEeiLpqU04QBFMA" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YMfInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YMvInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1YM_InEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Va1YNPInEeiLpqU04QBFMA" name="table" type="_Va1YqvInEeiLpqU04QBFMA" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YNfInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YNvInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1YN_InEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Va1YOPInEeiLpqU04QBFMA" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YOfInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YOvInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1YO_InEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Va1YPPInEeiLpqU04QBFMA" name="ajouterConsommations" visibility="public">
+        <ownedParameter xmi:id="_Va1YPfInEeiLpqU04QBFMA" name="commande" type="_Va1YkvInEeiLpqU04QBFMA" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YPvInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YP_InEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1YQPInEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Va1YQfInEeiLpqU04QBFMA" name="listeConsommations" type="_Va1ZHfInEeiLpqU04QBFMA" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YQvInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YQ_InEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1YRPInEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Va1YRfInEeiLpqU04QBFMA" type="_Va1YkvInEeiLpqU04QBFMA" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YRvInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YR_InEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1YSPInEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YSfInEeiLpqU04QBFMA" memberEnd="_Va1YH_InEeiLpqU04QBFMA _Va1YSvInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1YSvInEeiLpqU04QBFMA" visibility="public" type="_Va1YG_InEeiLpqU04QBFMA" association="_Va1YSfInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YS_InEeiLpqU04QBFMA" memberEnd="_Va1YIvInEeiLpqU04QBFMA _Va1YTPInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1YTPInEeiLpqU04QBFMA" visibility="public" type="_Va1YG_InEeiLpqU04QBFMA" association="_Va1YS_InEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YTfInEeiLpqU04QBFMA" name="DAOConsommation">
+      <ownedAttribute xmi:id="_Va1YTvInEeiLpqU04QBFMA" name="consommation" visibility="public" type="_Va1Ym_InEeiLpqU04QBFMA" association="_Va1YivInEeiLpqU04QBFMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YT_InEeiLpqU04QBFMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YUPInEeiLpqU04QBFMA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YUfInEeiLpqU04QBFMA" name="DAOUtilisateur">
+      <ownedAttribute xmi:id="_Va1YUvInEeiLpqU04QBFMA" name="utilisateur" visibility="public" type="_Va1YpfInEeiLpqU04QBFMA" association="_Va1YjPInEeiLpqU04QBFMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YU_InEeiLpqU04QBFMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YVPInEeiLpqU04QBFMA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YVfInEeiLpqU04QBFMA" name="DAOCarte">
+      <ownedAttribute xmi:id="_Va1YVvInEeiLpqU04QBFMA" name="carte" visibility="public" type="_Va1YpPInEeiLpqU04QBFMA" association="_Va1YjvInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YV_InEeiLpqU04QBFMA" name="DAOTable">
+      <ownedAttribute xmi:id="_Va1YWPInEeiLpqU04QBFMA" name="table" visibility="public" type="_Va1YqvInEeiLpqU04QBFMA" association="_Va1YkPInEeiLpqU04QBFMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YWfInEeiLpqU04QBFMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YWvInEeiLpqU04QBFMA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YW_InEeiLpqU04QBFMA" name="DAOAddition">
+      <ownedComment xmi:id="_Va1YXPInEeiLpqU04QBFMA">
+        <body>A modifier dans le diagramme de sequence : rajouter le DAO addition</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_Va1YXfInEeiLpqU04QBFMA" name="addition" visibility="public" type="_Va1Yz_InEeiLpqU04QBFMA" association="_Va1YaPInEeiLpqU04QBFMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YXvInEeiLpqU04QBFMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YX_InEeiLpqU04QBFMA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Va1YYPInEeiLpqU04QBFMA" name="creer addition" visibility="public" type="_Va1Yz_InEeiLpqU04QBFMA" association="_Va1YavInEeiLpqU04QBFMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YYfInEeiLpqU04QBFMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YYvInEeiLpqU04QBFMA"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_Va1YY_InEeiLpqU04QBFMA" name="creerAddition" visibility="public">
+        <ownedParameter xmi:id="_Va1YZPInEeiLpqU04QBFMA" type="_Va1Yz_InEeiLpqU04QBFMA" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YZfInEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YZvInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1YZ_InEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YaPInEeiLpqU04QBFMA" memberEnd="_Va1YXfInEeiLpqU04QBFMA _Va1YafInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1YafInEeiLpqU04QBFMA" visibility="public" type="_Va1YW_InEeiLpqU04QBFMA" association="_Va1YaPInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YavInEeiLpqU04QBFMA" memberEnd="_Va1YYPInEeiLpqU04QBFMA _Va1Ya_InEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1Ya_InEeiLpqU04QBFMA" visibility="public" type="_Va1YW_InEeiLpqU04QBFMA" association="_Va1YavInEeiLpqU04QBFMA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YbPInEeiLpqU04QBFMA" memberEnd="_Va1YbfInEeiLpqU04QBFMA _Va1YbvInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YbfInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YbPInEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YbvInEeiLpqU04QBFMA" name="dAOCommande" visibility="public" type="_Va1YG_InEeiLpqU04QBFMA" aggregation="composite" association="_Va1YbPInEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1Yb_InEeiLpqU04QBFMA" memberEnd="_Va1YcPInEeiLpqU04QBFMA _Va1YcfInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YcPInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1Yb_InEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YcfInEeiLpqU04QBFMA" name="creer une commande" visibility="public" type="_Va1YG_InEeiLpqU04QBFMA" aggregation="composite" association="_Va1Yb_InEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YcvInEeiLpqU04QBFMA" memberEnd="_Va1Yc_InEeiLpqU04QBFMA _Va1YdPInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1Yc_InEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YcvInEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YdPInEeiLpqU04QBFMA" name="cloturer la commande" visibility="public" type="_Va1YG_InEeiLpqU04QBFMA" aggregation="composite" association="_Va1YcvInEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YdfInEeiLpqU04QBFMA" memberEnd="_Va1YdvInEeiLpqU04QBFMA _Va1Yd_InEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YdvInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YdfInEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1Yd_InEeiLpqU04QBFMA" name="dAOConsommation" visibility="public" type="_Va1YTfInEeiLpqU04QBFMA" aggregation="composite" association="_Va1YdfInEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YePInEeiLpqU04QBFMA" memberEnd="_Va1YefInEeiLpqU04QBFMA _Va1YevInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YefInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YePInEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YevInEeiLpqU04QBFMA" name="dAOUtilisateur" visibility="public" type="_Va1YUfInEeiLpqU04QBFMA" aggregation="composite" association="_Va1YePInEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1Ye_InEeiLpqU04QBFMA" memberEnd="_Va1YfPInEeiLpqU04QBFMA _Va1YffInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YfPInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1Ye_InEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YffInEeiLpqU04QBFMA" name="dAOCarte" visibility="public" type="_Va1YVfInEeiLpqU04QBFMA" aggregation="composite" association="_Va1Ye_InEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YfvInEeiLpqU04QBFMA" memberEnd="_Va1Yf_InEeiLpqU04QBFMA _Va1YgPInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1Yf_InEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YfvInEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YgPInEeiLpqU04QBFMA" name="dAOTable" visibility="public" type="_Va1YV_InEeiLpqU04QBFMA" aggregation="composite" association="_Va1YfvInEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YgfInEeiLpqU04QBFMA" memberEnd="_Va1YgvInEeiLpqU04QBFMA _Va1Yg_InEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YgvInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YgfInEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1Yg_InEeiLpqU04QBFMA" name="dAOAddition" visibility="public" type="_Va1YW_InEeiLpqU04QBFMA" aggregation="composite" association="_Va1YgfInEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1YhPInEeiLpqU04QBFMA" memberEnd="_Va1YhfInEeiLpqU04QBFMA _Va1YhvInEeiLpqU04QBFMA">
+    <ownedEnd xmi:id="_Va1YhfInEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" association="_Va1YhPInEeiLpqU04QBFMA"/>
+    <ownedEnd xmi:id="_Va1YhvInEeiLpqU04QBFMA" name="creer l'addition" visibility="public" type="_Va1YW_InEeiLpqU04QBFMA" aggregation="composite" association="_Va1YhPInEeiLpqU04QBFMA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Va1Yh_InEeiLpqU04QBFMA" name="Model">
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YiPInEeiLpqU04QBFMA" memberEnd="_Va1YHPInEeiLpqU04QBFMA _Va1YifInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1YifInEeiLpqU04QBFMA" visibility="public" type="_Va1YG_InEeiLpqU04QBFMA" association="_Va1YiPInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YivInEeiLpqU04QBFMA" memberEnd="_Va1YTvInEeiLpqU04QBFMA _Va1Yi_InEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1Yi_InEeiLpqU04QBFMA" visibility="public" type="_Va1YTfInEeiLpqU04QBFMA" association="_Va1YivInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YjPInEeiLpqU04QBFMA" memberEnd="_Va1YUvInEeiLpqU04QBFMA _Va1YjfInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1YjfInEeiLpqU04QBFMA" visibility="public" type="_Va1YUfInEeiLpqU04QBFMA" association="_Va1YjPInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YjvInEeiLpqU04QBFMA" memberEnd="_Va1YVvInEeiLpqU04QBFMA _Va1Yj_InEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1Yj_InEeiLpqU04QBFMA" visibility="public" type="_Va1YVfInEeiLpqU04QBFMA" association="_Va1YjvInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YkPInEeiLpqU04QBFMA" memberEnd="_Va1YWPInEeiLpqU04QBFMA _Va1YkfInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1YkfInEeiLpqU04QBFMA" visibility="public" type="_Va1YV_InEeiLpqU04QBFMA" association="_Va1YkPInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YkvInEeiLpqU04QBFMA" name="Commande">
+      <ownedAttribute xmi:id="_Va1Yk_InEeiLpqU04QBFMA" name="est composé de" visibility="public" type="_Va1Ym_InEeiLpqU04QBFMA" aggregation="shared" association="_Va1YmfInEeiLpqU04QBFMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YlPInEeiLpqU04QBFMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YlfInEeiLpqU04QBFMA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Va1YlvInEeiLpqU04QBFMA" name="total" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Va1Yl_InEeiLpqU04QBFMA" name="table" visibility="public" type="_Va1YqvInEeiLpqU04QBFMA" isUnique="false"/>
+      <ownedAttribute xmi:id="_Va1YmPInEeiLpqU04QBFMA" name="listeCommande" visibility="public" type="_Va1ZHfInEeiLpqU04QBFMA" isUnique="false"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YmfInEeiLpqU04QBFMA" memberEnd="_Va1Yk_InEeiLpqU04QBFMA _Va1YmvInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1YmvInEeiLpqU04QBFMA" visibility="public" type="_Va1YkvInEeiLpqU04QBFMA" association="_Va1YmfInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1Ym_InEeiLpqU04QBFMA" name="Consommation">
+      <ownedAttribute xmi:id="_Va1YnPInEeiLpqU04QBFMA" name="est composée de" visibility="public" type="_Va1YpPInEeiLpqU04QBFMA" aggregation="composite" association="_Va1YoPInEeiLpqU04QBFMA"/>
+      <ownedAttribute xmi:id="_Va1YnfInEeiLpqU04QBFMA" name="nom" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Va1YnvInEeiLpqU04QBFMA" name="description" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Va1Yn_InEeiLpqU04QBFMA" name="prix" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YoPInEeiLpqU04QBFMA" memberEnd="_Va1YnPInEeiLpqU04QBFMA _Va1YofInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1YofInEeiLpqU04QBFMA" visibility="public" type="_Va1Ym_InEeiLpqU04QBFMA" association="_Va1YoPInEeiLpqU04QBFMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YovInEeiLpqU04QBFMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1Yo_InEeiLpqU04QBFMA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YpPInEeiLpqU04QBFMA" name="Carte"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YpfInEeiLpqU04QBFMA" name="Utilisateur" isAbstract="true">
+      <ownedAttribute xmi:id="_Va1YpvInEeiLpqU04QBFMA" name="accède" visibility="public" type="_Va1YvvInEeiLpqU04QBFMA" association="_Va1YqPInEeiLpqU04QBFMA"/>
+      <ownedAttribute xmi:id="_Va1Yp_InEeiLpqU04QBFMA" name="Nom" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YqPInEeiLpqU04QBFMA" memberEnd="_Va1YpvInEeiLpqU04QBFMA _Va1YqfInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1YqfInEeiLpqU04QBFMA" visibility="public" type="_Va1YpfInEeiLpqU04QBFMA" association="_Va1YqPInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YqvInEeiLpqU04QBFMA" name="Table">
+      <ownedAttribute xmi:id="_Va1Yq_InEeiLpqU04QBFMA" name="numero" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YrPInEeiLpqU04QBFMA" memberEnd="_Va1YrfInEeiLpqU04QBFMA _Va1YrvInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1YrfInEeiLpqU04QBFMA" name="tabletteClient" visibility="public" type="_Va1YvPInEeiLpqU04QBFMA" aggregation="composite" association="_Va1YrPInEeiLpqU04QBFMA"/>
+      <ownedEnd xmi:id="_Va1YrvInEeiLpqU04QBFMA" visibility="public" type="_Va1YqvInEeiLpqU04QBFMA" association="_Va1YrPInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1Yr_InEeiLpqU04QBFMA" name="Gerant">
+      <generalization xmi:id="_Va1YsPInEeiLpqU04QBFMA" general="_Va1YpfInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YsfInEeiLpqU04QBFMA" name="Preparateur">
+      <generalization xmi:id="_Va1YsvInEeiLpqU04QBFMA" general="_Va1YpfInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1Ys_InEeiLpqU04QBFMA" name="Tablette" isAbstract="true">
+      <generalization xmi:id="_Va1YtPInEeiLpqU04QBFMA" general="_Va1YpfInEeiLpqU04QBFMA"/>
+      <ownedAttribute xmi:id="_Va1YtfInEeiLpqU04QBFMA" name="contient des" visibility="public" type="_Va1YkvInEeiLpqU04QBFMA" aggregation="shared" association="_Va1YuPInEeiLpqU04QBFMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YtvInEeiLpqU04QBFMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1Yt_InEeiLpqU04QBFMA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YuPInEeiLpqU04QBFMA" memberEnd="_Va1YtfInEeiLpqU04QBFMA _Va1YufInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1YufInEeiLpqU04QBFMA" visibility="public" type="_Va1Ys_InEeiLpqU04QBFMA" association="_Va1YuPInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YuvInEeiLpqU04QBFMA" name="TabletteServeur">
+      <generalization xmi:id="_Va1Yu_InEeiLpqU04QBFMA" general="_Va1Ys_InEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YvPInEeiLpqU04QBFMA" name="TabletteClient">
+      <generalization xmi:id="_Va1YvfInEeiLpqU04QBFMA" general="_Va1Ys_InEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1YvvInEeiLpqU04QBFMA" name="Menu">
+      <ownedComment xmi:id="_Va1Yv_InEeiLpqU04QBFMA">
+        <body>Singleton</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_Va1YwPInEeiLpqU04QBFMA" name="contient" visibility="public" type="_Va1Ym_InEeiLpqU04QBFMA" aggregation="shared" association="_Va1Yy_InEeiLpqU04QBFMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1YwfInEeiLpqU04QBFMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YwvInEeiLpqU04QBFMA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Va1Yw_InEeiLpqU04QBFMA" name="instance de Menu" visibility="public" type="_Va1YvvInEeiLpqU04QBFMA" aggregation="composite" association="_Va1YzfInEeiLpqU04QBFMA"/>
+      <ownedAttribute xmi:id="_Va1YxPInEeiLpqU04QBFMA" name="InstanceMenu" visibility="private" type="_Va1YvvInEeiLpqU04QBFMA" isUnique="false"/>
+      <ownedOperation xmi:id="_Va1YxfInEeiLpqU04QBFMA" name="getInstance" visibility="public">
+        <ownedParameter xmi:id="_Va1YxvInEeiLpqU04QBFMA" type="_Va1YvvInEeiLpqU04QBFMA" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1Yx_InEeiLpqU04QBFMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1YyPInEeiLpqU04QBFMA" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1YyfInEeiLpqU04QBFMA" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Va1YyvInEeiLpqU04QBFMA" name="Menu" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1Yy_InEeiLpqU04QBFMA" memberEnd="_Va1YwPInEeiLpqU04QBFMA _Va1YzPInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1YzPInEeiLpqU04QBFMA" visibility="public" type="_Va1YvvInEeiLpqU04QBFMA" association="_Va1Yy_InEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1YzfInEeiLpqU04QBFMA" memberEnd="_Va1Yw_InEeiLpqU04QBFMA _Va1YzvInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1YzvInEeiLpqU04QBFMA" visibility="public" type="_Va1YvvInEeiLpqU04QBFMA" association="_Va1YzfInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1Yz_InEeiLpqU04QBFMA" name="Addition">
+      <ownedAttribute xmi:id="_Va1Y0PInEeiLpqU04QBFMA" name="listeConsommations" visibility="public" type="_Va1ZHfInEeiLpqU04QBFMA" isUnique="false"/>
+      <ownedAttribute xmi:id="_Va1Y0fInEeiLpqU04QBFMA" name="total" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Va1Y0vInEeiLpqU04QBFMA" name="Controller">
+    <ownedOperation xmi:id="_Va1Y0_InEeiLpqU04QBFMA" name="recupererCommande" visibility="public">
+      <ownedParameter xmi:id="_Va1Y1PInEeiLpqU04QBFMA" type="_Va1YkvInEeiLpqU04QBFMA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1Y1fInEeiLpqU04QBFMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1Y1vInEeiLpqU04QBFMA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1Y1_InEeiLpqU04QBFMA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Va1Y2PInEeiLpqU04QBFMA" name="cloturerCommande" visibility="public">
+      <ownedParameter xmi:id="_Va1Y2fInEeiLpqU04QBFMA" name="c" type="_Va1YkvInEeiLpqU04QBFMA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1Y2vInEeiLpqU04QBFMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1Y2_InEeiLpqU04QBFMA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1Y3PInEeiLpqU04QBFMA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Va1Y3fInEeiLpqU04QBFMA" name="supprimerUtilisateur" visibility="public">
+      <ownedParameter xmi:id="_Va1Y3vInEeiLpqU04QBFMA" name="u" type="_Va1YpfInEeiLpqU04QBFMA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1Y3_InEeiLpqU04QBFMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1Y4PInEeiLpqU04QBFMA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1Y4fInEeiLpqU04QBFMA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Va1Y4vInEeiLpqU04QBFMA" name="modifierConsommation" visibility="public">
+      <ownedParameter xmi:id="_Va1Y4_InEeiLpqU04QBFMA" name="c" type="_Va1Ym_InEeiLpqU04QBFMA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1Y5PInEeiLpqU04QBFMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1Y5fInEeiLpqU04QBFMA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1Y5vInEeiLpqU04QBFMA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Va1Y5_InEeiLpqU04QBFMA" name="modifierCommande" visibility="public">
+      <ownedParameter xmi:id="_Va1Y6PInEeiLpqU04QBFMA" name="c" type="_Va1YkvInEeiLpqU04QBFMA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1Y6fInEeiLpqU04QBFMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1Y6vInEeiLpqU04QBFMA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1Y6_InEeiLpqU04QBFMA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Va1Y7PInEeiLpqU04QBFMA" name="creerUneCommande" visibility="public">
+      <ownedParameter xmi:id="_Va1Y7fInEeiLpqU04QBFMA" name="listeConsommation" type="_Va1ZHfInEeiLpqU04QBFMA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1Y7vInEeiLpqU04QBFMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1Y7_InEeiLpqU04QBFMA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1Y8PInEeiLpqU04QBFMA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_Va1Y8fInEeiLpqU04QBFMA" name="table" type="_Va1YqvInEeiLpqU04QBFMA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1Y8vInEeiLpqU04QBFMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1Y8_InEeiLpqU04QBFMA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1Y9PInEeiLpqU04QBFMA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_Va1Y9fInEeiLpqU04QBFMA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1Y9vInEeiLpqU04QBFMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1Y9_InEeiLpqU04QBFMA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1Y-PInEeiLpqU04QBFMA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Va1Y-fInEeiLpqU04QBFMA" name="genererAddtion" visibility="public">
+      <ownedComment xmi:id="_Va1Y-vInEeiLpqU04QBFMA">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedParameter xmi:id="_Va1Y-_InEeiLpqU04QBFMA" name="commande" type="_Va1YkvInEeiLpqU04QBFMA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1Y_PInEeiLpqU04QBFMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1Y_fInEeiLpqU04QBFMA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1Y_vInEeiLpqU04QBFMA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_Va1Y__InEeiLpqU04QBFMA" type="_Va1Yz_InEeiLpqU04QBFMA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1ZAPInEeiLpqU04QBFMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1ZAfInEeiLpqU04QBFMA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1ZAvInEeiLpqU04QBFMA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Va1ZA_InEeiLpqU04QBFMA" name="ajoutConsommations" visibility="public">
+      <ownedParameter xmi:id="_Va1ZBPInEeiLpqU04QBFMA" name="listeConsommations" type="_Va1ZHfInEeiLpqU04QBFMA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1ZBfInEeiLpqU04QBFMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1ZBvInEeiLpqU04QBFMA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1ZB_InEeiLpqU04QBFMA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_Va1ZCPInEeiLpqU04QBFMA" name="commande" type="_Va1YkvInEeiLpqU04QBFMA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1ZCfInEeiLpqU04QBFMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1ZCvInEeiLpqU04QBFMA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1ZC_InEeiLpqU04QBFMA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_Va1ZDPInEeiLpqU04QBFMA" type="_Va1YkvInEeiLpqU04QBFMA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1ZDfInEeiLpqU04QBFMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1ZDvInEeiLpqU04QBFMA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Va1ZD_InEeiLpqU04QBFMA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Va1ZEPInEeiLpqU04QBFMA" name="AlertesApplcation">
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1ZEfInEeiLpqU04QBFMA" memberEnd="_Va1ZEvInEeiLpqU04QBFMA _Va1ZE_InEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1ZEvInEeiLpqU04QBFMA" visibility="public" type="_Va1ZHPInEeiLpqU04QBFMA" association="_Va1ZEfInEeiLpqU04QBFMA"/>
+      <ownedEnd xmi:id="_Va1ZE_InEeiLpqU04QBFMA" visibility="public" type="_Va1Y0vInEeiLpqU04QBFMA" aggregation="composite" association="_Va1ZEfInEeiLpqU04QBFMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1ZFPInEeiLpqU04QBFMA" name="Alerte">
+      <ownedAttribute xmi:id="_Va1ZFfInEeiLpqU04QBFMA" name="nom" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Va1ZFvInEeiLpqU04QBFMA" name="description" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Va1ZF_InEeiLpqU04QBFMA" memberEnd="_Va1ZGPInEeiLpqU04QBFMA _Va1ZGfInEeiLpqU04QBFMA">
+      <ownedEnd xmi:id="_Va1ZGPInEeiLpqU04QBFMA" name="peut envoyer" visibility="public" type="_Va1ZHPInEeiLpqU04QBFMA" association="_Va1ZF_InEeiLpqU04QBFMA"/>
+      <ownedEnd xmi:id="_Va1ZGfInEeiLpqU04QBFMA" visibility="public" type="_Va1ZFPInEeiLpqU04QBFMA" association="_Va1ZF_InEeiLpqU04QBFMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Va1ZGvInEeiLpqU04QBFMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Va1ZG_InEeiLpqU04QBFMA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Va1ZHPInEeiLpqU04QBFMA" name="AlerteManager"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Va1ZHfInEeiLpqU04QBFMA" name="undefined"/>
+</uml:Model>

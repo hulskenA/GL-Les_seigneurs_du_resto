@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Model" version="4">
+  <OBJECT>
+    <ID name="Model" mc="Standard.Package" uid="73f5361f-148b-4630-81c1-d42641fd3e4a"/>
+    <PID name="gl" mc="Standard.Package" uid="757d5508-7b8f-47ad-9ffc-6bc26e481cb8"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Model]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Commande" mc="Standard.Class" uid="f943bdf9-b630-4383-815c-222321732660"/>
+        <COMPID name="Consommation" mc="Standard.Class" uid="fff638d0-649a-47b9-b99c-e8be912f7665"/>
+        <COMPID name="Carte" mc="Standard.Class" uid="9108795a-5114-44d2-ba0a-23e1e5b67f21"/>
+        <COMPID name="&lt;abstract&gt; Utilisateur" mc="Standard.Class" uid="8b719640-a975-4019-886b-11b4a4335777"/>
+        <COMPID name="Table" mc="Standard.Class" uid="b864e696-056d-479d-8b80-f3b42342466c"/>
+        <COMPID name="Gerant" mc="Standard.Class" uid="2085aaa9-ee1b-4468-a2ec-db9a422773ba"/>
+        <COMPID name="Preparateur" mc="Standard.Class" uid="ade7ae16-0676-4920-b767-c43fa9cca209"/>
+        <COMPID name="&lt;abstract&gt; Tablette" mc="Standard.Class" uid="8fd005ca-0cc5-47a6-a939-54e51bd34105"/>
+        <COMPID name="TabletteServeur" mc="Standard.Class" uid="f3461b48-a34b-440a-ae69-cea9c4f199f4"/>
+        <COMPID name="TabletteClient" mc="Standard.Class" uid="8ad0a8b5-d90b-424f-b319-65ea56c3ff58"/>
+        <COMPID name="&lt;Singleton&gt; Menu" mc="Standard.Class" uid="9e2b262c-7e41-4c74-94ba-f6169e111710"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

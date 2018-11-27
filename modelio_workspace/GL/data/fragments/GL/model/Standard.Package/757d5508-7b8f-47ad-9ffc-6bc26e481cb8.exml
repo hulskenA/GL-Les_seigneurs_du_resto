@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="gl" version="4">
+  <OBJECT>
+    <ID name="gl" mc="Standard.Package" uid="757d5508-7b8f-47ad-9ffc-6bc26e481cb8"/>
+    <PID name="GL" mc="Standard.Project" uid="3bd2b41c-f8f0-4b4d-b9f0-7cd505d4b9c7"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[gl]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Vues" mc="Standard.Package" uid="965c6ad0-b3c7-45ad-82a1-8f31e0cb35ae"/>
+        <COMPID name="DAOs" mc="Standard.Package" uid="2badac90-25f2-4027-93db-843ae05d3a22"/>
+        <COMPID name="Model" mc="Standard.Package" uid="73f5361f-148b-4630-81c1-d42641fd3e4a"/>
+        <COMPID name="Controller" mc="Standard.Class" uid="1c17508d-3902-47a6-93bc-3875fece8914"/>
+        <COMPID name="AlertesApplcation" mc="Standard.Package" uid="4e30ecb5-6864-459a-93ef-0678e0066ebe"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="gl Class diagram" mc="Standard.ClassDiagram" uid="311d89f0-8fec-4f2e-b0e4-101585c4561c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
