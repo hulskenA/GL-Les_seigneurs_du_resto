@@ -4,8 +4,8 @@ hide footbox
 title __Scénario 10__: Les responsables ajoutent/enlèvent des plats à la carte
 
 
-actor ":Préparateur" as Préparateur order 10
-actor ":Gérant" as Gérant order 20
+actor ":Preparateur" as Préparateur order 10
+actor ":Gerant" as Gérant order 20
 
 box "Application" #Lightblue
     participant ":VuePreparateur" as VuePréparateur order 30
