@@ -19,26 +19,30 @@ endbox
 
 == La commande est déjà saisie et envoyée ==
 
-VuePréparateur -> Préparateur : Notifie et affiche la commande
+
+Controller ->> VuePréparateur : informeNouvelleCommande(commande)
 activate VuePréparateur
+VuePréparateur ->> Préparateur : envoie alerte
+deactivate VuePréparateur
   Préparateur -> Préparateur : Pas assez\nd'ingrédient
-  Préparateur -> VuePréparateur : Indique l'indisponibilié
-  VuePréparateur -> Controller : Indique l'indisponibilié
+  Préparateur ->> VuePréparateur : Indique l'indisponibilié
+activate VuePréparateur
+  VuePréparateur -> Controller : consommationIndisponible\n(consommation)
 activate Controller
 
-Controller -> CarteDAO : Update la carte
+Controller -> CarteDAO : consommationIndisponible\n(consommation)
 activate CarteDAO
-CarteDAO -> Carte
-CarteDAO <-- Carte
-Controller <-- CarteDAO
+CarteDAO -> Carte : retirerConsommation\n(consommation)
+CarteDAO <<-- Carte
+Controller <<-- CarteDAO
 deactivate CarteDAO
 
-Controller -> VueTablette : Notifie de l'indisponibilié
-Controller --> VuePréparateur
+Controller ->> VueTablette : notificationIndisponible\n(consommation)
+Controller -->> VuePréparateur
 deactivate VuePréparateur
 deactivate Controller
 
-Tablette <- VueTablette : Notifie, alerte et demande\nla saisie d'un nouveau choix
+Tablette <<- VueTablette : Notifie, alerte et demande\nla saisie d'un nouveau choix
 
 note right Tablette
   Ici le client est averti sur sa

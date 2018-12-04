@@ -18,31 +18,32 @@ box "Base de données" #Lightblue
   participant ":Commande" as Commande order 70
 endbox
 
-activate VueTabletteClient
+
 
 Client ->> VueTabletteClient : Saisie une entrée
 Client ->> VueTabletteClient : Saisie un plat
-Client -> VueTabletteClient : Valide sonchoix
+Client -> VueTabletteClient : Valide son choix
+activate VueTabletteClient
 
-VueTabletteClient -> Controller : Envoi les détails\nde la commande
+VueTabletteClient -> Controller : nouvelleCommande\n(listeConsommations, table)
 activate Controller
 
-Controller -> CommandeDAO : Demande l'enregistrement\nen base
+Controller -> CommandeDAO : creerUneCommande\n(listeConsommations, table)
 activate CommandeDAO
 
 create Commande
-CommandeDAO -> Commande : Insert en base
-CommandeDAO <-- Commande
-CommandeDAO --> Controller : Confirme la\ncréation
+CommandeDAO -> Commande : creerCommande\n(listeConsommations,\n table)
+CommandeDAO <-- Commande : commande
+CommandeDAO --> Controller : commande
 deactivate CommandeDAO
 
-Controller ->> VuePréparateur : Notifie de la création
-Controller --> VueTabletteClient : Confirmation de\nla création
+Controller ->> VuePréparateur : informeNouvelleCommande\n(commande)
+Controller -->> VueTabletteClient : commande
 deactivate Controller
 
 VuePréparateur ->> Préparateur : Notification sonore\nou visuelle
 
-VueTabletteClient --> Client : Confirme au client\nque la commande\nest prise en compte
+VueTabletteClient -->> Client : Confirme au client\nque la commande\nest prise en compte
 deactivate VueTabletteClient
 
 @enduml
