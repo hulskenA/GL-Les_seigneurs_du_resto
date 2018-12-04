@@ -10,9 +10,9 @@ actor "s1:Serveur" as Serveur1 order 30
 actor "s2:Serveur" as Serveur2 order 40
 
 box "Application" #Lightblue
-    participant ":VueServeur" as VueServeur order 50
+    participant ":VueTabletteServeur" as VueServeur order 50
     participant ":Controller" as Controller order 60
-    participant ":TableDAO" as TableDAO order 70
+    participant ":DAOTable" as TableDAO order 70
 endbox
 
 box "Base de données" #Lightblue
@@ -25,14 +25,14 @@ ref over ClientB
 end
 
 ClientB -> Serveur1 : Paye
-Serveur1 -> VueServeur : Liberer la table\n(table)
+Serveur1 -> VueServeur : Liberer la table
 activate VueServeur
-VueServeur -> Controller : Liberer la table\n(table)
+VueServeur -> Controller : libererTable\n(table)
 activate Controller
-Controller -> TableDAO : Liberer la table\n(table)
+Controller -> TableDAO : libererTable\n(table)
 activate TableDAO
-TableDAO -> Table
-TableDAO <-- Table
+TableDAO -> Table : libererTable(table)
+TableDAO <-- Table : table
 Controller <-- TableDAO
 deactivate TableDAO
 Controller --> VueServeur
@@ -47,9 +47,9 @@ deactivate VueServeur
 ClientA -> Serveur2 : Entre et demande une table
 Serveur2 -> VueServeur : Recherche les\ntables disponibles
 activate VueServeur
-VueServeur -> Controller : Recherche les\ntables disponibles
+VueServeur -> Controller : listerTablesDisponibles()
 activate Controller
-Controller -> TableDAO : Recherche les\ntables disponibles
+Controller -> TableDAO : listerTablesDisponibles()
 activate TableDAO
 TableDAO -> TableDispo
 TableDAO <-- TableDispo

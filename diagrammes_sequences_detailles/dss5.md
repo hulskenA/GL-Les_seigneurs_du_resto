@@ -9,10 +9,10 @@ actor ":Serveur" as Serveur order 30
 actor ":Préparateur" as Préparateur order 40
 
 box "Application" #Lightblue
-  participant ":VueServeur" as VueServeur order 50
+  participant ":VueTabletteServeur" as VueServeur order 50
   participant ":VuePréparateur" as VuePréparateur order 60
   participant ":Controller" as Controller order 70
-  participant ":CommandeDAO" as CommandeDAO order 80
+  participant ":DAOCommande" as CommandeDAO order 80
 endbox
 
 box "Base de données" #Lightblue
@@ -28,20 +28,21 @@ Serveur -> VueServeur : Saisie et valide\nla commande
 activate VueServeur
 
 group #transparent Envoie d'une commande
-  VueServeur -> Controller : Envoi les détails\nde la commande
+  VueServeur -> Controller : nouvelleCommande\n(listeConsommations)
   activate Controller
-  Controller -> CommandeDAO : Demande de l'enregistrer
+  Controller -> CommandeDAO : creerUneCommande\n(listeConsommations,table)
 
   activate CommandeDAO    
     create Commande
-    CommandeDAO -> Commande
-    CommandeDAO <-- Commande
+    CommandeDAO -> Commande : creerCommande\n(listeConsommations,table)
+    CommandeDAO <-- Commande : commande
 
-    CommandeDAO ->> CommandeDAO : Insert\nen base
-    CommandeDAO --> Controller
+    CommandeDAO ->> CommandeDAO : insererCommande\n(commande)
+    CommandeDAO --> Controller : commande
   deactivate CommandeDAO
 
-  Controller ->> VuePréparateur : Indique la création
+  Controller ->> VuePréparateur : envoyerAlerteCreationCommande\n(commande)
+  VuePréparateur ->> VuePréparateur : informeNouvelleCommande\n(commande)
   VuePréparateur ->> Préparateur : Alerte sonore\nou visuelle
   Controller --> VueServeur
   deactivate Controller
