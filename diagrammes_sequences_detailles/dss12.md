@@ -6,54 +6,45 @@ title __Scénario 12__: Suppression d'un utilisateur
 actor ":Gérant" as Gérant order 10
 
 box "Application" #Lightblue
-  participant ":VueMenuGérant" as VueMenuGérant order 20
+  participant ":VueGérant" as VueGérant order 20
   participant ":VueListeUtilisateurs" as VueListeUtilisateurs order 30
-  participant ":PopupSuppression" as PopupSuppression order 40
-  participant ":Controller" as Controller order 50
-  participant ":UserDAO" as UserDAO order 60
+  participant ":PopupSuppressionUtilisateur" as PopupSuppressionUtilisateur order 40
+  participant ":VueProfilUtilisateur" as VueProfilUtilisateur  order 50
+  participant ":Controller" as Controller order 60
+  participant ":DAOUtilisateur" as DAOUtilisateur order 70
 endbox
 
 box "Base de donnée" #Lightblue
-  collections "AllUser:User" as AllUser order 70
-  participant "A:User" as User order 80
+  collections "AllUser:User" as AllUser order 80
+  participant "A:User" as User order 90
 endbox
 
-activate VueMenuGérant
-Gérant -> VueMenuGérant : Demande la liste des utilisateurs
-VueMenuGérant -> VueListeUtilisateurs : Redirection
-deactivate VueMenuGérant
+
+Gérant -> VueGérant : Demande la liste des utilisateurs
+activate VueGérant
+VueGérant -> VueListeUtilisateurs : listerUtilisateurs()
 activate VueListeUtilisateurs
-VueListeUtilisateurs -> Controller : Demande la liste des utilisateurs
+VueListeUtilisateurs -> Controller : listerTousLesUtilisateurs()
 activate Controller
-Controller -> UserDAO : Requête les utilisateurs
-activate UserDAO
-UserDAO -> AllUser
-UserDAO <-- AllUser
-UserDAO --> Controller
-deactivate UserDAO
-Controller --> VueListeUtilisateurs : Retour de la liste d'utilisateurs
+Controller -> DAOUtilisateur :  recupererTousUtilisateurs()
+activate DAOUtilisateur
+DAOUtilisateur -> AllUser : listerUtilisateurs()
+DAOUtilisateur <<-- AllUser : listeUtilisateurs
+DAOUtilisateur -->> Controller : listeUtilisateurs
+deactivate DAOUtilisateur
+Controller -->> VueListeUtilisateurs : listeUtilisateurs
 deactivate Controller
-VueListeUtilisateurs --> Gérant : Affiche la liste des utilisateurs
-Gérant -> VueListeUtilisateurs : Supprime l'utilisateur A
-VueListeUtilisateurs -> PopupSuppression : Déclenche la popup
-activate PopupSuppression
-PopupSuppression --> VueListeUtilisateurs
-deactivate PopupSuppression
-VueListeUtilisateurs --> Gérant : Affiche la popup de confirmation
-Gérant -> VueListeUtilisateurs : Valide la suppression
-VueListeUtilisateurs -> Controller : Déclenche la suppression
-activate Controller
-Controller -> UserDAO : Delete l'utilisateur A
-activate UserDAO
-UserDAO -> User
-User --> UserDAO
-destroy User
-UserDAO -> AllUser : Requête tous les utilisateurs
-AllUser --> UserDAO
-UserDAO --> Controller
-deactivate UserDAO
-Controller --> VueListeUtilisateurs : Retourne la liste d'utilisateurs
-deactivate Controller
-VueListeUtilisateurs --> Gérant : Affiche la liste des utilisateurs sans celui supprimé
+VueListeUtilisateurs -->> VueGérant : listeUtilisateurs
+deactivate VueListeUtilisateurs
+VueGérant -->> Gérant : Affiche la liste des utilisateurs
+note left : Pour chaque utilisateur\nun clique sur son nom\nprovoque le chargement\nde son profil.
+deactivate VueGérant
+Gérant -> VueGérant : Demande de visionner \nprofil de l'utilisateur A
+activate VueGérant
+VueGérant -> VueProfilUtilisateur : recuperProfil(utilisateur)
+activate VueProfilUtilisateur
+
+deactivate VueProfilUtilisateur
+VueProfilUtilisateur -->>
 @enduml
 ```
