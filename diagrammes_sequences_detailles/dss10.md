@@ -8,69 +8,74 @@ actor ":Préparateur" as Préparateur order 10
 actor ":Gérant" as Gérant order 20
 
 box "Application" #Lightblue
-    participant ":VuePréparateur" as VuePréparateur order 30
-    participant ":VueGérant" as VueGérant order 40
-    participant ":FormulaireSaisiePlat" as FormulaireSaisiePlat order 50
+    participant ":VuePreparateur" as VuePréparateur order 30
+    participant ":VueGerant" as VueGérant order 40
+    participant ":FormulaireSaisieConsommation" as FormulaireSaisiePlat order 50
     participant ":Controller" as Controller order 60
-    participant ":PlatDAO" as PlatDAO order 70
-    participant ":CarteDAO" as CarteDAO order 80
+    participant ":DAOConsommation" as PlatDAO order 70
+    participant ":DAOCarte" as CarteDAO order 80
 endbox
 
 box "Base de données" #Lightblue
-  participant ":Plat" as Plat order 90
+  participant ":Consommation" as Plat order 90
   participant ":Carte" as Carte order 100
 endbox
 
 Préparateur -> VuePréparateur : Choisit saisir un plat
 activate VuePréparateur
-VuePréparateur -> FormulaireSaisiePlat
-activate FormulaireSaisiePlat
-VuePréparateur <-- FormulaireSaisiePlat
-deactivate FormulaireSaisiePlat
-Préparateur <- VuePréparateur : Affiche le formulaire
-Préparateur -> VuePréparateur : Saisit les ingrédient et le prix
-Préparateur -> VuePréparateur : Valide les informations
-VuePréparateur ->> Controller
+VuePréparateur -> FormulaireSaisiePlat : afficherFormulaireSaisieConsommation()
 deactivate VuePréparateur
+activate FormulaireSaisiePlat
+Préparateur <-- FormulaireSaisiePlat :  Affiche le formulaire
+
+Préparateur -> FormulaireSaisiePlat : Saisit les ingrédients et le prix
+Préparateur -> FormulaireSaisiePlat : Valide les informations
+Controller <- FormulaireSaisiePlat : creerConsommation()
+
+deactivate FormulaireSaisiePlat
+
+
 activate Controller
 
-Controller -> PlatDAO : Insert le plat\nen base
+Controller -> PlatDAO : creerConsommation\n(consommation)
 activate PlatDAO
 Create Plat
-PlatDAO -> Plat
-PlatDAO <-- Plat
-Controller <-- PlatDAO
+PlatDAO -> Plat : creerConsommation\n(consommation)
+PlatDAO <-- Plat : consommation
+Controller <-- PlatDAO : consommation
 deactivate PlatDAO
 
-Controller ->> VueGérant : Envoie l'alerte de création
+Controller ->> VueGérant : envoyerAlerteCreationConsommation\n(consommation)
 deactivate Controller
 VueGérant ->> Gérant : Affiche la notification
-VueGérant <- Gérant : Sélectionne la notification
+VueGérant <- Gérant : Selectionne la nouvelle \nconsommation
 activate VueGérant
 
-VueGérant -> Controller : Selectionner le plat
+VueGérant -> Controller : editerConsommation\n(consommation)
 activate Controller
-Controller -> PlatDAO : requete le plat
+Controller -> PlatDAO :  editerConsommation\n(consommation)
 activate PlatDAO
 
-PlatDAO -> Plat
-PlatDAO <-- Plat
-Controller <-- PlatDAO
+PlatDAO -> Plat :  editerConsommation\n(consommation)
+PlatDAO <-- Plat : consommation
+Controller <-- PlatDAO : consommation
 deactivate PlatDAO
-Controller -> VueGérant : Envoie le plat
+Controller --> VueGérant : consommation
 deactivate Controller
-VueGérant -> Gérant : Affiche le plat
+VueGérant --> Gérant : Affiche le plat
 deactivate VueGérant
 
 alt #transparent Si le prix est incorrect
     Gérant -> VueGérant : Modifie le prix
     activate VueGérant
     Gérant -> VueGérant : Valide le plat
-    VueGérant -> Controller : Envoie le plat modifié
+    VueGérant -> Controller : modifierNouvelleConsommation\n(consommation)
     activate Controller
-    Controller -> CarteDAO : Ajoute le plat à la carte
+    Controller -> Controller : modifierConsommation\n(consommation)
+
+    Controller -> CarteDAO : validerNouvelleConsommation\n(consommation)
     activate CarteDAO
-    CarteDAO -> Carte
+    CarteDAO -> Carte : ajouterConsommation\n(consommation)
     CarteDAO <-- Carte
     Controller <-- CarteDAO
     deactivate CarteDAO
@@ -81,11 +86,11 @@ alt #transparent Si le prix est incorrect
 else Si refuse l'ajout
   Gérant -> VueGérant : Refuse l'ajout
   activate VueGérant
-  VueGérant -> Controller : Envoie le refus
+  VueGérant -> Controller : refuseNouvelleConsommation\n(consommation)
   activate Controller
-  Controller -> PlatDAO : Supprime le plat
+  Controller -> PlatDAO : refuseNouvelleConsommation\n(consommation)
   activate PlatDAO
-  PlatDAO -> Plat
+  PlatDAO -> Plat : refuseConsommation\n(consommation)
   PlatDAO <-- Plat
   destroy Plat
   Controller <-- PlatDAO
