@@ -6,11 +6,11 @@ title __Scénario 11__: Ajout d'un utilisateur
 actor ":Gérant" as Gérant order 10
 
 box "Application" #Lightblue
-  participant ":VueMenuGérant" as VueMenuGérant order 20
+  participant ":VueGérant" as VueGérant order 20
   participant ":VueListeUtilisateurs" as VueListeUtilisateurs order 30
-  participant ":FormulaireUtilisateur" as FormulaireUtilisateur order 40
+  participant ":VueFormulaireAjoutEmployé" as VueFormulaireAjoutEmployé order 40
   participant ":Controller" as Controller order 50
-  participant ":UserDAO" as UserDAO order 60
+  participant ":DAOUtilisateur" as DAOUtilisateur order 60
 endbox
 
 box "Base de données" #Lightblue
@@ -18,53 +18,58 @@ box "Base de données" #Lightblue
   participant ":User" as User order 80
 endbox
 
-activate VueMenuGérant
 
-Gérant -> VueMenuGérant : Demande la liste\ndes utilisateurs
-VueMenuGérant -> VueListeUtilisateurs : Redirection
-deactivate VueMenuGérant
+Gérant -> VueGérant : Demande la liste\ndes utilisateurs
+activate VueGérant
+VueGérant -> VueListeUtilisateurs : listerUtilisateurs()
 activate VueListeUtilisateurs
-VueListeUtilisateurs -> Controller : Demande les utilisateurs
+VueListeUtilisateurs -> Controller : listerTousLesUtilisateurs()
 activate Controller
-Controller -> UserDAO : Requête les utilisateurs
-activate UserDAO
-UserDAO -> UserList
-UserDAO <-- UserList
-UserDAO --> Controller
-deactivate UserDAO
-Controller --> VueListeUtilisateurs
+Controller -> DAOUtilisateur : recupererTousUtilisateurs()
+activate DAOUtilisateur
+DAOUtilisateur -> UserList : listerUtilisateurs()
+DAOUtilisateur <<-- UserList : listeUtilisateurs
+DAOUtilisateur -->> Controller: listeUtilisateurs
+deactivate DAOUtilisateur
+Controller -->> VueListeUtilisateurs : listeUtilisateurs
 deactivate Controller
-VueListeUtilisateurs --> Gérant : Affiche la liste des utilisateurs
-Gérant -> VueListeUtilisateurs : Ajoute un utilisateur
-VueListeUtilisateurs -> FormulaireUtilisateur : Redirection
+VueListeUtilisateurs -->> VueGérant : listeUtilisateurs
 deactivate VueListeUtilisateurs
-activate FormulaireUtilisateur
-FormulaireUtilisateur --> Gérant : Affichele formulaire
-Gérant -> FormulaireUtilisateur : Remplit le formulaire
-FormulaireUtilisateur -> FormulaireUtilisateur : Analyse syntaxique
-Gérant <-- FormulaireUtilisateur
-Gérant -> FormulaireUtilisateur : Valide la saisie
-FormulaireUtilisateur -> Controller : Envoie des champs saisies
+VueGérant -->> Gérant : Affiche la liste \ndes utilisateurs
+deactivate VueGérant
+Gérant -> VueGérant : Clique "Ajouter un employé"
+activate VueGérant
+VueGérant -> VueFormulaireAjoutEmployé : afficherFormulaireAjoutEmployé()
+activate VueFormulaireAjoutEmployé
+VueFormulaireAjoutEmployé -> VueFormulaireAjoutEmployé: creerUtilisateur()
+note right : La methode cree \nun formulaire vide\ncorrespondant au\ninfos necessaires
+VueFormulaireAjoutEmployé -->> VueGérant : formulaire
+deactivate VueFormulaireAjoutEmployé
+VueGérant -->> Gérant : affichage du formulaire\npour nouveau employé
+deactivate VueGérant
+Gérant ->> VueGérant : Remplit le formulaire
+Gérant -> VueGérant : Valide la saisie
+activate VueGérant
+note over VueFormulaireAjoutEmployé : L'objet utilisateur est construit a partir du formulaire
+VueGérant -> Controller : ajouterUtilisateur(utilisateur)
 activate Controller
-Controller -> UserDAO : Ajoute l'utilisateur en base
-activate UserDAO
+Controller -> DAOUtilisateur : ajouterUtilisateur(utilisateur)
+activate DAOUtilisateur
 create User
-UserDAO -> User
-User --> UserDAO
-UserDAO --> Controller
-deactivate UserDAO
-Controller -> UserDAO : Demande la liste des utilisateurs
-activate UserDAO
-UserDAO -> UserList : Requête la liste des utilisateurs
-UserList --> UserDAO
-UserDAO --> Controller
-deactivate UserDAO
-Controller --> FormulaireUtilisateur
-FormulaireUtilisateur --> VueListeUtilisateurs
-deactivate FormulaireUtilisateur
-activate VueListeUtilisateurs
+DAOUtilisateur -> User : ajouterUtilisateur\n(utilisateur)
+User -->> DAOUtilisateur : true
+DAOUtilisateur -->> Controller : true
+deactivate DAOUtilisateur
+Controller -> DAOUtilisateur : recupererTousUtilisateurs()
+activate DAOUtilisateur
+DAOUtilisateur -> UserList : listerUtilisateurs()
+UserList -->> DAOUtilisateur : listeUtilisateurs
+DAOUtilisateur -->> Controller : listeUtilisateurs
+deactivate DAOUtilisateur
+Controller -->> VueGérant : listeUtilisateurs
 deactivate Controller
-VueListeUtilisateurs --> Gérant : Affiche la liste des utilisateurs
+VueGérant -->> Gérant : Affiche la liste des utilisateurs
+deactivate VueGérant
 
 @enduml
 ```
