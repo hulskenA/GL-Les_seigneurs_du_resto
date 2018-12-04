@@ -16,120 +16,48 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="creer une commande" mc="Standard.AssociationEnd" uid="c85ac87f-2dd1-4ec5-90be-7724c9b73fa9"/>
+        </REFOBJ>
+      </COMP>
+      <COMP relation="Parent">
         <OBJECT>
-          <ID name="" mc="Standard.AssociationEnd" uid="0ac34148-6c89-4e59-ab66-159aa1d2dbda"/>
+          <ID name="Generalization" mc="Standard.Generalization" uid="2431fce9-1a0b-4baf-b903-950cab9cff40"/>
           <ATTRIBUTES>
-            <ATT name="Aggregation">KindIsAssociation</ATT>
-            <ATT name="IsChangeable">true</ATT>
-            <ATT name="Changeable">ReadWrite</ATT>
-            <ATT name="IsDerived">false</ATT>
-            <ATT name="IsOrdered">false</ATT>
-            <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"></ATT>
-            <ATT name="MultiplicityMax"></ATT>
-            <ATT name="Visibility">Public</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"></ATT>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <COMP relation="Opposite">
-              <OBJECT>
-                <ID name="vueTabletteClient" mc="Standard.AssociationEnd" uid="6ed8b0dd-01c5-4d6d-b75e-a9d39cd41655"/>
-                <ATTRIBUTES>
-                  <ATT name="Aggregation">KindIsAssociation</ATT>
-                  <ATT name="IsChangeable">true</ATT>
-                  <ATT name="Changeable">ReadWrite</ATT>
-                  <ATT name="IsDerived">false</ATT>
-                  <ATT name="IsOrdered">false</ATT>
-                  <ATT name="IsUnique">false</ATT>
-                  <ATT name="MultiplicityMin"></ATT>
-                  <ATT name="MultiplicityMax"></ATT>
-                  <ATT name="Visibility">Public</ATT>
-                  <ATT name="IsClass">false</ATT>
-                  <ATT name="IsAbstract">false</ATT>
-                  <ATT name="Name"><![CDATA[vueTabletteClient]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="Opposite">
-                    <COMPID name="" mc="Standard.AssociationEnd" uid="0ac34148-6c89-4e59-ab66-159aa1d2dbda"/>
-                  </COMP>
-                  <COMP relation="Association">
-                    <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="4b5c2798-9f1f-44b4-a4aa-c79192f039fa"/>
-                      <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES></DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-            <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="4b5c2798-9f1f-44b4-a4aa-c79192f039fa"/>
-            </COMP>
+            <LINK relation="SuperType">
+              <ID name="VueTablette" mc="Standard.Class" uid="dad9c760-c3fa-4244-bdd6-da25c9e3d82a"/>
+            </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.AssociationEnd" uid="d1b24d2b-33f6-4e42-b53a-66156cb37b87"/>
+          <ID name="Generalization" mc="Standard.Generalization" uid="0ea2fc44-c465-4c62-937f-ff0fcc3a4d22"/>
           <ATTRIBUTES>
-            <ATT name="Aggregation">KindIsAssociation</ATT>
-            <ATT name="IsChangeable">true</ATT>
-            <ATT name="Changeable">ReadWrite</ATT>
-            <ATT name="IsDerived">false</ATT>
-            <ATT name="IsOrdered">false</ATT>
-            <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"></ATT>
-            <ATT name="MultiplicityMax"></ATT>
-            <ATT name="Visibility">Public</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"></ATT>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <COMP relation="Opposite">
-              <OBJECT>
-                <ID name="vueTabletteClient" mc="Standard.AssociationEnd" uid="39ab4dc7-20e9-4c75-9ac2-89e90479de6c"/>
-                <ATTRIBUTES>
-                  <ATT name="Aggregation">KindIsAssociation</ATT>
-                  <ATT name="IsChangeable">true</ATT>
-                  <ATT name="Changeable">ReadWrite</ATT>
-                  <ATT name="IsDerived">false</ATT>
-                  <ATT name="IsOrdered">false</ATT>
-                  <ATT name="IsUnique">false</ATT>
-                  <ATT name="MultiplicityMin"></ATT>
-                  <ATT name="MultiplicityMax"></ATT>
-                  <ATT name="Visibility">Public</ATT>
-                  <ATT name="IsClass">false</ATT>
-                  <ATT name="IsAbstract">false</ATT>
-                  <ATT name="Name"><![CDATA[vueTabletteClient]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="Opposite">
-                    <COMPID name="" mc="Standard.AssociationEnd" uid="d1b24d2b-33f6-4e42-b53a-66156cb37b87"/>
-                  </COMP>
-                  <COMP relation="Association">
-                    <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="26738f0c-953a-4855-a20b-54fdf9172a2d"/>
-                      <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES></DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-            <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="26738f0c-953a-4855-a20b-54fdf9172a2d"/>
-            </COMP>
+            <LINK relation="SuperType">
+              <ID name="VueTablette" mc="Standard.Class" uid="dad9c760-c3fa-4244-bdd6-da25c9e3d82a"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Generalization" mc="Standard.Generalization" uid="6dd783f5-586c-4939-9e28-34015afcfc7d"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="VueTablette" mc="Standard.Class" uid="dad9c760-c3fa-4244-bdd6-da25c9e3d82a"/>
+            </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>

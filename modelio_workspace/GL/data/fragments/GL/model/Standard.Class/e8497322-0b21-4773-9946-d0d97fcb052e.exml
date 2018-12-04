@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="VueListeEmployes" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="VueListeUtilisateurs" version="4">
   <OBJECT>
-    <ID name="VueListeEmployes" mc="Standard.Class" uid="e8497322-0b21-4773-9946-d0d97fcb052e"/>
+    <ID name="VueListeUtilisateurs" mc="Standard.Class" uid="e8497322-0b21-4773-9946-d0d97fcb052e"/>
     <PID name="Vues" mc="Standard.Package" uid="965c6ad0-b3c7-45ad-82a1-8f31e0cb35ae"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,10 +11,26 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[VueListeEmployes]]></ATT>
+      <ATT name="Name"><![CDATA[VueListeUtilisateurs]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="listerTousLesUtilisateurs" mc="Standard.Operation" uid="d6f29533-5782-4917-bbaa-8daa1463edd0"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[listerTousLesUtilisateurs]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <COMP relation="OwnedEnd">
         <REFOBJ>
           <ID name="vueGerant" mc="Standard.AssociationEnd" uid="ef8e7414-efc5-4fd7-98c4-345eccbec36b"/>

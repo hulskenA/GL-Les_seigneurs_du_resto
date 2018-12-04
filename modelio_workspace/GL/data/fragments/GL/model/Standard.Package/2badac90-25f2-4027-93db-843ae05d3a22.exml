@@ -16,9 +16,10 @@
       <COMP relation="OwnedElement">
         <COMPID name="DAOCommande" mc="Standard.Class" uid="b5d718ba-7941-4e56-b97c-698434767ad5"/>
         <COMPID name="DAOConsommation" mc="Standard.Class" uid="4e970d8c-ad5d-49bd-872e-27d184eb14a7"/>
-        <COMPID name="DAOEmploye" mc="Standard.Class" uid="2aab38b6-3476-4ebc-89c4-77243baa7558"/>
+        <COMPID name="DAOUtilisateur" mc="Standard.Class" uid="2aab38b6-3476-4ebc-89c4-77243baa7558"/>
         <COMPID name="DAOCarte" mc="Standard.Class" uid="60295a06-e79c-4607-b873-8cbd4bf27fec"/>
         <COMPID name="DAOTable" mc="Standard.Class" uid="27bc0d5e-507b-4bc1-9df3-70d9a5386efd"/>
+        <COMPID name="DAOAddition" mc="Standard.Class" uid="879c7f21-0cd6-42e1-9f79-8f110b7e963d"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

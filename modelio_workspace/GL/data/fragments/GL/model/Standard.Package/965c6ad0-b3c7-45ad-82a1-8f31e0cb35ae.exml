@@ -19,10 +19,10 @@
         <COMPID name="VueTabletteServeur" mc="Standard.Class" uid="7d81945a-3c85-4261-a420-7a338ad6a675"/>
         <COMPID name="VueTabletteClient" mc="Standard.Class" uid="2fc8cd3d-7b8a-428b-a2e6-4c6409b4195d"/>
         <COMPID name="VueFormulaireAjoutElmploye" mc="Standard.Class" uid="3bfe0786-237d-410b-b7b6-bd0e36c21afc"/>
-        <COMPID name="VueFormulaireAjoutConsommation" mc="Standard.Class" uid="bfd1884c-daae-445a-965e-9a02827f71a2"/>
-        <COMPID name="VueAjoutCommande" mc="Standard.Class" uid="8eebd724-6f1f-49af-bf5f-1db4bef03092"/>
-        <COMPID name="VueListeEmployes" mc="Standard.Class" uid="e8497322-0b21-4773-9946-d0d97fcb052e"/>
-        <COMPID name="VueDetailCommande" mc="Standard.Class" uid="999b4c2c-e037-41f0-9aed-2e8ee173a95d"/>
+        <COMPID name="VueListeUtilisateurs" mc="Standard.Class" uid="e8497322-0b21-4773-9946-d0d97fcb052e"/>
+        <COMPID name="VueTablette" mc="Standard.Class" uid="dad9c760-c3fa-4244-bdd6-da25c9e3d82a"/>
+        <COMPID name="FormulaireSaisieConsommation" mc="Standard.Class" uid="179082e1-2085-4fc3-8e41-3ee33952861d"/>
+        <COMPID name="PopupSuppressionUtilisateur" mc="Standard.Class" uid="7e4e6756-a499-4ca5-bf07-87234685ad15"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
